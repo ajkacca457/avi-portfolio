@@ -6,10 +6,8 @@ import Navbar from './Navbar'
 
 const HomeLayout = () => {
   return (
-    <div className='max-w-content mx-auto'>
+    <div className='max-w-content mx-auto relative'>
         <Header />
-        <Social /> 
-        <Navbar />
         <Outlet />
     </div>
   )
