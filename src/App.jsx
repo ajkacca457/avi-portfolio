@@ -2,6 +2,7 @@ import { useState } from 'react'
 import HomeLayout from './components/HomeLayout'
 import About from './components/About'
 import Experience from './components/Experience';
+import Projects from './components/Projects';
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
@@ -17,7 +18,7 @@ const router = createBrowserRouter(
         },
         {
           path: 'projects',
-          element: <div>Projects</div>
+          element: <Projects />
         },
         {
           path: 'experience',

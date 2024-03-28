@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>
+    <div className='px-3 py-1'>
         <p className='text-slate-400 my-3'> Hi! My name is <span className='text-white'>Avijit Karmaker</span>,and I am a passionate Fullstack Developer and Graphics Designer based in Vantaa, Finland. With years of experience in handling <span className='text-white'>diverse projects</span>, I have honed my skills to deliver results consistently. My journey has led me to work with renowned multinational companies, where I have gained invaluable insights and experiences that have shaped me both personally and professionally.</p>
         <p className='text-slate-400 my-3'> While my tenure as a programmer may not span decades, my journey in the field is relatively recent. Before delving into programming, I navigated the realms of project and programme management for various companies. It was in 2020 that I stumbled upon <span className='text-white'>Microverse, a transformative educational platform</span>, igniting my official foray into programming.</p>
         <p className='text-slate-400 my-3'> Completing the Microverse curriculum marked a significant turning point, equipping me with the essential skills and knowledge to navigate the tech landscape. Subsequently, I immersed myself in the Finnish tech scene, lending my skills to several esteemed companies. Presently, I'm privileged to serve as a <span className='text-white'>fullstack developer at JJ-NET OY</span>, where I channel my passion for coding into <span className='text-white'>innovative solutions and projects.</span></p>
