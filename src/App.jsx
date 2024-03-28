@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import HomeLayout from './components/HomeLayout'
 import About from './components/About'
+import Experience from './components/Experience';
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
@@ -11,7 +12,7 @@ const router = createBrowserRouter(
       element: <HomeLayout />,
       children: [
         {
-          path: 'about',
+          index: true,
           element: <About />
         },
         {
@@ -20,7 +21,7 @@ const router = createBrowserRouter(
         },
         {
           path: 'experience',
-          element: <div>Experience</div>
+          element: <Experience />
         }
       ]
     }
