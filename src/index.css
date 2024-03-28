@@ -12,5 +12,5 @@ body {
 }
 
 .active {
-   @apply text-slate-400;
+   @apply text-slate-200;
 }
