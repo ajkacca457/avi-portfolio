@@ -10,3 +10,7 @@ body {
 body {
     @apply bg-slate-900 text-white;
 }
+
+.active {
+   @apply text-slate-400;
+}
