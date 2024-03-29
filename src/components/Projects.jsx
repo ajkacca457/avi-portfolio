@@ -24,6 +24,18 @@ const projectsData = [
         title: 'Project 4',
         description: 'Description 4',
         stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
+    },
+    {
+        image:"https://fakeimg.pl/600x400",
+        title: 'Project 5',
+        description: 'Description 4',
+        stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
+    },
+    {
+        image:"https://fakeimg.pl/600x400",
+        title: 'Project 6',
+        description: 'Description 4',
+        stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
     }
 ];
 
