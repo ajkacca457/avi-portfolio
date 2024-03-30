@@ -11,81 +11,101 @@ import LOS from '../assets/images/los.png'
 import API from '../assets/images/api.png'
 import Coursetracker from '../assets/images/coursetracker.jpg'
 import HomeAccounts from '../assets/images/home-accounts.png'
+import ShahriarPortfolio from '../assets/images/shariar-portfolio.png'
+import Virala from '../assets/images/virala.png'
+import Kettutesti from '../assets/images/kettutesti.png'
 
 const projectsData = [
     {
         image:Netox,
         title: 'netox.com',
         description: 'Icare interactive map',
-        stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
+        stack: ["Javascript", "React", "PHP", "Wordpress", "Scss", "Gutenberg-blocks"]
     },
     {
         image:Efecte,
         title: 'efecte.tenderoffer.fi',
         description: 'Description 2',
-        stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
+        stack: ["Javascript", "PHP", "Wordpress","Handlebars","Tailwind","Typescript"]
     },
     {
         image:Endomines,
         title: 'endomines.com',
         description: 'Description 2',
-        stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
+        stack: ["Javascript", "PHP", "Wordpress","Handlebars","Tailwind","Typescript"]
     },
     {
         image:IcareMap,
         title: 'Icare interactive map',
         description: 'Description 3',
-        stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
+        stack: ["Javascript", "Google-Maps-API", "PHP", "Wordpress", "Scss","Typescript"]
     },
     {
         image:IcareManual,
         title: 'Icare manual downloader application',
         description: 'Description 4',
-        stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
+        stack: ["Javascript", "React", "PHP", "Wordpress", "Scss","Typescript"]
     },
     {
         image:Museoliitto,
         title: 'museoliitto.fi',
         description: 'Description 4',
-        stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
+        stack: ["Javascript", "PHP", "Wordpress", "Tailwind","Typescript"]
     },
     {
         image:Tukikummit,
         title: 'tukikummit.fi',
         description: 'Description 4',
-        stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
+        stack: ["Javascript", "PHP", "Wordpress", "Tailwind","Typescript"]
     },
     {
         image:Rightware,
         title: 'rightware.com',
         description: 'Description 4',
-        stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
+        stack: ["Vue","PHP", "Wordpress","HeadlesCMS", "Wordpress Rest API"]
+    },
+    {
+        image:Virala,
+        title: 'Legend of Soha',
+        description: 'Description 4',
+        stack: ["Javascript", "PHP", "Wordpress", "Tailwind","Typescript"]
+    },
+    {
+        image:Kettutesti,
+        title: 'Legend of Soha',
+        description: 'Description 4',
+        stack: ["Javascript", "PHP", "Wordpress", "Tailwind","Typescript"]
     },
     {
         image:LOS,
         title: 'Legend of Soha',
         description: 'Description 4',
-        stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
+        stack: ["Javascript", "Phaser 3"]
     },
     {
         image:API,
         title: 'Legend of Soha',
         description: 'Description 4',
-        stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
+        stack: ["Javascript", "Express", "Mongoose", "MongoDB", "Node.js"]
     },
     {
         image:Coursetracker,
         title: 'Legend of Soha',
         description: 'Description 4',
-        stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
+        stack: ["Javascript", "React", "Express", "Mongoose", "MongoDB", "Node.js"]
     },
     {
         image:HomeAccounts,
         title: 'Legend of Soha',
         description: 'Description 4',
-        stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
+        stack: ["Javascript", "React", "Express", "Mongoose", "MongoDB", "Node.js"]
     },
-    
+    {
+        image:ShahriarPortfolio,
+        title: 'Legend of Soha',
+        description: 'Description 4',
+        stack: ["Javascript","Html", "Css"]
+    },
 
 ];
 
@@ -105,7 +125,7 @@ const Projects = () => {
                         <p className='text-slate-400'>{description}</p>
                         <div className='flex flex-wrap my-4'>
                             {stack.map((item, index) => (
-                                <span key={index} className='bg-slate-800 text-slate-400 px-2 py-1 rounded-full text-sm mr-2 mb-2'>{item}</span>
+                                <span key={index} className='bg-sky-900 text-sky-400 px-2 py-1 rounded-full text-sm mr-2 mb-2'>{item}</span>
                             ))}
                         </div>
                     </div>
