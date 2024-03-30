@@ -4,24 +4,24 @@ const projectsData = [
     {
         image:"https://fakeimg.pl/600x400",
         title: 'Project 1',
-        description: 'Description 1',
+        description: 'Icare interactive map',
         stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
     },
     {
         image:"https://fakeimg.pl/600x400",
-        title: 'Project 2',
+        title: 'Icare manual downloader',
         description: 'Description 2',
         stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
     },
     {
         image:"https://fakeimg.pl/600x400",
-        title: 'Project 3',
+        title: 'Rightware.com',
         description: 'Description 3',
         stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
     },
     {
         image:"https://fakeimg.pl/600x400",
-        title: 'Project 4',
+        title: 'Endomines.com',
         description: 'Description 4',
         stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
     },
