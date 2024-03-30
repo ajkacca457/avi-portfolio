@@ -3,6 +3,9 @@ import Netox from '../assets/images/netox.png'
 import Endomines from '../assets/images/endomines.png'
 import Efecte from '../assets/images/efecte.png'
 import IcareMap from '../assets/images/icare-map.png'
+import IcareManual from '../assets/images/icare-manuals.png'
+import Museoliitto from '../assets/images/museoliitto.png'
+import Tukikummit from '../assets/images/tukikummit.png'
 
 const projectsData = [
     {
@@ -30,8 +33,8 @@ const projectsData = [
         stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
     },
     {
-        image:"./assets/images/efecte0.png",
-        title: 'Endomines.com',
+        image:IcareManual,
+        title: 'Icare manual downloader application',
         description: 'Description 4',
         stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
     },
