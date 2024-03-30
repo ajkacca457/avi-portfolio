@@ -6,6 +6,11 @@ import IcareMap from '../assets/images/icare-map.png'
 import IcareManual from '../assets/images/icare-manuals.png'
 import Museoliitto from '../assets/images/museoliitto.png'
 import Tukikummit from '../assets/images/tukikummit.png'
+import Rightware from '../assets/images/rightware.png'
+import LOS from '../assets/images/los.png'
+import API from '../assets/images/api.png'
+import Coursetracker from '../assets/images/coursetracker.jpg'
+import HomeAccounts from '../assets/images/home-accounts.png'
 
 const projectsData = [
     {
@@ -39,17 +44,49 @@ const projectsData = [
         stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
     },
     {
-        image:"https://fakeimg.pl/600x400",
-        title: 'Project 5',
+        image:Museoliitto,
+        title: 'museoliitto.fi',
         description: 'Description 4',
         stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
     },
     {
-        image:"https://fakeimg.pl/600x400",
-        title: 'Project 6',
+        image:Tukikummit,
+        title: 'tukikummit.fi',
         description: 'Description 4',
         stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
-    }
+    },
+    {
+        image:Rightware,
+        title: 'rightware.com',
+        description: 'Description 4',
+        stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
+    },
+    {
+        image:LOS,
+        title: 'Legend of Soha',
+        description: 'Description 4',
+        stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
+    },
+    {
+        image:API,
+        title: 'Legend of Soha',
+        description: 'Description 4',
+        stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
+    },
+    {
+        image:Coursetracker,
+        title: 'Legend of Soha',
+        description: 'Description 4',
+        stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
+    },
+    {
+        image:HomeAccounts,
+        title: 'Legend of Soha',
+        description: 'Description 4',
+        stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
+    },
+    
+
 ];
 
 const Projects = () => {
