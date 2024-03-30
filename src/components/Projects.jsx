@@ -3,7 +3,7 @@ import React from 'react'
 const projectsData = [
     {
         image:"https://fakeimg.pl/600x400",
-        title: 'Project 1',
+        title: 'Icare interactive map',
         description: 'Icare interactive map',
         stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
     },
