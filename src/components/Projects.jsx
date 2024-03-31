@@ -8,71 +8,83 @@ import Museoliitto from '../assets/images/museoliitto.png'
 import Tukikummit from '../assets/images/tukikummit.png'
 import Rightware from '../assets/images/rightware.png'
 import LOS from '../assets/images/los.png'
-import API from '../assets/images/api.png'
 import Coursetracker from '../assets/images/coursetracker.jpg'
 import HomeAccounts from '../assets/images/home-accounts.png'
 import ShahriarPortfolio from '../assets/images/shariar-portfolio.png'
 import Virala from '../assets/images/virala.png'
 import Kettutesti from '../assets/images/kettutesti.png'
 
+
+import { Link } from 'react-router-dom'
+
 const projectsData = [
     {
         image:Netox,
         title: 'netox.com',
+        url: 'https://netox.com',
         description: 'Icare interactive map',
         stack: ["Javascript", "React", "PHP", "Wordpress", "Scss", "Gutenberg-blocks"]
     },
     {
         image:Efecte,
         title: 'efecte.tenderoffer.fi',
+        url: 'https://efecte.tenderoffer.fi',
         description: 'Description 2',
         stack: ["Javascript", "PHP", "Wordpress","Handlebars","Tailwind","Typescript"]
     },
     {
         image:Endomines,
         title: 'endomines.com',
+        url: 'https://endomines.com',
         description: 'Description 2',
         stack: ["Javascript", "PHP", "Wordpress","Handlebars","Tailwind","Typescript"]
     },
     {
         image:IcareMap,
         title: 'Icare interactive map',
+        url: 'https://patients.icare-world.com/find-a-provider',
         description: 'Description 3',
         stack: ["Javascript", "Google-Maps-API", "PHP", "Wordpress", "Scss","Typescript"]
     },
     {
         image:IcareManual,
         title: 'Icare manual downloader application',
+        url: 'https://www.icare-world.com/ifu/',
         description: 'Description 4',
         stack: ["Javascript", "React", "PHP", "Wordpress", "Scss","Typescript"]
     },
     {
         image:Museoliitto,
         title: 'museoliitto.fi',
+        url: 'https://museoliitto.fi/',
         description: 'Description 4',
         stack: ["Javascript", "PHP", "Wordpress", "Tailwind","Typescript"]
     },
     {
         image:Tukikummit,
         title: 'tukikummit.fi',
+        url: 'https://tukikummit.fi/',
         description: 'Description 4',
         stack: ["Javascript", "PHP", "Wordpress", "Tailwind","Typescript"]
     },
     {
         image:Rightware,
         title: 'rightware.com',
+        url: 'https://rightware.com/',
         description: 'Description 4',
         stack: ["Vue","PHP", "Wordpress","HeadlesCMS", "Wordpress Rest API"]
     },
     {
         image:Virala,
         title: 'virala.fi',
+        url: 'https://virala.fi/',
         description: 'Description 4',
         stack: ["Javascript", "PHP", "Wordpress", "Tailwind","Typescript"]
     },
     {
         image:Kettutesti,
         title: 'kettutesti.hel.fi',
+        url: 'https://kettutesti.hel.fi/',
         description: 'Description 4',
         stack: ["Javascript", "PHP", "Wordpress", "Tailwind","Typescript"]
     },
@@ -107,7 +119,7 @@ const Projects = () => {
   return (
     <div>
         {projectsData.map((project, index) => {
-            const { image, title, description, stack } = project;
+            const { image, title, description, stack,url } = project;
 
             return (
                 <div key={index} className='my-4 grid grid-cols-4 gap-x-6 px-4 py-2 group hover:bg-slate-800 transition duration-250 ease-out hover:ease-in items-start'>
@@ -115,7 +127,9 @@ const Projects = () => {
                         <img src={image} alt={title} className='w-full h-full object-contain' />
                     </div>
                     <div className='col-span-3'>
-                        <p className='text-lg mb-2'>{title}</p>
+                        <Link to={url} target='_blank' className='text-sky-600 group-hover:text-sky-500 flex items-center'>
+                            <p className='text-lg mb-2'>{title}</p>
+                        </Link>
                         <p className='text-slate-400'>{description}</p>
                         <div className='flex flex-wrap my-4'>
                             {stack.map((item, index) => (
