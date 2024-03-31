@@ -66,13 +66,13 @@ const projectsData = [
     },
     {
         image:Virala,
-        title: 'Legend of Soha',
+        title: 'virala.fi',
         description: 'Description 4',
         stack: ["Javascript", "PHP", "Wordpress", "Tailwind","Typescript"]
     },
     {
         image:Kettutesti,
-        title: 'Legend of Soha',
+        title: 'kettutesti.hel.fi',
         description: 'Description 4',
         stack: ["Javascript", "PHP", "Wordpress", "Tailwind","Typescript"]
     },
@@ -83,26 +83,20 @@ const projectsData = [
         stack: ["Javascript", "Phaser 3"]
     },
     {
-        image:API,
-        title: 'Legend of Soha',
-        description: 'Description 4',
-        stack: ["Javascript", "Express", "Mongoose", "MongoDB", "Node.js"]
-    },
-    {
         image:Coursetracker,
-        title: 'Legend of Soha',
+        title: 'Course Tracker',
         description: 'Description 4',
         stack: ["Javascript", "React", "Express", "Mongoose", "MongoDB", "Node.js"]
     },
     {
         image:HomeAccounts,
-        title: 'Legend of Soha',
+        title: 'Home Accounts',
         description: 'Description 4',
         stack: ["Javascript", "React", "Express", "Mongoose", "MongoDB", "Node.js"]
     },
     {
         image:ShahriarPortfolio,
-        title: 'Legend of Soha',
+        title: 'Photographer Portfolio',
         description: 'Description 4',
         stack: ["Javascript","Html", "Css"]
     },
