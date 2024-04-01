@@ -36,6 +36,14 @@ const experienceData = [
         companyUrl:"https://www.microverse.org/",
         description: 'Description 3',
         stack: ["Rails","Javascript", "React", "Tailwind", "Scss", "Html", "Css", "Node.js", "Typescript"]        
+    },
+    {
+        date: '2017 - 2018',
+        role: 'Lead content developer',
+        company:"Rohto Mentholatum",
+        companyUrl:"https://www.microverse.org/",
+        description: 'Description 3',
+        stack: ["Rails","Javascript", "React", "Tailwind", "Scss", "Html", "Css", "Node.js", "Typescript"]        
     }
 
 ];
