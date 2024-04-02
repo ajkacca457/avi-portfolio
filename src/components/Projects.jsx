@@ -29,7 +29,7 @@ const projectsData = [
         image:Efecte,
         title: 'efecte.tenderoffer.fi',
         url: 'https://efecte.tenderoffer.fi',
-        description: 'Description 2',
+        description: 'I led this project, which involved developing a public tender website to showcase various stock-related information for consumers. It was a time-sensitive project that demanded effective time and resource management. The site is constructed using a custom WordPress theme as the base, supplemented with Tailwind CSS, JavaScript, and Handlebars templates for data rendering.',
         stack: ["Javascript", "PHP", "Wordpress","Handlebars","Tailwind","Typescript"]
     },
     {
