@@ -57,28 +57,28 @@ const projectsData = [
         image:Museoliitto,
         title: 'museoliitto.fi',
         url: 'https://museoliitto.fi/',
-        description: 'Description 4',
+        description: 'I was responsible for developing all the building blocks for this site, guided by the lead developer in terms of architecture. The project was built with a custom WordPress theme utilizing custom blocks. We utilized Handlebars, Tailwind, and TypeScript for the frontend, while the backend predominantly relied on WordPress and PHP. Additionally, the site features integration with third-party APIs.',
         stack: ["Javascript", "PHP", "Wordpress", "Tailwind","Typescript"]
     },
     {
         image:Tukikummit,
         title: 'tukikummit.fi',
         url: 'https://tukikummit.fi/',
-        description: 'Description 4',
+        description: "I undertook similar responsibilities for this site, where I developed building blocks in alignment with the project's requirements. Collaborating closely with the lead developer, I ensured consistency in architectural design. This project also utilized a custom WordPress theme with custom blocks, employing technologies such as Handlebars, Tailwind, and TypeScript for frontend development. On the backend, WordPress and PHP formed the foundation.",
         stack: ["Javascript", "PHP", "Wordpress", "Tailwind","Typescript"]
     },
     {
         image:Rightware,
         title: 'rightware.com',
         url: 'https://rightware.com/',
-        description: 'Description 4',
+        description: "This site was built using Vue.js and a headless CMS architecture. Collaborating with the lead developer, we integrated the WordPress REST API with Vue.js. The frontend utilizes Vuex for managing the global state of the project, and Vue Router handles all the routes. Initially responsible for building features and bug fixes, I later assumed sole responsibility for managing the site's codebase.",
         stack: ["Vue","PHP", "Wordpress","HeadlesCMS", "Wordpress Rest API"]
     },
     {
         image:Virala,
         title: 'virala.fi',
         url: 'https://virala.fi/',
-        description: 'Description 4',
+        description: 'Served as the lead developer, utilizing Handlebars for frontend rendering, complemented by TypeScript and Tailwind CSS. Leveraged WordPress and PHP for backend functionality. Through collaborative efforts, delivered a robust website exceeding client expectations.',
         stack: ["Javascript", "PHP", "Wordpress", "Tailwind","Typescript"]
     },
     {
