@@ -34,7 +34,7 @@ const experienceData = [
         role: 'Practice session coordinator',
         company:"Microverse",
         companyUrl:"https://www.microverse.org/",
-        description: 'Description 3',
+        description: 'As a coding practice session coordinator, I facilitated collaborative learning environments where individuals honed their programming skills. I organized and managed practice sessions, ensuring participants had access to relevant resources and guidance. Additionally, I actively engaged with participants by providing assistance in solving coding challenges and participated in peer coding sessions, collaborating with others to tackle challenges collectively and exchange insights. Through my involvement, I contributed to fostering a supportive atmosphere aimed at enhancing coding proficiency and problem-solving skills within the coding community.',
         stack: ["Rails","Javascript","Html", "Css"]        
     },
     {
