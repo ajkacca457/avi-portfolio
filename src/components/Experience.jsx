@@ -26,7 +26,7 @@ const experienceData = [
         role: 'Full Stack Developer',
         company:"Miltton OY",
         companyUrl:"https://www.miltton.fi/",
-        description: 'Description 2',
+        description: 'As a Junior Fullstack Developer, I contributed to building and maintaining web applications, gaining experience in frontend and backend development. Working closely with senior developers, I assisted in designing, implementing, and testing features. On the frontend, I crafted responsive interfaces with HTML, Css, Scss, tailwind and JavaScript, while on the backend, I managed headless cms and wordpress RESTful APIs. Actively participating in code reviews and debugging sessions, I honed my problem-solving skills and expanded my technical knowledge, contributing to delivering high-quality software solutions.',
         stack: ["Javascript", "React", "PHP", "Wordpress", "HeadlessCMS","Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
     },
     {
@@ -34,7 +34,7 @@ const experienceData = [
         role: 'Practice session coordinator',
         company:"Microverse",
         companyUrl:"https://www.microverse.org/",
-        description: 'As a coding practice session coordinator, I facilitated collaborative learning environments where individuals honed their programming skills. I organized and managed practice sessions, ensuring participants had access to relevant resources and guidance. Additionally, I actively engaged with participants by providing assistance in solving coding challenges and participated in peer coding sessions, collaborating with others to tackle challenges collectively and exchange insights. Through my involvement, I contributed to fostering a supportive atmosphere aimed at enhancing coding proficiency and problem-solving skills within the coding community.',
+        description: 'As a coding practice session coordinator, I facilitated collaborative learning environments where individuals honed their programming skills. I organized and managed practice sessions, ensuring participants had access to relevant resources and guidance. Additionally, I actively engaged with participants by providing assistance in solving coding challenges and participated in peer coding sessions, collaborating with others to tackle challenges collectively and exchange insights.',
         stack: ["Rails","Javascript","Html", "Css"]        
     },
     {
