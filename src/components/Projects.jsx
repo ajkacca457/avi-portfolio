@@ -97,7 +97,7 @@ const projectsData = [
     {
         image:Coursetracker,
         title: 'Course Tracker',
-        description: 'Description 4',
+        description: "This app was part of my final capstone project at Microverse and has been updated with the MERN stack. The Course Tracker app allows students to track details about their courses. Users create an account to log in and can then add, update, and view detailed reports of their courses. JWT authentication is used for user authentication. The app features an elegant, user-friendly UI and provides an accumulated report of all added courses for tracking study progression. It's a useful tool for students to monitor their course progress.",
         stack: ["Javascript", "React", "Express", "Mongoose", "MongoDB", "Node.js"]
     },
     {
@@ -130,7 +130,7 @@ const Projects = () => {
                         <Link to={url} target='_blank' className='text-sky-600 group-hover:text-sky-500 flex items-center'>
                             <p className='text-lg mb-2'>{title}</p>
                         </Link>
-                        <p className='text-slate-400'>{description}</p>
+                        <p className='text-slate-400 text-justify'>{description}</p>
                         <div className='flex flex-wrap my-4'>
                             {stack.map((item, index) => (
                                 <span key={index} className='bg-sky-900 text-sky-400 px-2 py-1 rounded-full text-sm mr-2 mb-2'>{item}</span>
