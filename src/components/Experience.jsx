@@ -17,7 +17,7 @@ const experienceData = [
         role: 'Capstone porject reviewer',
         company:"Microverse",
         companyUrl:"https://www.microverse.org/", 
-        description: 'Build, style, and ship high-quality websites, design systems, mobile apps, and digital experiences for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and spearheading the development of internal tools.',
+        description: "As a Capstone Project Evaluator for software development projects, I assessed the culmination of students' technical skills and knowledge. During project presentations, I evaluated the functionality, design, and implementation of the software solutions. I provided feedback on the effectiveness of the codebase, the utilization of appropriate technologies, and the alignment with project requirements. Collaborating with faculty, I ensured that students effectively communicated their project's objectives, development process, and outcomes. By evaluating these software development capstone projects, I contributed to students' readiness for real-world software engineering roles and their overall academic achievement.",
         stack: ["Rails","Javascript", "React", "Tailwind", "Scss", "Html", "Css", "Node.js", "Typescript"]
     },
 
