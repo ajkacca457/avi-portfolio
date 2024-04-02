@@ -8,7 +8,7 @@ const experienceData = [
         role: 'Full Stack Developer',
         company:"JJ-NET OY",
         companyUrl:"https://jj-net.fi/",
-        description: 'Build, style, and ship high-quality websites, design systems, mobile apps, and digital experiences for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and spearheading the development of internal tools.',
+        description: "Currently, I serve as a Fullstack Developer at JJ-NET OY, specializing in modern WordPress development. In this role, I am responsible for designing and implementing custom Gutenberg themes and blocks, as well as spearheading full-stack projects. Leveraging my skills in frontend technologies such as HTML, Css, Scss, Tailwind, JavaScript and Typescript, I craft visually appealing and intuitive user interfaces. On the backend, I utilize my proficiency in PHP, NodeJs, Express and WordPress APIs to develop robust and scalable solutions tailored to our clients' specific requirements. Working closely with cross-functional teams, I ensure seamless integration and deployment of our projects, while consistently delivering high-quality, performance-driven solutions that exceed client expectations. Through my contributions, I play a pivotal role in driving the success and growth of our WordPress development initiatives at [Company Name].",
         stack: ["Javascript", "React", "PHP", "Wordpress", "Tailwind", "Scss", "Bootstrap", "Html", "Css", "Node.js", "Typescript"]
     },
 
@@ -17,7 +17,7 @@ const experienceData = [
         role: 'Capstone porject reviewer',
         company:"Microverse",
         companyUrl:"https://www.microverse.org/", 
-        description: "As a Capstone Project Evaluator for software development projects, I assessed the culmination of students' technical skills and knowledge. During project presentations, I evaluated the functionality, design, and implementation of the software solutions. I provided feedback on the effectiveness of the codebase, the utilization of appropriate technologies, and the alignment with project requirements. Collaborating with faculty, I ensured that students effectively communicated their project's objectives, development process, and outcomes. By evaluating these software development capstone projects, I contributed to students' readiness for real-world software engineering roles and their overall academic achievement.",
+        description: "As a Capstone Project Evaluator for software development projects, I assessed the culmination of students' technical skills and knowledge. During project presentations, I evaluated the functionality, design, and implementation of the web development solutions. I provided feedback on the effectiveness of the codebase, the utilization of appropriate technologies, and the alignment with project requirements. Collaborating with faculty, I ensured that students effectively communicated their project's objectives, development process, and outcomes.",
         stack: ["Rails","Javascript", "React", "Tailwind", "Scss", "Html", "Css", "Node.js", "Typescript"]
     },
 
