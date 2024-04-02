@@ -85,13 +85,13 @@ const projectsData = [
         image:Kettutesti,
         title: 'kettutesti.hel.fi',
         url: 'https://kettutesti.hel.fi/',
-        description: 'Description 4',
+        description: 'It is a quiz app developed for the Helsinki City website, primarily targeting children as part of a promotional campaign. Through this quiz app, both children and adults can discover which type of fox they are and share the results on social media. The frontend design of the app primarily utilizes Tailwind CSS. TypeScript was employed for implementing quizzes and logical functions.',
         stack: ["Javascript", "PHP", "Wordpress", "Tailwind","Typescript"]
     },
     {
         image:LOS,
         title: 'Legend of Soha',
-        description: 'Description 4',
+        description: "This is a role-playing game that I developed as part of my web development program's JavaScript capstone project. I utilized Phaser 3 and created various scenes using Illustrator. The game logic was primarily implemented through Phaser 3 and various JavaScript classes provided by Phaser 3. It was an enjoyable project to work on.",
         stack: ["Javascript", "Phaser 3"]
     },
     {
