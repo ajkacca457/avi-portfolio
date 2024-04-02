@@ -103,13 +103,13 @@ const projectsData = [
     {
         image:HomeAccounts,
         title: 'Home Accounts',
-        description: 'Description 4',
+        description: "This web app enables users to track their financial activities effortlessly. Users can create an account and promptly begin monitoring their finances. With a user-friendly interface, there's a single form offering multiple options for entering transactions. The app conducts graphical analysis of all user transactions, providing an intuitive statistical overview of their financial status. Designed with simplicity in mind, the aim of this app is to offer users an easy-to-use interface for managing their finances effectively.",
         stack: ["Javascript", "React", "Express", "Mongoose", "MongoDB", "Node.js"]
     },
     {
         image:ShahriarPortfolio,
         title: 'Photographer Portfolio',
-        description: 'Description 4',
+        description: 'This project is a HTML, CSS, and JavaScript portfolio website designed for a photographer to showcase their work. It features an image carousel for displaying background images with a timer, and scroll animations using the AOS library. Bootstrap was utilized for styling, and Font Awesome for icons. The website is fully responsive, ensuring optimal viewing across desktops, tablets, and mobile devices.',
         stack: ["Javascript","Html", "Css"]
     },
 
