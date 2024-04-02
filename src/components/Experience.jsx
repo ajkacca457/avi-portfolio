@@ -31,21 +31,20 @@ const experienceData = [
     },
     {
         date: '2020 - 2021',
-        role: 'Coding session coordinator',
+        role: 'Practice session coordinator',
         company:"Microverse",
         companyUrl:"https://www.microverse.org/",
         description: 'Description 3',
-        stack: ["Rails","Javascript", "React", "Tailwind", "Scss", "Html", "Css", "Node.js", "Typescript"]        
+        stack: ["Rails","Javascript","Html", "Css"]        
     },
     {
         date: '2017 - 2018',
-        role: 'Lead content developer',
-        company:"Rohto Mentholatum",
-        companyUrl:"https://www.microverse.org/",
-        description: 'Description 3',
-        stack: ["Rails","Javascript", "React", "Tailwind", "Scss", "Html", "Css", "Node.js", "Typescript"]        
+        role: 'Lead ( Digital content management)',
+        company:"Rohto-Mentholatum (Bangladesh) Limited",
+        companyUrl:"https://www.rohto.com.bd/",
+        description: 'As a Motion Graphics Designer, I adeptly conceptualized, designed, and delivered quality motion graphics for various projects including corporate videos, e-Learning modules, websites, and marketing materials. Collaborating closely with art and creative teams, I ensured alignment with project scopes and objectives while selecting audio, video, colors, and animations. I effectively resolved technical and design challenges alongside editors, producers, and fellow designers, enhancing raw video footage through editing and effects.',
+        stack: ["Photoshop","Illustrator", "After-effects", "Premiere-Pro", "Fedora"]        
     }
-
 ];
 
 
