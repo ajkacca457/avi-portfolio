@@ -36,14 +36,14 @@ const projectsData = [
         image:Endomines,
         title: 'endomines.com',
         url: 'https://endomines.com',
-        description: 'Description 2',
+        description: 'This project was initially developed by another developer, and I assumed responsibility for its ongoing development. I implemented numerous new features based on client requests and took charge of codebase management, site updates, and bug fixes. Currently, I serve as the lead developer for this project.',
         stack: ["Javascript", "PHP", "Wordpress","Handlebars","Tailwind","Typescript"]
     },
     {
         image:IcareMap,
         title: 'Icare interactive map',
         url: 'https://patients.icare-world.com/find-a-provider',
-        description: 'Description 3',
+        description: "The app was initially designed to display all the locations of the home providers for Icare. Initially, it had basic search functionality based on zip code or provider name. Later, the app was rebuilt with advanced features. Now, it showcases all the home provider locations on Google Maps as clusters. Users can search for locations by name or location, and the app calculates the distance between all the home providers and the user's location. It sorts out all the locations based on distance and displays them on the map alongside the user's location.",
         stack: ["Javascript", "Google-Maps-API", "PHP", "Wordpress", "Scss","Typescript"]
     },
     {
