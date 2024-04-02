@@ -22,7 +22,7 @@ const projectsData = [
         image:Netox,
         title: 'netox.com',
         url: 'https://netox.com',
-        description: 'Icare interactive map',
+        description: 'The website is constructed using custom Gutenberg React blocks, with my primary responsibility being the creation of these custom blocks designed to perform various interactive activities. Throughout this project, our team collectively devised unique solutions tailored to Gutenberg blocks. We successfully implemented several npm packages with custom Gutenberg React blocks and brainstormed innovative ideas to optimize their efficiency. Notably, we effectively utilized GSAP with custom blocks to introduce animation and interactivity. Our collaborative efforts resulted in a diverse array of custom blocks, enhancing user engagement and contributing to the overall success of the site.',
         stack: ["Javascript", "React", "PHP", "Wordpress", "Scss", "Gutenberg-blocks"]
     },
     {
