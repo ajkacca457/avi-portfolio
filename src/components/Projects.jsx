@@ -50,7 +50,7 @@ const projectsData = [
         image:IcareManual,
         title: 'Icare manual downloader application',
         url: 'https://www.icare-world.com/ifu/',
-        description: 'Description 4',
+        description: 'The app consumes API data related to manuals for iCare. It provides filtering functionalities for different models of iCare products. Users can locate all manuals available for the chosen models based on their selected location. They can then further filter the manuals by category and model. Each manual has its own filtering options for language and version.',
         stack: ["Javascript", "React", "PHP", "Wordpress", "Scss","Typescript"]
     },
     {
