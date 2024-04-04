@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Link } from 'react-router-dom';
 
 
@@ -50,6 +50,11 @@ const experienceData = [
 
 
 const Experience = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     return (
         <div>
             {experienceData.map((experience, index) => {

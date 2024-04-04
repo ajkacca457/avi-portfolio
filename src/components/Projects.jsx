@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Netox from '../assets/images/netox.png';
 import Endomines from '../assets/images/endomines.png';
 import Efecte from '../assets/images/efecte.png';
@@ -116,6 +116,10 @@ const projectsData = [
 ];
 
 const Projects = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     return (
         <div>
             {projectsData.map((project, index) => {

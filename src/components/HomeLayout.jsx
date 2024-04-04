@@ -1,9 +1,9 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Header from './Header'
-const HomeLayout = () => {
 
-  
+
+const HomeLayout = () => {  
   return (
     <div className='max-w-content mx-auto relative'>
         <Header />
