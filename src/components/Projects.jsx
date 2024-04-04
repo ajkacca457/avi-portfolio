@@ -130,7 +130,7 @@ const Projects = () => {
                             <Link to={url} target='_blank' className='text-sky-600 group-hover:text-sky-500 flex items-center'>
                                 <p className='text-lg mb-2'>{title}</p>
                             </Link>
-                            <p className='text-slate-400 text-justify'>{description}</p>
+                            <p className='text-slate-400 text-justify text-body'>{description}</p>
                             <div className='flex flex-wrap my-4'>
                                 {stack.map((item, index) => (
                                     <span key={index} className='bg-sky-900 text-sky-400 px-2 py-1 rounded-full text-sm mr-2 mb-2'>{item}</span>
