@@ -1,9 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 const Project = ({index, image, title, url, description, stack}) => {
   return (
-    <div key={index} className='my-4 grid grid-cols-4 gap-x-6 px-4 py-2 group hover:bg-slate-800 transition duration-250 ease-out hover:ease-in items-start'>
+    <motion.div 
+    initial={{ opacity: 0, y: 20 }}
+    transition={{ duration: .5 }}
+    whileInView={{ opacity: 1, y: 0}}
+    
+    key={index} className='my-4 grid grid-cols-4 gap-x-6 px-4 py-2 group hover:bg-slate-800 transition duration-250 ease-out hover:ease-in items-start z-0'>
     <div className='col-span-full m540:col-span-2 m960:col-span-1 mb-2'>
         <img src={image} alt={title} className='w-full h-full object-contain' />
     </div>
@@ -21,7 +27,7 @@ const Project = ({index, image, title, url, description, stack}) => {
             ))}
         </div>
     </div>
-</div>
+</motion.div>
   )
 }
 
