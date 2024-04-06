@@ -43,7 +43,6 @@ const Social = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // translate x to the next icon and loop back to the first icon
       setIndex((prevIndex) => (prevIndex + 1) % socialLinks.length);
       
     }, 2000);
