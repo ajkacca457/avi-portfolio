@@ -5,8 +5,8 @@ import { motion } from 'framer-motion'
 const Project = ({index, image, title, url, description, stack}) => {
   return (
     <motion.div 
-    initial={{ opacity: 0, y: 20 }}
-    transition={{ duration: .5 }}
+    initial={{ opacity: 0, y: 5 }}
+    transition={{ duration: .8 }}
     whileInView={{ opacity: 1, y: 0}}
     
     key={index} className='my-4 grid grid-cols-4 gap-x-6 px-4 py-2 group hover:bg-slate-800 transition duration-250 ease-out hover:ease-in items-start z-0'>
