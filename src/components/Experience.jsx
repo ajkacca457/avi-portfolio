@@ -9,7 +9,7 @@ const Experience = ({index,date,role,companyUrl,company,description,stack}) => {
     transition={{ duration: .8 }}
     whileInView={{ opacity: 1 , y:0}}
     
-    key={index} className='my-4 grid grid-cols-4 gap-x-4 px-4 py-2 group hover:bg-slate-800 transition duration-250 ease-out hover:ease-in'>
+    key={index} className='my-4 grid grid-cols-4 gap-x-4 px-4 py-2 group'>
     <p className='text-sm col-span-full m540:col-span-1 text-slate-400 mb-3'>{date}</p>
     <div className='col-span-full m540:col-span-3'>
         <p className='text-lg mb-2'>{role}</p>
