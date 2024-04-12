@@ -51,7 +51,7 @@ const Social = () => {
   }, [socialLinks.length]);
 
   return (
-    <div className='flex justify-center gap-4 my-8'>
+    <div className='flex gap-4 my-8'>
       <AnimatePresence>
         {socialLinks.map((link, idx) => (
           <motion.div

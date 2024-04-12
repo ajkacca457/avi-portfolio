@@ -4,12 +4,12 @@ import Social from './Social'
 const Hero = () => {
   return (
     <>
-    <div className='text-center'>
+      <div className='flex flex-col items-center'>
         <h1 className='text-heading'>AVIJIT KARMAKER</h1>
-        <p className='text-subheading'>Full Stack Developer</p>
+        <h2 className='text-subheading'>Full Stack Developer</h2>
         <p className='text-body-lg text-slate-400'>Crafting Digital Experiences, One Line of Code at a Time.</p>
-    </div>
-    <Social/>
+        <Social/>
+      </div>
     </>
   )
 }
