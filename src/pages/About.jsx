@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useAnimate, stagger } from 'framer-motion'
-import Hero from './Hero';
+import Hero from '../components/Hero';
 
 const About = () => {
 

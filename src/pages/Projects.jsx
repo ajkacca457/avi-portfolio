@@ -13,7 +13,7 @@ import HomeAccounts from '../assets/images/home-accounts.png';
 import ShahriarPortfolio from '../assets/images/shariar-portfolio.png';
 import Virala from '../assets/images/virala.png';
 import Kettutesti from '../assets/images/kettutesti.png';
-import Project from './Project';
+import Project from '../components/Project';
 
 const projectsData = [
     {

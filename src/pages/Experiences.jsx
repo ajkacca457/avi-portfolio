@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import { Link } from 'react-router-dom';
-import Experience from './Experience';
+import Experience from '../components/Experience';
 
 
 const experienceData = [

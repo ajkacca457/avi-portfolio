@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import HomeLayout from './components/HomeLayout'
-import About from './components/About'
-import Experiences from './components/Experiences';
-import Projects from './components/Projects';
+import HomeLayout from './layouts/HomeLayout'
+import About from './pages/About'
+import Experiences from './pages/Experiences';
+import Projects from './pages/Projects';
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
