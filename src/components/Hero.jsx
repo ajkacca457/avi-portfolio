@@ -1,6 +1,5 @@
 import React from 'react'
 import Social from './Social'
-import ComputerCanvas from './ComputerCanvas'
 
 const Hero = () => {
   return (
@@ -10,8 +9,6 @@ const Hero = () => {
         <h2 className='text-subheading'>Full Stack Developer</h2>
         <p className='text-body-lg text-slate-400'>Crafting Digital Experiences, One Line of Code at a Time.</p>
         <Social/>
-
-        <ComputerCanvas/>
       </div>
     </>
   )
