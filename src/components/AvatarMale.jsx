@@ -9,7 +9,7 @@ import { Canvas } from '@react-three/fiber'
 export function AvatarMale(props) {
   const { nodes, materials } = useGLTF('/models/663dcdb0515d91cf7828578a.glb')
   return (
-    <Canvas flat linear>
+    <Canvas flat linear shadows camera={{ position: [3, 3, 3], fov: 30 }}>
     <Suspense fallback={null}>
     <group {...props} dispose={null}>
       <primitive object={nodes.Hips} />
