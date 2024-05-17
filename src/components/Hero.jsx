@@ -1,13 +1,16 @@
 import React from 'react'
-import { AvatarMale } from './AvatarMale'
+import { OrbitControls } from "@react-three/drei";
+
 
 
 const Hero = () => {
   return (
     <>
-      <div className='flex flex-col items-center h-full'>
-          <AvatarMale/>
-      </div>
+      <OrbitControls />
+      <mesh>
+        <boxGeometry/>
+        <meshNormalMaterial />
+      </mesh>
     </>
   )
 }
