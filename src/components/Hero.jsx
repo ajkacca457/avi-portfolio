@@ -6,7 +6,7 @@ import {AvatarMale} from './AvatarMale'
 const Hero = () => {
   return (
     <>
-      <OrbitControls />
+      <OrbitControls enableZoom={false}/>
       <group position-y={-1}>
         <AvatarMale />
       </group>
