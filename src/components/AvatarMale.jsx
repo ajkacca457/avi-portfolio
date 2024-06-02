@@ -15,8 +15,11 @@ export function AvatarMale(props) {
   armGesture[0].name = 'ArmGesture';
 
   const {actions} = useAnimations(armGesture, group);
+
+  console.log(actions['ArmGesture']);
+
   useEffect(() => {
-    actions['ArmGesture'].reset().play();
+    actions['ArmGesture'].play();
   }, []);
 
 
