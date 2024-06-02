@@ -14,6 +14,7 @@ export default {
     extend: {
       maxWidth: {
         'content': '1024px',
+        'content-lagre': '1280px',
       },
       fontSize: {
         'heading': 'clamp(1.5rem, 0.5795rem + 2.7273vi, 2.625rem);',
