@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <>
       <OrbitControls enableZoom={false}/>
-      <group position-y={-1}>
+      <group position-y={-.6} rotation-x={-Math.PI/1.8}>
         <AvatarMale />
       </group>
       <ambientLight intensity={2} />
