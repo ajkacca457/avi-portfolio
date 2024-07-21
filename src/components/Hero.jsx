@@ -2,7 +2,6 @@ import React from 'react'
 import { OrbitControls } from "@react-three/drei";
 import {AvatarMale} from './AvatarMale'
 
-
 const Hero = () => {
   return (
     <>
