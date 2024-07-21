@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import HomeLayout from './layouts/HomeLayout'
-import About from './pages/About'
+import Landing from './pages/Landing'
 import Experiences from './pages/Experiences';
 import Projects from './pages/Projects';
 
@@ -14,7 +14,7 @@ const router = createBrowserRouter(
       children: [
         {
           index: true,
-          element: <About />
+          element: <Landing />
         },
         {
           path: 'projects',

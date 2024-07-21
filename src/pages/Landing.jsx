@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import Social from "../components/Social";
 
 
-const About = () => {
+const Landing = () => {
   return (
     <div className="grid grid-cols-2 place-items-center">
     <div className="col-span-1 flex flex-col">
@@ -18,4 +18,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Landing
