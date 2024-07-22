@@ -113,7 +113,7 @@ const projectsData = [
 
 ];
 
-const Projects = () => {
+const Work = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
       }, [])
@@ -129,4 +129,4 @@ const Projects = () => {
     );
 };
 
-export default Projects;
+export default Work;

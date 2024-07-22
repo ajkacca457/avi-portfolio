@@ -50,7 +50,7 @@ const experienceData = [
 
 
 
-const Experiences = () => {
+const Resume = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -68,4 +68,4 @@ const Experiences = () => {
     );
 };
 
-export default Experiences;
+export default Resume;

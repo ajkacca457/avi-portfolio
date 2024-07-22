@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import HomeLayout from './layouts/HomeLayout'
 import Landing from './pages/Landing'
-import Experiences from './pages/Experiences';
-import Projects from './pages/Projects';
+import Resume from './pages/Resume';
+import Work from './pages/Work';
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
@@ -17,12 +17,12 @@ const router = createBrowserRouter(
           element: <Landing />
         },
         {
-          path: 'projects',
-          element: <Projects />
+          path: 'work',
+          element: <Work />
         },
         {
-          path: 'experience',
-          element: <Experiences />
+          path: 'resume',
+          element: <Resume />
         }
       ]
     }
