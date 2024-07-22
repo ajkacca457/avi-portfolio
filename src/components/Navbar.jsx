@@ -9,8 +9,8 @@ const Navbar = () => {
           to="/"
           className={({ isActive }) =>
             `relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] transition duration-300 ${
-              isActive ? "text-purple-600 after:scale-x-100" : "hover:text-purple-600"
-            } after:bg-purple-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
+              isActive ? "text-purple-500 after:scale-x-100" : "hover:text-purple-500"
+            } after:bg-purple-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
           }
         >
           Home
@@ -20,8 +20,8 @@ const Navbar = () => {
           to="/work"
           className={({ isActive }) =>
             `relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] transition duration-300 ${
-              isActive ? "text-purple-600 after:scale-x-100" : "hover:text-purple-600"
-            } after:bg-purple-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
+              isActive ? "text-purple-500 after:scale-x-100" : "hover:text-purple-500"
+            } after:bg-purple-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
           }
         >
           Work
@@ -31,8 +31,8 @@ const Navbar = () => {
           to="/resume"
           className={({ isActive }) =>
             `relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] transition duration-300 ${
-              isActive ? "text-purple-600 after:scale-x-100" : "hover:text-purple-600"
-            } after:bg-purple-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
+              isActive ? "text-purple-500 after:scale-x-100" : "hover:text-purple-500"
+            } after:bg-purple-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
           }
         >
           Resume
@@ -42,8 +42,8 @@ const Navbar = () => {
           to="/contact"
           className={({ isActive }) =>
             `relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] transition duration-300 ${
-              isActive ? "text-purple-600 after:scale-x-100" : "hover:text-purple-600"
-            } after:bg-purple-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
+              isActive ? "text-purple-500 after:scale-x-100" : "hover:text-purple-500"
+            } after:bg-purple-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
           }
         >
           Contact
