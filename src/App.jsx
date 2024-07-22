@@ -3,6 +3,7 @@ import HomeLayout from './layouts/HomeLayout'
 import Landing from './pages/Landing'
 import Resume from './pages/Resume';
 import Work from './pages/Work';
+import Contact from './pages/Contact';
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter(
         {
           path: 'resume',
           element: <Resume />
+        },
+        {
+          path: 'contact',
+          element: <Contact />
         }
       ]
     }
