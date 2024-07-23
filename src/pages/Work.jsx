@@ -18,14 +18,15 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const projectsData = [
-    {
+    {   id:1,
         image: Netox,
         title: 'netox.com',
         url: 'https://netox.com',
         description: 'The website is constructed using custom Gutenberg React blocks, with my primary responsibility being the creation of these custom blocks designed to perform various interactive activities. Throughout this project, our team collectively devised unique solutions tailored to Gutenberg blocks. We successfully implemented several npm packages with custom Gutenberg React blocks and brainstormed innovative ideas to optimize their efficiency. Notably, we effectively utilized GSAP with custom blocks to introduce animation and interactivity. Our collaborative efforts resulted in a diverse array of custom blocks, enhancing user engagement and contributing to the overall success of the site.',
         stack: ["Javascript", "React", "PHP", "Wordpress", "Scss", "Gutenberg-blocks"]
     },
-    {
+    {   
+        id:2,
         image: Efecte,
         title: 'efecte.tenderoffer.fi',
         url: 'https://efecte.tenderoffer.fi',
@@ -33,6 +34,7 @@ const projectsData = [
         stack: ["Javascript", "PHP", "Wordpress", "Handlebars", "Tailwind", "Typescript"]
     },
     {
+        id:3,
         image: Endomines,
         title: 'endomines.com',
         url: 'https://endomines.com',
@@ -40,6 +42,7 @@ const projectsData = [
         stack: ["Javascript", "PHP", "Wordpress", "Handlebars", "Tailwind", "Typescript"]
     },
     {
+        id:4,
         image: IcareMap,
         title: 'Icare interactive map',
         url: 'https://patients.icare-world.com/find-a-provider',
@@ -47,6 +50,7 @@ const projectsData = [
         stack: ["Javascript", "Google-Maps-API", "PHP", "Wordpress", "Scss", "Typescript"]
     },
     {
+        id:5,
         image: IcareManual,
         title: 'Icare manual downloader application',
         url: 'https://www.icare-world.com/ifu/',
@@ -54,6 +58,7 @@ const projectsData = [
         stack: ["Javascript", "React", "PHP", "Wordpress", "Scss", "Typescript"]
     },
     {
+        id:6,
         image: Museoliitto,
         title: 'museoliitto.fi',
         url: 'https://museoliitto.fi/',
@@ -61,6 +66,7 @@ const projectsData = [
         stack: ["Javascript", "PHP", "Wordpress", "Tailwind", "Typescript"]
     },
     {
+        id:7,
         image: Tukikummit,
         title: 'tukikummit.fi',
         url: 'https://tukikummit.fi/',
@@ -68,6 +74,7 @@ const projectsData = [
         stack: ["Javascript", "PHP", "Wordpress", "Tailwind", "Typescript"]
     },
     {
+        id:8,
         image: Rightware,
         title: 'rightware.com',
         url: 'https://rightware.com/',
@@ -75,6 +82,7 @@ const projectsData = [
         stack: ["Vue", "PHP", "Wordpress", "HeadlesCMS", "Wordpress Rest API"]
     },
     {
+        id:9,
         image: Virala,
         title: 'virala.fi',
         url: 'https://virala.fi/',
@@ -82,6 +90,7 @@ const projectsData = [
         stack: ["Javascript", "PHP", "Wordpress", "Tailwind", "Typescript"]
     },
     {
+        id:10,
         image: Kettutesti,
         title: 'kettutesti.hel.fi',
         url: 'https://kettutesti.hel.fi/',
@@ -89,24 +98,28 @@ const projectsData = [
         stack: ["Javascript", "PHP", "Wordpress", "Tailwind", "Typescript"]
     },
     {
+        id:11,
         image: LOS,
         title: 'Legend of Soha',
         description: "This is a role-playing game that I developed as part of my web development program's JavaScript capstone project. I utilized Phaser 3 and created various scenes using Illustrator. The game logic was primarily implemented through Phaser 3 and various JavaScript classes provided by Phaser 3. It was an enjoyable project to work on.",
         stack: ["Javascript", "Phaser 3"]
     },
     {
+        id:12,
         image: Coursetracker,
         title: 'Course Tracker',
         description: "This app was part of my final capstone project at Microverse and has been updated with the MERN stack. The Course Tracker app allows students to track details about their courses. Users create an account to log in and can then add, update, and view detailed reports of their courses. JWT authentication is used for user authentication. The app features an elegant, user-friendly UI and provides an accumulated report of all added courses for tracking study progression. It's a useful tool for students to monitor their course progress.",
         stack: ["Javascript", "React", "Express", "Mongoose", "MongoDB", "Node.js"]
     },
     {
+        id:13,
         image: HomeAccounts,
         title: 'Home Accounts',
         description: "This web app enables users to track their financial activities effortlessly. Users can create an account and promptly begin monitoring their finances. With a user-friendly interface, there's a single form offering multiple options for entering transactions. The app conducts graphical analysis of all user transactions, providing an intuitive statistical overview of their financial status. Designed with simplicity in mind, the aim of this app is to offer users an easy-to-use interface for managing their finances effectively.",
         stack: ["Javascript", "React", "Express", "Mongoose", "MongoDB", "Node.js"]
     },
     {
+        id:14,  
         image: ShahriarPortfolio,
         title: 'Photographer Portfolio',
         description: 'This project is a HTML, CSS, and JavaScript portfolio website designed for a photographer to showcase their work. It features an image carousel for displaying background images with a timer, and scroll animations using the AOS library. Bootstrap was utilized for styling, and Font Awesome for icons. The website is fully responsive, ensuring optimal viewing across desktops, tablets, and mobile devices.',

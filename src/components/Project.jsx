@@ -2,18 +2,20 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
-const Project = ({index, image, title, url, description, stack}) => {
+const Project = ({id,image, title, url, description, stack}) => {  
   return (
     <motion.div 
     initial={{ opacity: 0, y: 5 }}
     transition={{ duration: .8 }}
     whileInView={{ opacity: 1, y: 0}}
-    
-    key={index} className='my-4 grid grid-cols-4 gap-x-6 px-4 py-2 group items-center z-0 h-full'>
+    className='my-4 grid grid-cols-4 gap-x-6 py-2 group items-center z-0 h-full'>
     <div className='col-span-full m540:col-span-2 mb-2'>
         <img src={image} alt={title} className='w-full h-full object-contain' />
     </div>
     <div className='col-span-full m540:col-span-2'>
+        <p className='text-4xl mb-2'>
+            {id}
+        </p>
         <Link to={url} target='_blank' className='text-purple-500 group-hover:text-purple-500 flex items-center'>
             <p className='text-2xl mb-2'>
                 {title}
