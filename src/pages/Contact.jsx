@@ -1,8 +1,12 @@
 import React from 'react'
+import Form from '../components/Form'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div className='grid grid-cols-2 h-screen place-items-center'>
+      <Form />
+      <h1>Info</h1>
+    </div>
   )
 }
 
