@@ -146,7 +146,7 @@ const Work = () => {
         <Carousel responsive={responsive} className='h-screen'>
             {projectsData.map((project, index) => {
                 return (
-                    <Project index={index} {...project} />
+                    <Project key={index} {...project} />
                 );
             })}
         </Carousel>
