@@ -78,7 +78,7 @@ const projectsData = [
         image: Rightware,
         title: 'rightware.com',
         url: 'https://rightware.com/',
-        description: "This site was built using Vue.js and a headless CMS architecture. Collaborating with the lead developer, we integrated the WordPress REST API with Vue.js. The frontend utilizes Vuex for managing the global state of the project, and Vue Router handles all the routes. Initially responsible for building features and bug fixes, I later assumed sole responsibility for managing the site's codebase.",
+        description: "The site used Vue.js with a headless CMS and integrated WordPress REST API. I worked with the lead developer, using Vuex for state management and Vue Router for routing. I started with features and bug fixes, then took over the entire codebase.",
         stack: ["Vue", "PHP", "Wordpress", "HeadlesCMS", "Wordpress Rest API"]
     },
     {
@@ -86,7 +86,7 @@ const projectsData = [
         image: Virala,
         title: 'virala.fi',
         url: 'https://virala.fi/',
-        description: 'Served as the lead developer, utilizing Handlebars for frontend rendering, complemented by TypeScript and Tailwind CSS. Leveraged WordPress and PHP for backend functionality. Through collaborative efforts, delivered a robust website exceeding client expectations.',
+        description: 'As the lead developer, I used Handlebars for frontend rendering with TypeScript and Tailwind CSS, and WordPress with PHP for the backend. Through collaboration, I delivered a robust website that exceeded client expectations.',
         stack: ["Javascript", "PHP", "Wordpress", "Tailwind", "Typescript"]
     },
     {
@@ -94,35 +94,35 @@ const projectsData = [
         image: Kettutesti,
         title: 'kettutesti.hel.fi',
         url: 'https://kettutesti.hel.fi/',
-        description: 'It is a quiz app developed for the Helsinki City website, primarily targeting children as part of a promotional campaign. Through this quiz app, both children and adults can discover which type of fox they are and share the results on social media. The frontend design of the app primarily utilizes Tailwind CSS. TypeScript was employed for implementing quizzes and logical functions.',
+        description: 'Developed for the Helsinki City website, this quiz app targets children for a promotional campaign. It lets users discover their fox type and share results on social media. The frontend uses Tailwind CSS, while TypeScript powers the quizzes and logic.',
         stack: ["Javascript", "PHP", "Wordpress", "Tailwind", "Typescript"]
     },
     {
         id:11,
         image: LOS,
         title: 'Legend of Soha',
-        description: "This is a role-playing game that I developed as part of my web development program's JavaScript capstone project. I utilized Phaser 3 and created various scenes using Illustrator. The game logic was primarily implemented through Phaser 3 and various JavaScript classes provided by Phaser 3. It was an enjoyable project to work on.",
+        description: "This role-playing game was developed for my web development program's JavaScript capstone project. I used Phaser 3 for game logic and created scenes with Illustrator. The game logic was implemented using Phaser 3 and its JavaScript classes, making it a rewarding project.",
         stack: ["Javascript", "Phaser 3"]
     },
     {
         id:12,
         image: Coursetracker,
         title: 'Course Tracker',
-        description: "This app was part of my final capstone project at Microverse and has been updated with the MERN stack. The Course Tracker app allows students to track details about their courses. Users create an account to log in and can then add, update, and view detailed reports of their courses. JWT authentication is used for user authentication. The app features an elegant, user-friendly UI and provides an accumulated report of all added courses for tracking study progression. It's a useful tool for students to monitor their course progress.",
+        description: "This app, a final Microverse capstone project updated with the MERN stack, helps students track course details. Users log in, add, update, and view course reports with JWT authentication. It features an elegant UI and provides a comprehensive report to monitor progress.",
         stack: ["Javascript", "React", "Express", "Mongoose", "MongoDB", "Node.js"]
     },
     {
         id:13,
         image: HomeAccounts,
         title: 'Home Accounts',
-        description: "This web app enables users to track their financial activities effortlessly. Users can create an account and promptly begin monitoring their finances. With a user-friendly interface, there's a single form offering multiple options for entering transactions. The app conducts graphical analysis of all user transactions, providing an intuitive statistical overview of their financial status. Designed with simplicity in mind, the aim of this app is to offer users an easy-to-use interface for managing their finances effectively.",
+        description: "This web app lets users track finances effortlessly. After account creation, users can manage transactions via a simple form. It offers graphical analysis and a clear overview of financial status, all within an intuitive, easy-to-use interface.",
         stack: ["Javascript", "React", "Express", "Mongoose", "MongoDB", "Node.js"]
     },
     {
         id:14,  
         image: ShahriarPortfolio,
         title: 'Photographer Portfolio',
-        description: 'This project is a HTML, CSS, and JavaScript portfolio website designed for a photographer to showcase their work. It features an image carousel for displaying background images with a timer, and scroll animations using the AOS library. Bootstrap was utilized for styling, and Font Awesome for icons. The website is fully responsive, ensuring optimal viewing across desktops, tablets, and mobile devices.',
+        description: 'This portfolio website for a photographer uses HTML, CSS, and JavaScript. It includes an image carousel, scroll animations with AOS, and is styled with Bootstrap and Font Awesome. The site is fully responsive for all devices.',
         stack: ["Javascript", "Html", "Css"]
     },
 
