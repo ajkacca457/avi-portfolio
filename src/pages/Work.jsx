@@ -16,6 +16,7 @@ import Kettutesti from '../assets/images/kettutesti.png';
 import Project from '../components/Project';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { div } from 'three/examples/jsm/nodes/Nodes.js';
 
 const projectsData = [
     {   id:1,
@@ -144,6 +145,16 @@ const responsive = {
     }
   };
 
+  const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
+    const { carouselState: { currentSlide } } = rest;
+    return (
+      <div className="absolute bottom-0 flex">
+        <button className={currentSlide === 0 ? 'disable' : ''} onClick={() => previous()}> Previous </button>
+        <button onClick={() => next()}>next</button>
+      </div>
+    );
+  };
+
 
 const Work = () => {
     useEffect(() => {
@@ -151,13 +162,15 @@ const Work = () => {
       }, [])
 
     return (
-        <Carousel responsive={responsive} className='h-screen'>
+        <div className='h-screen flex flex-col justify-center'>
+        <Carousel arrows={false} responsive={responsive} customButtonGroup={<ButtonGroup/>}>
             {projectsData.map((project, index) => {
                 return (
                     <Project key={index} {...project} />
                 );
             })}
         </Carousel>
+        </div>
     );
 };
 
