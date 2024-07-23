@@ -14,6 +14,8 @@ import ShahriarPortfolio from '../assets/images/shariar-portfolio.png';
 import Virala from '../assets/images/virala.png';
 import Kettutesti from '../assets/images/kettutesti.png';
 import Project from '../components/Project';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 const projectsData = [
     {
@@ -113,19 +115,41 @@ const projectsData = [
 
 ];
 
+
+const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
+
+
 const Work = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
       }, [])
 
     return (
-        <div>
+        <Carousel responsive={responsive} className='h-screen'>
             {projectsData.map((project, index) => {
                 return (
                     <Project index={index} {...project} />
                 );
             })}
-        </div>
+        </Carousel>
     );
 };
 
