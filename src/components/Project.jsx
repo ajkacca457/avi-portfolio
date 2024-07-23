@@ -9,7 +9,7 @@ const Project = ({index, image, title, url, description, stack}) => {
     transition={{ duration: .8 }}
     whileInView={{ opacity: 1, y: 0}}
     
-    key={index} className='my-4 grid grid-cols-4 gap-x-6 px-4 py-2 group items-center z-0'>
+    key={index} className='my-4 grid grid-cols-4 gap-x-6 px-4 py-2 group items-center z-0 h-full'>
     <div className='col-span-full m540:col-span-2 mb-2'>
         <img src={image} alt={title} className='w-full h-full object-contain' />
     </div>
