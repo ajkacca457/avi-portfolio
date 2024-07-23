@@ -22,7 +22,7 @@ const projectsData = [
         image: Netox,
         title: 'netox.com',
         url: 'https://netox.com',
-        description: 'The website is constructed using custom Gutenberg React blocks, with my primary responsibility being the creation of these custom blocks designed to perform various interactive activities. Throughout this project, our team collectively devised unique solutions tailored to Gutenberg blocks. We successfully implemented several npm packages with custom Gutenberg React blocks and brainstormed innovative ideas to optimize their efficiency. Notably, we effectively utilized GSAP with custom blocks to introduce animation and interactivity. Our collaborative efforts resulted in a diverse array of custom blocks, enhancing user engagement and contributing to the overall success of the site.',
+        description: "The website was built using custom Gutenberg React blocks, with my main role focused on creating these blocks for various interactive activities. Our team implemented several npm packages and utilized GSAP to add animation and interactivity, enhancing user engagement and the site's success.",
         stack: ["Javascript", "React", "PHP", "Wordpress", "Scss", "Gutenberg-blocks"]
     },
     {   
@@ -30,7 +30,7 @@ const projectsData = [
         image: Efecte,
         title: 'efecte.tenderoffer.fi',
         url: 'https://efecte.tenderoffer.fi',
-        description: 'I led this project, which involved developing a public tender website to showcase various stock-related information for consumers. It was a time-sensitive project that demanded effective time and resource management. The site is constructed using a custom WordPress theme as the base, supplemented with Tailwind CSS, JavaScript, and Handlebars templates for data rendering.',
+        description: 'I led the development of a public tender website showcasing stock information for consumers. This time-sensitive project required efficient management. Built on a custom WordPress theme, the site uses Tailwind CSS, JavaScript, and Handlebars templates.',
         stack: ["Javascript", "PHP", "Wordpress", "Handlebars", "Tailwind", "Typescript"]
     },
     {
@@ -38,7 +38,7 @@ const projectsData = [
         image: Endomines,
         title: 'endomines.com',
         url: 'https://endomines.com',
-        description: 'This project was initially developed by another developer, and I assumed responsibility for its ongoing development. I implemented numerous new features based on client requests and took charge of codebase management, site updates, and bug fixes. Currently, I serve as the lead developer for this project.',
+        description: 'I took over this project from another developer and continued its development. I added new features based on client requests, managed the codebase, and handled site updates and bug fixes. Now, I serve as the lead developer for the project.',
         stack: ["Javascript", "PHP", "Wordpress", "Handlebars", "Tailwind", "Typescript"]
     },
     {
@@ -46,7 +46,7 @@ const projectsData = [
         image: IcareMap,
         title: 'Icare interactive map',
         url: 'https://patients.icare-world.com/find-a-provider',
-        description: "The app was initially designed to display all the locations of the home providers for Icare. Initially, it had basic search functionality based on zip code or provider name. Later, the app was rebuilt with advanced features. Now, it showcases all the home provider locations on Google Maps as clusters. Users can search for locations by name or location, and the app calculates the distance between all the home providers and the user's location. It sorts out all the locations based on distance and displays them on the map alongside the user's location.",
+        description: "The app initially showed Icare home providers with basic zip code or name search. It was rebuilt to display locations on Google Maps as clusters. Users can now search by name or location, with the app calculating and sorting distances, displaying both providers and the user on the map.",
         stack: ["Javascript", "Google-Maps-API", "PHP", "Wordpress", "Scss", "Typescript"]
     },
     {
@@ -54,7 +54,7 @@ const projectsData = [
         image: IcareManual,
         title: 'Icare manual downloader application',
         url: 'https://www.icare-world.com/ifu/',
-        description: 'The app consumes API data related to manuals for iCare. It provides filtering functionalities for different models of iCare products. Users can locate all manuals available for the chosen models based on their selected location. They can then further filter the manuals by category and model. Each manual has its own filtering options for language and version.',
+        description: 'The app consumes API data for iCare manuals, providing filtering for different product models. Users can find manuals for chosen models by location, then further filter by category and model. Each manual also has filtering options for language and version.',
         stack: ["Javascript", "React", "PHP", "Wordpress", "Scss", "Typescript"]
     },
     {
@@ -62,7 +62,7 @@ const projectsData = [
         image: Museoliitto,
         title: 'museoliitto.fi',
         url: 'https://museoliitto.fi/',
-        description: 'I was responsible for developing all the building blocks for this site, guided by the lead developer in terms of architecture. The project was built with a custom WordPress theme utilizing custom blocks. We utilized Handlebars, Tailwind, and TypeScript for the frontend, while the backend predominantly relied on WordPress and PHP. Additionally, the site features integration with third-party APIs.',
+        description: "I developed the site's building blocks, following the lead developer's architectural guidance. Using a custom WordPress theme with Handlebars, Tailwind, and TypeScript on the frontend, and WordPress and PHP on the backend, the site also integrates with third-party APIs.",
         stack: ["Javascript", "PHP", "Wordpress", "Tailwind", "Typescript"]
     },
     {
@@ -70,7 +70,7 @@ const projectsData = [
         image: Tukikummit,
         title: 'tukikummit.fi',
         url: 'https://tukikummit.fi/',
-        description: "I undertook similar responsibilities for this site, where I developed building blocks in alignment with the project's requirements. Collaborating closely with the lead developer, I ensured consistency in architectural design. This project also utilized a custom WordPress theme with custom blocks, employing technologies such as Handlebars, Tailwind, and TypeScript for frontend development. On the backend, WordPress and PHP formed the foundation.",
+        description: "I developed building blocks for this site, ensuring architectural consistency with the lead developer. The project used a custom WordPress theme with Handlebars, Tailwind, and TypeScript for the frontend, and WordPress and PHP for the backend.",
         stack: ["Javascript", "PHP", "Wordpress", "Tailwind", "Typescript"]
     },
     {
