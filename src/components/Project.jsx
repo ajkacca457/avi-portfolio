@@ -10,11 +10,11 @@ const Project = ({index, image, title, url, description, stack}) => {
     whileInView={{ opacity: 1, y: 0}}
     
     key={index} className='my-4 grid grid-cols-4 gap-x-6 px-4 py-2 group items-start z-0'>
-    <div className='col-span-full m540:col-span-2 m960:col-span-1 mb-2'>
+    <div className='col-span-full m540:col-span-2 mb-2'>
         <img src={image} alt={title} className='w-full h-full object-contain' />
     </div>
-    <div className='col-span-full m540:col-span-2 m960:col-span-3'>
-        <Link to={url} target='_blank' className='text-sky-600 group-hover:text-sky-500 flex items-center'>
+    <div className='col-span-full m540:col-span-2'>
+        <Link to={url} target='_blank' className='text-purple-500 group-hover:text-purple-500 flex items-center'>
             <p className='text-lg mb-2'>
                 {title}
             </p>
@@ -23,7 +23,7 @@ const Project = ({index, image, title, url, description, stack}) => {
         <p className='text-slate-400 text-justify text-body'>{description}</p>
         <div className='flex flex-wrap my-4'>
             {stack.map((item, index) => (
-                <span key={index} className='bg-sky-900 text-sky-400 px-2 py-1 rounded-full text-sm mr-2 mb-2'>{item}</span>
+                <span key={index} className='bg-purple-900 text-purple-200 px-2 py-1 rounded-full text-sm mr-2 mb-2'>{item}</span>
             ))}
         </div>
     </div>

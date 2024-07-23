@@ -5,7 +5,7 @@ import Header from '../components/Header'
 
 const HomeLayout = () => {  
   return (
-    <div className='relative max-w-content-large mx-auto max-h-screen overflow-hidden'>
+    <div className='relative max-w-content-large mx-auto'>
         <Header />
         <Outlet />
     </div>
