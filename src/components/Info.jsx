@@ -8,20 +8,29 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Info = () => {
   return (
-    <div>
-        <div className='flex'>
-            <FaPhone className="text-3xl text-purple-600 px-2"/>
-            <p className="text-xl">+1 234 567 890</p>
+    <div className='w-full p-8'>
+        <div className='flex my-8 w-3/4 mx-auto'>
+            <FaPhone className="text-6xl text-purple-600 p-4 bg-slate-700 mr-6"/>
+            <div>
+                <p>Phone</p>
+                <p className="text-xl">+1 234 567 890</p>
+            </div>
         </div>
 
-        <div className='flex'>
-            <SiMinutemailer className="text-3xl text-purple-600 px-2"/>
-            <p className="text-xl">+1 234 567 890</p>
+        <div className='flex my-8 w-3/4 mx-auto'>
+            <SiMinutemailer className="text-6xl text-purple-600 p-4 bg-slate-700 mr-6"/>
+            <div>
+                <p>Email</p>
+                <p className="text-xl">+1 234 567 890</p>
+            </div>
         </div>
 
-        <div className='flex'>
-            <FaLocationDot className="text-3xl text-purple-600 px-2 "/>
-            <p className="text-xl">+1 234 567 890</p>
+        <div className='flex my-8 w-3/4 mx-auto'>
+            <FaLocationDot className="text-6xl text-purple-600 p-4 bg-slate-700 mr-6"/>
+            <div>
+                <p>Location</p>
+                <p className="text-xl">+1 234 567 890</p>
+            </div>
         </div>
 
 
