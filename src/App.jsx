@@ -5,6 +5,7 @@ import Resume from './pages/Resume';
 import Work from './pages/Work';
 import Contact from './pages/Contact';
 import Experinces from './components/Experinces';
+import Skills from './components/Skills';
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
@@ -32,7 +33,7 @@ const router = createBrowserRouter(
             },
             {
               path:'skills',
-              element: "<h1>Skills</h1>"
+              element: <Skills />
             },
             {
               path:'about',
