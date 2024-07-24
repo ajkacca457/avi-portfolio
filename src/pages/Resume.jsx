@@ -12,7 +12,7 @@ const Resume = () => {
             <div className='flex flex-col col-span-1'>
                 <NavLink to="/resume" className="border-[1px] border-purple-600 text-center py-2 my-2 rounded"><span className='text-purple-400'>Experinces</span></NavLink>
                 <NavLink to="/resume/skills" className="border-[1px] border-purple-600 text-center py-2 my-2 rounded"><span className='text-purple-400'>Skills</span></NavLink>
-                <NavLink to="/resume/about" className="border-[1px] border-purple-600 text-center py-2 my-2 rounded"> <span className='text-purple-400'>About</span></NavLink>
+                <NavLink to="/resume/about" className="border-[1px] border-purple-600 text-center py-2 my-2 rounded"> <span className='text-purple-400'>About Me</span></NavLink>
             </div>
 
             <Outlet className="col-span-2" />

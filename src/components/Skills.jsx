@@ -94,7 +94,7 @@ const Skills = () => {
 
         <div className="grid w-full min-w-[7rem] transform cursor-pointer place-items-center rounded-xl border border-purple-500 px-3 py-2 transition-all" href="#">
             <span className="my-6 grid h-24 w-24 place-items-center">
-                <FaWordpress className='text-purple-500 text-6xl' />
+                <FaWordpress className='text-purple-500 text-5xl' />
             </span>
         </div>
 
