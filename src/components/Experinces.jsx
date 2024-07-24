@@ -1,52 +1,107 @@
-import React from 'react'
+import React from "react";
+import Experience from "./Experience";
+
+const experienceData = [
+  {
+    date: "2023 - Present",
+    role: "Full Stack Developer",
+    company: "JJ-NET OY",
+    companyUrl: "https://jj-net.fi/",
+    description:
+      "Currently, I serve as a Fullstack Developer at JJ-NET OY, specializing in modern WordPress development. In this role, I am responsible for designing and implementing custom Gutenberg themes and blocks, as well as spearheading full-stack projects. Leveraging my skills in frontend technologies such as HTML, Css, Scss, Tailwind, JavaScript and Typescript, I craft visually appealing and intuitive user interfaces. On the backend, I utilize my proficiency in PHP, NodeJs, Express and WordPress APIs to develop robust and scalable solutions tailored to our clients' specific requirements. Working closely with cross-functional teams, I ensure seamless integration and deployment of our projects, while consistently delivering high-quality, performance-driven solutions that exceed client expectations. Through my contributions, I play a pivotal role in driving the success and growth of our WordPress development initiatives at JJ-NET OY.",
+    stack: [
+      "Javascript",
+      "React",
+      "PHP",
+      "Wordpress",
+      "Tailwind",
+      "Scss",
+      "Bootstrap",
+      "Html",
+      "Css",
+      "Node.js",
+      "Typescript",
+    ],
+  },
+
+  {
+    date: "2022 - 2024",
+    role: "Capstone porject reviewer",
+    company: "Microverse",
+    companyUrl: "https://www.microverse.org/",
+    description:
+      "As a Capstone Project Evaluator for software development projects, I assessed the culmination of students' technical skills and knowledge. During project presentations, I evaluated the functionality, design, and implementation of the web development solutions. I provided feedback on the effectiveness of the codebase, the utilization of appropriate technologies, and the alignment with project requirements. Collaborating with faculty, I ensured that students effectively communicated their project's objectives, development process, and outcomes.",
+    stack: [
+      "Rails",
+      "Javascript",
+      "React",
+      "Tailwind",
+      "Scss",
+      "Html",
+      "Css",
+      "Node.js",
+      "Typescript",
+    ],
+  },
+
+  {
+    date: "2021 - 2023",
+    role: "Full Stack Developer",
+    company: "Miltton OY",
+    companyUrl: "https://www.miltton.fi/",
+    description:
+      "As a Junior Fullstack Developer, I contributed to building and maintaining web applications, gaining experience in frontend and backend development. Working closely with senior developers, I assisted in designing, implementing, and testing features. On the frontend, I crafted responsive interfaces with HTML, Css, Scss, tailwind and JavaScript, while on the backend, I managed headless cms and wordpress RESTful APIs. Actively participating in code reviews and debugging sessions, I honed my problem-solving skills and expanded my technical knowledge, contributing to delivering high-quality software solutions.",
+    stack: [
+      "Javascript",
+      "React",
+      "PHP",
+      "Wordpress",
+      "HeadlessCMS",
+      "Tailwind",
+      "Scss",
+      "Bootstrap",
+      "Html",
+      "Css",
+      "Node.js",
+      "Typescript",
+    ],
+  },
+  {
+    date: "2020 - 2021",
+    role: "Practice session coordinator",
+    company: "Microverse",
+    companyUrl: "https://www.microverse.org/",
+    description:
+      "As a coding practice session coordinator, I facilitated collaborative learning environments where individuals honed their programming skills. I organized and managed practice sessions, ensuring participants had access to relevant resources and guidance. Additionally, I actively engaged with participants by providing assistance in solving coding challenges and participated in peer coding sessions, collaborating with others to tackle challenges collectively and exchange insights.",
+    stack: ["Rails", "Javascript", "Html", "Css"],
+  },
+  {
+    date: "2017 - 2018",
+    role: "Lead ( Digital content management)",
+    company: "Rohto-Mentholatum (Bangladesh) Limited",
+    companyUrl: "https://www.rohto.com.bd/",
+    description:
+      "As a Motion Graphics Designer, I adeptly conceptualized, designed, and delivered quality motion graphics for various projects including corporate videos, e-Learning modules, websites, and marketing materials. Collaborating closely with art and creative teams, I ensured alignment with project scopes and objectives while selecting audio, video, colors, and animations. I effectively resolved technical and design challenges alongside editors, producers, and fellow designers, enhancing raw video footage through editing and effects.",
+    stack: [
+      "Photoshop",
+      "Illustrator",
+      "After-effects",
+      "Premiere-Pro",
+      "Fedora",
+    ],
+  },
+];
 
 const Experinces = () => {
   return (
-    <div class="flex col-span-2 items-center justify-center bg-white p-6 h-[50vh] overflow-y-scroll">
-  <div class="space-y-6 border-l-2 border-dashed">
-    <div class="relative w-full">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-blue-500">
-        <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-      </svg>
-      <div class="ml-6">
-        <h4 class="font-bold text-blue-500">Frontend Development.</h4>
-        <p class="mt-2 max-w-screen-sm text-sm text-gray-500">Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis ante.</p>
-        <span class="mt-1 block text-sm font-semibold text-blue-500">2007</span>
+    <div class="flex col-span-2 items-center justify-center bg-slate-800 rounded">
+      <div class="space-y-6 p-6 h-[60vh] overflow-y-scroll">
+        {experienceData.map((experience, index) => {
+          return <Experience key={index} {...experience} />;
+        })}
       </div>
     </div>
-    <div class="relative w-full">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-blue-500">
-        <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-      </svg>
-      <div class="ml-6">
-        <h4 class="font-bold text-blue-500">Graphic Design.</h4>
-        <p class="mt-2 max-w-screen-sm text-sm text-gray-500">Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet urna. Quisque fringilla mollis risus, eu pulvinar dolor.</p>
-        <span class="mt-1 block text-sm font-semibold text-blue-500">2007</span>
-      </div>
-    </div>
-    <div class="relative w-full">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-blue-500">
-        <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-      </svg>
-      <div class="ml-6">
-        <h4 class="font-bold text-blue-500">Lead Ui/Ux Designer.</h4>
-        <p class="mt-2 max-w-screen-sm text-sm text-gray-500">Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet urna. Quisque fringilla mollis risus, eu pulvinar dolor</p>
-        <span class="mt-1 block text-sm font-semibold text-blue-500">2007</span>
-      </div>
-    </div>
-    <div class="relative w-full">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-blue-500">
-        <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-      </svg>
-      <div class="ml-6">
-        <h4 class="font-bold text-blue-500">Lead Ui/Ux Designer.</h4>
-        <p class="mt-2 max-w-screen-sm text-sm text-gray-500">Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet urna. Quisque fringilla mollis risus, eu pulvinar dolor</p>
-        <span class="mt-1 block text-sm font-semibold text-blue-500">2007</span>
-      </div>
-    </div>
-  </div>
-</div>
-  )
-}
+  );
+};
 
-export default Experinces
+export default Experinces;

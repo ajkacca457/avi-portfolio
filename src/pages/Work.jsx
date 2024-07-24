@@ -16,7 +16,6 @@ import Kettutesti from '../assets/images/kettutesti.png';
 import Project from '../components/Project';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { div } from 'three/examples/jsm/nodes/Nodes.js';
 
 const projectsData = [
     {   id:1,

@@ -22,9 +22,9 @@ const Project = ({ id, image, title, url, description, stack }) => {
           target="_blank"
           className="text-purple-500 group-hover:text-purple-500 flex items-center"
         >
-          <p className="text-2xl mb-2">{title}</p>
+          <p className="text-2xl my-4">{title}</p>
           <svg
-            className="ml-1 mb-2"
+            className="ml-1 my-4"
             width="20px"
             height="20px"
             viewBox="0 0 24 24"
@@ -50,7 +50,7 @@ const Project = ({ id, image, title, url, description, stack }) => {
             </g>
           </svg>
         </Link>
-        <p className="text-slate-400 text-justify text-body">{description}</p>
+        <p className="text-slate-400 text-justify text-body my-8">{description}</p>
         <div className="flex flex-wrap my-4">
           {stack.map((item, index) => (
             <span
