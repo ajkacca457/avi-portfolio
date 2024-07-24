@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
-import { Link } from 'react-router-dom';
-import Experience from '../components/Experience';
+import { Outlet, NavLink } from 'react-router-dom';
 
 
 const experienceData = [
@@ -57,13 +56,15 @@ const Resume = () => {
       }, [])
 
     return (
-        <div>
-            {experienceData.map((experience, index) => {
-                return (
-                    <Experience index={index} {...experience}/>
-                );
-            })}
+        <div className='grid grid-cols-3 h-screen place-content-center gap-x-10'>
 
+            <div className='flex flex-col col-span-1'>
+                <NavLink to="/resume" className="bg-purple-600 text-center py-2 my-2">Experinces</NavLink>
+                <NavLink to="/resume/skills" className="bg-purple-600 text-center py-2 my-2">Skills</NavLink>
+                <NavLink to="/resume/about" className="bg-purple-600 text-center py-2 my-2">About</NavLink>
+            </div>
+
+            <Outlet className="col-span-2" />
         </div>
     );
 };
