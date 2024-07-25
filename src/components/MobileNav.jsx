@@ -23,12 +23,12 @@ const MobileNav = () => {
       <nav
         className={` ${
           isOpen ? "block" : "hidden"
-        } p-4 text-white text-lg my-4 rounded bg-red-500 w-[100vw]`}
+        } p-4 text-white text-lg my-4 rounded`}
       >
         <NavLink
           to="/"
           className={({ isActive }) =>
-            `relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] transition duration-300 ${
+            `relative w-fit mx-auto block after:block after:content-[''] after:absolute after:h-[2px] transition duration-300 ${
               isActive
                 ? "text-purple-500 after:scale-x-100"
                 : "hover:text-purple-500"
@@ -41,7 +41,7 @@ const MobileNav = () => {
         <NavLink
           to="/work"
           className={({ isActive }) =>
-            `relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] transition duration-300 ${
+            `relative w-fit mx-auto my-3 block after:block after:content-[''] after:absolute after:h-[2px] transition duration-300 ${
               isActive
                 ? "text-purple-500 after:scale-x-100"
                 : "hover:text-purple-500"
@@ -54,7 +54,7 @@ const MobileNav = () => {
         <NavLink
           to="/resume"
           className={({ isActive }) =>
-            `relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] transition duration-300 ${
+            `relative w-fit mx-auto my-3 block after:block after:content-[''] after:absolute after:h-[2px] transition duration-300 ${
               isActive
                 ? "text-purple-500 after:scale-x-100"
                 : "hover:text-purple-500"
@@ -67,7 +67,7 @@ const MobileNav = () => {
         <NavLink
           to="/contact"
           className={({ isActive }) =>
-            `relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] transition duration-300 ${
+            `relative w-fit mx-auto my-3 block after:block after:content-[''] after:absolute after:h-[2px] transition duration-300 ${
               isActive
                 ? "text-purple-500 after:scale-x-100"
                 : "hover:text-purple-500"
