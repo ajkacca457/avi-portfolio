@@ -163,7 +163,7 @@ const Work = () => {
       }, [])
 
     return (
-        <div className='h-screen flex flex-col justify-center'>
+        <div className='h-screen flex flex-col justify-center mx-4'>
         <Carousel arrows={false} responsive={responsive} customButtonGroup={<ButtonGroup/>}>
             {projectsData.map((project, index) => {
                 return (
