@@ -19,13 +19,13 @@ import { FaWordpress } from "react-icons/fa";
 
 const Skills = () => {
   return (
-    <div className='flex items-center justify-center col-span-2 overflow-y-scroll custom-scrollbar border-[1px] border-purple-700 rounded bg-slate-800'>
-    <div className='h-[60vh] p-4 w-full'>
+    <div className='flex items-center justify-center col-span-full m768:col-span-2 overflow-y-scroll custom-scrollbar border-[1px] border-purple-700 rounded bg-slate-800 mx-4'>
+    <div className='h-[70vh] m768:h-[60vh] p-4 w-full'>
         <div className="group relative -ml-4 flex scroll-mt-40 items-center pl-4">
             <h2 className="block antialiased tracking-normal text-4xl text-purple-500 font-semibold leading-snug !mb-2 text-primary">My Skills</h2>
         </div>
         
-        <div className="mt-8 grid grid-cols-4 gap-6 md:grid-cols-4" id="frameworks-integration">
+        <div className="mt-8 grid grid-cols-3 m768:grid-cols-4 gap-6 md:grid-cols-4" id="frameworks-integration">
         <div className="grid w-full min-w-[7rem] transform cursor-pointer place-items-center rounded-xl border border-purple-500 px-3 py-2 transition-all" href="#">
             <span className="my-6 grid h-24 w-24 place-items-center">
                 <AiOutlineHtml5 className='text-purple-500 text-6xl' />
