@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const MobileNav = () => {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+
+
   return (
-    <>
-      <nav className="hidden m768:flex gap-x-10 items-center p-4 text-white text-lg my-4 mx-4 rounded">
+    <div className="w-full block m768:hidden">
+    <h1 className='text-logo-heading'>Avi<span className='text-purple-600'>.</span></h1>
+      <nav className="p-4 text-white text-lg my-4 rounded bg-red-500 w-[100vw]">
         <NavLink
           to="/"
           className={({ isActive }) =>
@@ -49,8 +55,8 @@ const Navbar = () => {
           Contact
         </NavLink>
       </nav>
-    </>
+    </div>
   );
 };
 
-export default Navbar;
+export default MobileNav;
