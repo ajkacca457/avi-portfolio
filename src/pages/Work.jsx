@@ -149,7 +149,7 @@ const responsive = {
   const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
     const { carouselState: { currentSlide } } = rest;
     return (
-      <div className="absolute top-0 flex">
+      <div className="absolute bottom-0 flex">
         <button className={currentSlide === 0 ? 'disable mr-2 border-[1px] border-purple-700 px-4 py-2' : 'mr-2 border-[1px] border-purple-700 px-4 py-2'} onClick={() => previous()}> <GrCaretPrevious className='text-purple-700'/> </button>
         <button className='border-[1px] border-purple-700 px-4 py-2' onClick={() => next()}><GrCaretNext className='text-purple-700'/></button>
       </div>

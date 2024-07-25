@@ -51,7 +51,7 @@ const Social = () => {
   }, [socialLinks.length]);
 
   return (
-    <div className='flex items-center gap-4 my-8'>
+    <div className='flex items-center gap-4 my-8 mx-4'>
       <button className='border-[1px] border-purple-500 transition duration-300 hover:border-purple-400 hover:text-purple-400 px-4 py-2 rounded-full text-purple-500'>Download Cv</button>
         {socialLinks.map((link, idx) => (
             <Link key={idx} to={link.url} target='_blank' className='border-[1px] border-purple-600 p-2 rounded-full'>

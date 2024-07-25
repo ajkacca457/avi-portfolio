@@ -6,10 +6,8 @@
 @tailwind utilities;
 
 body {
-  font-family: "Inconsolata", monospace;
-}
-body {
-    @apply bg-gradient-to-l from-slate-800 via-slate-950 to-slate-900 text-white;
+    font-family: "Inconsolata", monospace;
+    @apply bg-gradient-to-l from-slate-800 via-slate-950 to-slate-900 text-white text-body;
 }
 
 .active {
