@@ -1,15 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 
 const Project = ({ id, image, title, url, description, stack }) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 5 }}
-      transition={{ duration: 0.8 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      className="my-4 grid grid-cols-4 gap-x-6 py-2 group items-center z-0 h-full relative"
-    >
+    <div className="my-4 grid grid-cols-4 gap-x-6 py-2 group items-center z-0 h-full relative">
       <div className="col-span-full m540:col-span-2 mb-2">
         <img src={image} alt={title} className="w-full h-full object-contain" />
       </div>
@@ -62,7 +56,7 @@ const Project = ({ id, image, title, url, description, stack }) => {
           ))}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

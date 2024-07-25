@@ -16,6 +16,8 @@ import Kettutesti from '../assets/images/kettutesti.png';
 import Project from '../components/Project';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { GrCaretPrevious } from "react-icons/gr";
+import { GrCaretNext } from "react-icons/gr";
 
 const projectsData = [
     {   id:1,
@@ -148,8 +150,8 @@ const responsive = {
     const { carouselState: { currentSlide } } = rest;
     return (
       <div className="absolute top-0 flex">
-        <button className={currentSlide === 0 ? 'disable mr-2' : 'mr-2'} onClick={() => previous()}> Previous </button>
-        <button onClick={() => next()}>Next</button>
+        <button className={currentSlide === 0 ? 'disable mr-2 border-[1px] border-purple-700 px-4 py-2' : 'mr-2 border-[1px] border-purple-700 px-4 py-2'} onClick={() => previous()}> <GrCaretPrevious className='text-purple-700'/> </button>
+        <button className='border-[1px] border-purple-700 px-4 py-2' onClick={() => next()}><GrCaretNext className='text-purple-700'/></button>
       </div>
     );
   };
