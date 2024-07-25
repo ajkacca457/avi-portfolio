@@ -19,7 +19,7 @@ export default {
       fontSize: {
         'heading': 'clamp(1.875rem, 1.25rem + 3.125vw, 5rem);',
         'subheading':'clamp(1.125rem, 0.8182rem + 0.9091vi, 1.5rem);',
-        'body-lg':'clamp(0.875rem, 0.6705rem + 0.6061vi, 1.125rem);',
+        'body-lg':'clamp(1rem, 0.925rem + 0.375vw, 1.375rem);',
         'body':'clamp(0.875rem, 0.7727rem + 0.303vi, 1rem);'
       },
     },
