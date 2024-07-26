@@ -8,7 +8,7 @@ const Project = ({ id, image, title, url, description, stack }) => {
         <img src={image} alt={title} className="w-full h-full object-contain" />
       </div>
       <div className="col-span-full m540:col-span-2">
-        <p className=" text-xl m768:first-letter:text-4xl mb-2 bg-purple-700 w-8 h-8 m768:w-12 m768:h-12 flex items-center justify-center rounded-full">
+        <p className=" text-xl m768:text-4xl mb-2 bg-purple-700 w-8 h-8 m768:w-12 m768:h-12 flex items-center justify-center rounded-full">
           {id}
         </p>
         <Link
