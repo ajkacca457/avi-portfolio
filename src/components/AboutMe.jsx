@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div className="h-[70vh] m768:h-[60vh] bg-slate-800 col-span-full m768:col-span-2 rounded border-[1px] border-purple-700 overflow-y-scroll custom-scrollbar mx-4">
+    <div className="h-[70vh] m768:h-[60vh] bg-slate-800 col-span-full m768:col-span-2 rounded border-[1px] border-purple-700 overflow-y-scroll custom-scrollbar mx-4 py-4">
       <p className="p-4">
         Hi, I'm Avi. With seven years of combined experience in project management and programming, I've worked extensively in NGOs and the corporate sector, focusing on community and HR development, as well as IT projects like e-learning. Over the past three years, I've worked as a programmer in several companies, gaining hands-on experience and honing my skills. I attended Microverse, an online coding school, for an 8-month intensive bootcamp that equipped me with technical and soft skills.
       </p>
