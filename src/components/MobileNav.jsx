@@ -34,6 +34,7 @@ const MobileNav = () => {
                 : "hover:text-purple-500"
             } after:bg-purple-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
           }
+          onClick={() => setIsOpen(false)}
         >
           Home
         </NavLink>
@@ -47,6 +48,7 @@ const MobileNav = () => {
                 : "hover:text-purple-500"
             } after:bg-purple-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
           }
+          onClick={() => setIsOpen(false)}
         >
           Work
         </NavLink>
@@ -60,6 +62,7 @@ const MobileNav = () => {
                 : "hover:text-purple-500"
             } after:bg-purple-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
           }
+          onClick={() => setIsOpen(false)}
         >
           Resume
         </NavLink>
@@ -73,6 +76,7 @@ const MobileNav = () => {
                 : "hover:text-purple-500"
             } after:bg-purple-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
           }
+          onClick={() => setIsOpen(false)}
         >
           Contact
         </NavLink>
