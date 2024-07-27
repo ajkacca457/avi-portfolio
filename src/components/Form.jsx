@@ -2,7 +2,7 @@ import React from 'react'
 
 const Form = () => {
   return (
-    <div className="col-span-full m768:col-span-1 w-full p-8 bg-slate-800 border-[1px] border-purple-500 rounded-md shadow-md form-container mt-[10vh] m768:mt-0">
+    <div className="col-span-full m768:col-span-1 w-full p-4 m768:p-8 bg-slate-800 border-[1px] border-purple-500 rounded-md shadow-md form-container mt-[10vh] m768:mt-0">
     <h2 className="text-logo-heading font-bold text-purple-400 mb-2 m768:mb-6">Lets Connect!</h2>
     <form action="https://fabform.io/f/insert-form-id" method="POST">
       <div className="mb-4">
