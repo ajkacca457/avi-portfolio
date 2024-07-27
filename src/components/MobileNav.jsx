@@ -30,9 +30,9 @@ const MobileNav = () => {
           className={({ isActive }) =>
             `relative w-fit mx-auto block after:block after:content-[''] after:absolute after:h-[2px] transition duration-300 ${
               isActive
-                ? "text-purple-500 after:scale-x-100"
-                : "hover:text-purple-500"
-            } after:bg-purple-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
+                ? "text-emerald-600 after:scale-x-100"
+                : "hover:text-emerald-600"
+            } after:bg-emerald-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
           }
           onClick={() => setIsOpen(false)}
         >
@@ -44,9 +44,9 @@ const MobileNav = () => {
           className={({ isActive }) =>
             `relative w-fit mx-auto my-3 block after:block after:content-[''] after:absolute after:h-[2px] transition duration-300 ${
               isActive
-                ? "text-purple-500 after:scale-x-100"
-                : "hover:text-purple-500"
-            } after:bg-purple-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
+                ? "text-emerald-600 after:scale-x-100"
+                : "hover:text-emerald-600"
+            } after:bg-emerald-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
           }
           onClick={() => setIsOpen(false)}
         >
@@ -58,9 +58,9 @@ const MobileNav = () => {
           className={({ isActive }) =>
             `relative w-fit mx-auto my-3 block after:block after:content-[''] after:absolute after:h-[2px] transition duration-300 ${
               isActive
-                ? "text-purple-500 after:scale-x-100"
-                : "hover:text-purple-500"
-            } after:bg-purple-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
+                ? "text-emerald-600 after:scale-x-100"
+                : "hover:text-emerald-600"
+            } after:bg-emerald-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
           }
           onClick={() => setIsOpen(false)}
         >
@@ -72,9 +72,9 @@ const MobileNav = () => {
           className={({ isActive }) =>
             `relative w-fit mx-auto my-3 block after:block after:content-[''] after:absolute after:h-[2px] transition duration-300 ${
               isActive
-                ? "text-purple-500 after:scale-x-100"
-                : "hover:text-purple-500"
-            } after:bg-purple-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
+                ? "text-emerald-600 after:scale-x-100"
+                : "hover:text-emerald-600"
+            } after:bg-emerald-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
           }
           onClick={() => setIsOpen(false)}
         >
