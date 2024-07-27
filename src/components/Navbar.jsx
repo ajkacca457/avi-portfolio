@@ -4,13 +4,13 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <nav className="hidden m768:flex gap-x-10 items-center p-4 text-white text-lg my-4 mx-4 rounded">
+      <nav className="hidden m768:flex gap-x-4 items-center p-4 text-white text-lg my-4 mx-4 rounded">
         <NavLink
           to="/"
           className={({ isActive }) =>
-            `relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] transition duration-300 ${
-              isActive ? "text-emerald-600 after:scale-x-100" : "hover:text-emerald-600"
-            } after:bg-emerald-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
+            `relative w-fit block transition duration-300 ${
+              isActive ? "text-emerald-600 bg-slate-800" : "hover:text-emerald-600"
+            } px-4 py-1 rounded-md`
           }
         >
           Home
@@ -19,9 +19,9 @@ const Navbar = () => {
         <NavLink
           to="/work"
           className={({ isActive }) =>
-            `relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] transition duration-300 ${
-              isActive ? "text-emerald-600 after:scale-x-100" : "hover:text-emerald-600"
-            } after:bg-emerald-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
+            `relative w-fit block transition duration-300 ${
+              isActive ? "text-emerald-600 bg-slate-800" : "hover:text-emerald-600"
+            } px-4 py-1 rounded-md`
           }
         >
           Work
@@ -30,9 +30,9 @@ const Navbar = () => {
         <NavLink
           to="/resume"
           className={({ isActive }) =>
-            `relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] transition duration-300 ${
-              isActive ? "text-emerald-600 after:scale-x-100" : "hover:text-emerald-600"
-            } after:bg-emerald-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
+            `relative w-fit block transition duration-300 ${
+              isActive ? "text-emerald-600 bg-slate-800" : "hover:text-emerald-600"
+            } px-4 py-1 rounded-md`
           }
         >
           Resume
@@ -41,9 +41,9 @@ const Navbar = () => {
         <NavLink
           to="/contact"
           className={({ isActive }) =>
-            `relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] transition duration-300 ${
-              isActive ? "text-emerald-600 after:scale-x-100" : "hover:text-emerald-600"
-            } after:bg-emerald-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`
+            `relative w-fit block transition duration-300 ${
+              isActive ? "text-emerald-600 bg-slate-800" : "hover:text-emerald-600"
+            } px-4 py-1 rounded-md`
           }
         >
           Contact
