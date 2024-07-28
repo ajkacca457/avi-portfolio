@@ -1,5 +1,5 @@
 import Social from "../components/Social";
-import LandingImage from "../assets/images/landing.png";
+import LandingImage from "../assets/images/landing.gif";
 
 
 const Landing = () => {
