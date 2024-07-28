@@ -8,17 +8,9 @@ const Project = ({ id, image, title, url, description, stack }) => {
         <img src={image} alt={title} className="w-full h-full object-contain" />
       </div>
       <div className="col-span-full m540:col-span-2">
-      <button
-              class="bg-slate-800 text-subheading rounded-full text-white font-bold flex flex-col justify-center items-center px-4 mr-2 my-2 relative
-                      before:w-full before:h-full before:scale-x-[1.01] before:scale-y-[1.0300] before:absolute before:top-[50%] before:left-[50%]
-                      before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%] 
-                    before:from-emerald-500 before:to-emerald-900 before:bg-gradient-to-t
-                      before:rounded-full  
-                    hover:bg-slate-900 transition-all duration-300
-                    "
-            >
-              {id}
-            </button>
+        <p className=" text-6xl font-extrabold bg-gradient-to-r from-slate-500 to-slate-700 inline-block text-transparent bg-clip-text">
+          {id}
+        </p>
         <Link
           to={url}
           target="_blank"
@@ -52,22 +44,14 @@ const Project = ({ id, image, title, url, description, stack }) => {
             </g>
           </svg>
         </Link>
-        <p className="text-slate-400 text-justify text-body m768:mb-6">
+        <p className="text-slate-400 text-justify text-body m768:mb-4">
           {description}
         </p>
         <div className="flex flex-wrap my-4">
           {stack.map((item, index) => (
-            <button
-              class="bg-slate-800 text-xs rounded-md text-white font-bold w-fit h-fit px-4 py-2 mr-2 my-2 relative
-                      before:w-full before:h-full before:scale-x-[1.01] before:scale-y-[1.0300] before:absolute before:top-[50%] before:left-[50%]
-                      before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%] 
-                    before:from-emerald-500 before:to-emerald-900 before:bg-gradient-to-t
-                      before:rounded-md  
-                    hover:bg-slate-900 transition-all duration-300
-                    "
-            >
-              {item}
-            </button>
+            <span key={index} className="text-emerald-400">
+              {item}{index < stack.length - 1?',':"."}
+            </span>
           ))}
         </div>
       </div>
