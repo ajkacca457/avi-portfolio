@@ -44,15 +44,22 @@ const Project = ({ id, image, title, url, description, stack }) => {
             </g>
           </svg>
         </Link>
-        <p className="text-slate-400 text-justify text-body m768:my-8">{description}</p>
+        <p className="text-slate-400 text-justify text-body m768:my-8">
+          {description}
+        </p>
         <div className="flex flex-wrap my-4">
           {stack.map((item, index) => (
-            <span
-              key={index}
-              className="bg-purple-900 text-purple-200 px-2 py-1 rounded-full text-sm mr-2 mb-2"
+            <button
+              class="bg-gray-700 text-xs rounded-md text-white font-bold w-fit h-fit px-4 py-2 m-2 relative
+                      before:w-full before:h-full before:scale-x-[1.01] before:scale-y-[1.0300] before:absolute before:top-[50%] before:left-[50%]
+                      before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%] 
+                    before:from-emerald-500 before:to-emerald-900 before:bg-gradient-to-t
+                      before:rounded-md  
+                    hover:bg-gray-800 transition-all duration-300
+                    "
             >
               {item}
-            </span>
+            </button>
           ))}
         </div>
       </div>
