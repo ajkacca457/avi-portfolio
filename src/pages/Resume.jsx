@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { Outlet, NavLink } from 'react-router-dom';
+import Coding from '../assets/images/coding.gif';
 const Resume = () => {
 
     const [active, setActive] = useState('/')
@@ -20,7 +21,12 @@ const Resume = () => {
                     hover:bg-slate-900 transition-all duration-300`} onClick={()=>{setActive("/")}}><span className={`${active==="/"?"text-white":"text-purple-600"}`}>Experience</span></NavLink>
                 <NavLink to="/resume/skills" className={`${active==="skills"?"bg-purple-700":"text-purple-600"} border-[1px] border-purple-600 text-center py-2 my-2 rounded px-4`} onClick={()=>{setActive("skills")}} >Skills</NavLink>
                 <NavLink to="/resume/about" className={`${active==="about"?"bg-purple-700":"text-purple-600"} border-[1px] border-purple-600 text-center py-2 my-2 rounded px-4`} onClick={()=> {setActive("about")}}>About Me</NavLink>
+
+                <div className='col-span-full m768:col-span-2'>
+                  <img src={Coding} alt="Coding" className="w-full h-full object-cover" />
+                </div>
             </div>
+
 
             <Outlet/>
         </div>
