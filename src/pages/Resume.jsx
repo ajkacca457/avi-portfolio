@@ -18,12 +18,12 @@ const Resume = () => {
                       before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%] 
                     before:from-emerald-500 before:to-emerald-900 before:bg-gradient-to-t
                       before:rounded-md  
-                    hover:bg-slate-900 transition-all duration-300`} onClick={()=>{setActive("/")}}><span className={`${active==="/"?"text-white":"text-purple-600"}`}>Experience</span></NavLink>
+                    hover:bg-slate-900 transition-all duration-300`} onClick={()=>{setActive("/")}}><span className={`${active==="/"?"text-white":"text-white-600"}`}>Experience</span></NavLink>
                 <NavLink to="/resume/skills" className={`${active==="skills"?"bg-purple-700":"text-purple-600"} border-[1px] border-purple-600 text-center py-2 my-2 rounded px-4`} onClick={()=>{setActive("skills")}} >Skills</NavLink>
                 <NavLink to="/resume/about" className={`${active==="about"?"bg-purple-700":"text-purple-600"} border-[1px] border-purple-600 text-center py-2 my-2 rounded px-4`} onClick={()=> {setActive("about")}}>About Me</NavLink>
 
                 <div className='col-span-full m768:col-span-2'>
-                  <img src={Coding} alt="Coding" className="w-full h-full object-cover" />
+                <img src={Coding} alt="Coding" className="w-full h-full object-cover" />
                 </div>
             </div>
 

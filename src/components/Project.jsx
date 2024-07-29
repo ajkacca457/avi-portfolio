@@ -49,9 +49,9 @@ const Project = ({ id, image, title, url, description, stack }) => {
         </p>
         <div className="flex flex-wrap my-4">
           {stack.map((item, index) => (
-            <span key={index} className="text-emerald-400">
-              {item}{index < stack.length - 1?',':"."}
-            </span>
+            <div class="mr-2 mb-2 bg-gradient-r from-purple-50 to-slate-100 rounded-lg px-2 py-1 text-white transition duration-150 text-xs hover:bg-green-700">
+              {item}
+            </div>
           ))}
         </div>
       </div>

@@ -18,7 +18,7 @@ body {
   width: 4px;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #980198; /* Purple */
+  background-color: green; /* Purple */
   border-radius: 4px;
 }
 .custom-scrollbar::-webkit-scrollbar-track {
