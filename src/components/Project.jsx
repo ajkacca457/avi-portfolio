@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Project = ({ id, image, title, url, description, stack }) => {
   return (
-    <div className="my-4 grid grid-cols-4 gap-x-6 py-2 group items-center z-0 h-full relative">
-      <div className="col-span-full m540:col-span-2 mb-2">
-        <img src={image} alt={title} className="w-full h-full object-contain" />
+    <div className="my-4 grid grid-cols-5 gap-x-6 py-2 group items-center z-0 h-full relative">
+      <div className="col-span-full m540:col-span-3 mb-2">
+        <img src={image} alt={title} className="w-full aspect-video" />
       </div>
       <div className="col-span-full m540:col-span-2">
         <p className=" text-6xl font-extrabold bg-gradient-to-r from-slate-500 to-slate-700 inline-block text-transparent bg-clip-text">
