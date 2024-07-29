@@ -5,7 +5,6 @@ import Resume from './pages/Resume';
 import Work from './pages/Work';
 import Contact from './pages/Contact';
 import Experinces from './components/Experinces';
-import Skills from './components/Skills';
 import AboutMe from './components/AboutMe';
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
@@ -31,10 +30,6 @@ const router = createBrowserRouter(
             {
               index: true,
               element: <Experinces />
-            },
-            {
-              path:'skills',
-              element: <Skills />
             },
             {
               path:'about',

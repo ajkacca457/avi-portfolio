@@ -10,23 +10,18 @@ const Resume = () => {
       }, [])
 
     return (
-        <div className='grid grid-cols-3 h-screen place-content-center gap-x-10'>
+        <div className='grid grid-cols-6 h-screen place-content-center gap-x-10'>
 
-            <div className='flex gap-x-4 col-span-full m768:flex-col m768:col-span-1 mx-4 mb-8'>
-                <NavLink to="/resume" className={`${active==="/"?"bg-slate-800":"bg-slate-600"}  text-sm rounded-md text-white font-bold w-full text-center h-fit px-4 py-4 mr-2 my-2 relative
-                      before:w-full before:h-full before:scale-x-[1.01] before:scale-y-[1.0300] before:absolute before:top-[50%] before:left-[50%]
-                      before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%] 
-                    before:from-emerald-500 before:to-emerald-900 before:bg-gradient-to-t
-                      before:rounded-md  
-                    hover:bg-slate-900 transition-all duration-300`} onClick={()=>{setActive("/")}}><span className={`${active==="/"?"text-white":"text-white-600"}`}>Experience</span></NavLink>
-                <NavLink to="/resume/skills" className={`${active==="skills"?"bg-purple-700":"text-purple-600"} border-[1px] border-purple-600 text-center py-2 my-2 rounded px-4`} onClick={()=>{setActive("skills")}} >Skills</NavLink>
-                <NavLink to="/resume/about" className={`${active==="about"?"bg-purple-700":"text-purple-600"} border-[1px] border-purple-600 text-center py-2 my-2 rounded px-4`} onClick={()=> {setActive("about")}}>About Me</NavLink>
-
-                <div className='col-span-full m768:col-span-2'>
-                <img src={Coding} alt="Coding" className="w-full h-full object-cover" />
+            <div className='flex gap-x-4 col-span-full m768:flex-col m768:col-span-2 mx-4 mb-8 m768:justify-between'>
+                <div className='flex gap-x-4 m768:flex-col'>
+                  <NavLink to="/resume" className={`${active==="/"?"bg-green-800 border-[1px] border-green-600":"border-[1px] border-green-600"} rounded-md my-2 px-2 py-2 text-center text-sm transition-all duration-300`} onClick={()=>{setActive("/")}}><span className={`${active==="/"?"text-white":"text-white-600"}`}>Experience</span></NavLink>
+                  <NavLink to="/resume/about" className={`${active==="about"?"bg-green-800 border-[1px] border-green-600":"border-[1px] border-green-600"} my-2 rounded-md px-2 py-2 text-center text-sm transition-all duration-300`} onClick={()=> {setActive("about")}}>About Me</NavLink>
                 </div>
-            </div>
+                <div className='hidden m768:grid m768:col-span-2'>
+                  <img src={Coding} alt="Coding" className="w-full h-full object-cover" />
+                </div>
 
+            </div>
 
             <Outlet/>
         </div>

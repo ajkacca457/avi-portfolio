@@ -94,7 +94,7 @@ const experienceData = [
 
 const Experinces = () => {
   return (
-    <div class="flex col-span-full m768:col-span-2 items-center justify-center bg-slate-800 rounded border-[1px] border-green-700 mx-4">
+    <div class="flex col-span-full m768:col-span-4 items-center justify-center bg-slate-800 rounded border-[1px] border-green-700 mx-4">
       <div class="space-y-6 p-6 h-[70vh] m768:h-[60vh] overflow-y-scroll custom-scrollbar">
         {experienceData.map((experience, index) => {
           return <Experience key={index} {...experience} />;
