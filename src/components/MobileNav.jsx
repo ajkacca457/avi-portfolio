@@ -10,7 +10,7 @@ const MobileNav = () => {
     <div className="w-full block m768:hidden">
       <div className="flex justify-between items-center m-4">
         <h1 className="text-logo-heading">
-          Avi<span className="text-purple-600">.</span>
+          Avi<span className="text-emerald-600">.</span>
         </h1>
 
         <button

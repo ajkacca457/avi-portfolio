@@ -10,9 +10,9 @@ const Experience = ({index,date,role,companyUrl,company,description,stack}) => {
       </svg>
       <div class="ml-6">
         <h4 class="font-bold text-green-500 text-xl">{role}</h4>
-        <a href={companyUrl} target="_blank" class="text-lg text-green-500 hover:underline">{company}</a>
+        <a href={companyUrl} target="_blank" class="text-lg text-green-600 underline hover:text-green-500">{company}</a>
         <span class="mt-1 block text-lg font-semibold text-green-500">{date}</span>
-        <p class="mt-2 max-w-screen-sm text-m text-white">{description}</p>
+        <p class="mt-2 max-w-screen-sm text-sm m768:text-lg text-white text-justify">{description}</p>
       </div>
     </div>
   )
