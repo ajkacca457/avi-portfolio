@@ -1,53 +1,27 @@
-import { useState } from 'react'
-import HomeLayout from './layouts/HomeLayout'
-import Landing from './pages/Landing'
-import Resume from './pages/Resume';
-import Work from './pages/Work';
-import Contact from './pages/Contact';
-import Experinces from './components/Experinces';
-import AboutMe from './components/AboutMe';
+import { BrowserRouter } from "react-router-dom";
 
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 
-const router = createBrowserRouter(
-  [
-    {
-      path: '/',
-      element: <HomeLayout />,
-      children: [
-        {
-          index: true,
-          element: <Landing />
-        },
-        {
-          path: 'work',
-          element: <Work />
-        },
-        {
-          path: 'resume',
-          element: <Resume />,
-          children: [
-            {
-              index: true,
-              element: <Experinces />
-            },
-            {
-              path:'about',
-              element: <AboutMe />
-            }
-          ]
-        },
-        {
-          path: 'contact',
-          element: <Contact />
-        }
-      ]
-    }
-  ]
-);
-
-function App() {
-  return <RouterProvider router={router} />;
+const App = () => {
+  return (
+    <BrowserRouter>
+      <div className='relative z-0 bg-primary'>
+        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+          <Navbar />
+          <Hero />
+        </div>
+        <About />
+        <Experience />
+        <Tech />
+        <Works />
+        <Feedbacks />
+        <div className='relative z-0'>
+          <Contact />
+          <StarsCanvas />
+        </div>
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
