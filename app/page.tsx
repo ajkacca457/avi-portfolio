@@ -1,9 +1,8 @@
-import Image from "next/image";
-
+import Hero from "./components/Hero";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-5xl">AVI PORTFOLIO</h1>
+    <main className="flex min-h-screen flex-col items-center justify-between">
+      <Hero />
     </main>
   );
 }
