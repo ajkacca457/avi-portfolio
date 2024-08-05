@@ -58,11 +58,8 @@ const SkeletonOne = () => {
     <motion.div
       initial="initial"
       whileHover="animate"
-      className="grid grid-cols-3 gap-x-4 h-full"
+      className="grid grid-cols-3 gap-x-4 h-full place-content-center"
     >   
-        <motion.div variants={variants} className="col-span-1 w-full h-full relative overflow-hidden rounded-md">
-            <img src="/profile.jpg" alt="profile-image" className="absolute object-cover rounded-md object-top" />
-        </motion.div>
     </motion.div>
   );
 };
@@ -85,22 +82,22 @@ const SkeletonTwo = () => {
       },
     },
   };
-  const arr= ["html", "css", "javascript", "react", "Next Js", "Node Js"]
+  const arr= ["html", "css ", "scss", "tailwind", "bootstrap", "javascript", "react", "next js", "node js", "php", "Wordpress"]
   return (
     <motion.div
       initial="initial"
       animate="animate"
       whileHover="hover"
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
+      className="grid grid-cols-2 gap-x-2 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col"
     >
       {arr.map(( item, index) => (
         <motion.div
           key={"skelenton-two" + index}
           variants={variants}
           style={{
-            maxWidth: Math.random() * (100 - 40) + 40 + "%",
+            maxWidth: "100%",
           }}
-          className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-neutral-100 dark:bg-black w-full h-4"
+          className="flex flex-row justify-center rounded-sm border border-neutral-100 dark:border-white/[0.2] py-2 items-center bg-neutral-100 dark:bg-black w-full h-4"
         >
           {item}
         </motion.div>
@@ -259,18 +256,17 @@ const items = [
   {
     header: <SkeletonOne />,
     className: "md:col-span-2",
-    title : "About Me"  
+    title : "Skills"  
     },
   {
-    title: "Automated Proofreading",
+    title: "My Skills",
     description: (
       <span className="text-sm">
-        Let AI handle the proofreading of your documents.
+        The technologies and tools I frequently work with.
       </span>
     ),
     header: <SkeletonTwo />,
     className: "md:col-span-1",
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "Contextual Suggestions",
