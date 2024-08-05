@@ -51,9 +51,6 @@ export const BentoGridItem = ({
 
       {img && <img src={img} className="w-full h-full object-fit rounded-xl absolute top-0 left-0 z-0" />}
 
-
-      {header}
-
       <div className="group-hover/bento:translate-x-2 transition duration-200 z-10">
         {icon}
         <div className="font-sans font-bold text-white mb-2 mt-2 ">
@@ -63,6 +60,7 @@ export const BentoGridItem = ({
           {description}
         </div>
       </div>
+      {header}
     </div>
   );
 };

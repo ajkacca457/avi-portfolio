@@ -8,7 +8,7 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 
 export function BentoGridThirdDemo() {
   return (
@@ -34,9 +34,9 @@ const SkeletonOne = () => {
       x: 0,
     },
     animate: {
-      x: 10,
-      rotate: 5,
+      x: 5,
       transition: {
+        delay: 0.2,
         duration: 0.2,
       },
     },
@@ -60,10 +60,13 @@ const SkeletonOne = () => {
       whileHover="animate"
       className="grid grid-cols-3 gap-x-4 h-full"
     >   
-
+        <motion.div variants={variants} className="col-span-1 w-full h-full relative overflow-hidden rounded-md">
+            <img src="/profile.jpg" alt="profile-image" className="absolute object-cover rounded-md object-top" />
+        </motion.div>
     </motion.div>
   );
 };
+
 const SkeletonTwo = () => {
   const variants = {
     initial: {
@@ -82,7 +85,7 @@ const SkeletonTwo = () => {
       },
     },
   };
-  const arr = new Array(6).fill(0);
+  const arr= ["html", "css", "javascript", "react", "Next Js", "Node Js"]
   return (
     <motion.div
       initial="initial"
@@ -90,19 +93,22 @@ const SkeletonTwo = () => {
       whileHover="hover"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
-      {arr.map((_, i) => (
+      {arr.map(( item, index) => (
         <motion.div
-          key={"skelenton-two" + i}
+          key={"skelenton-two" + index}
           variants={variants}
           style={{
             maxWidth: Math.random() * (100 - 40) + 40 + "%",
           }}
           className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-neutral-100 dark:bg-black w-full h-4"
-        ></motion.div>
+        >
+          {item}
+        </motion.div>
       ))}
     </motion.div>
   );
 };
+
 const SkeletonThree = () => {
   const variants = {
     initial: {
@@ -133,6 +139,7 @@ const SkeletonThree = () => {
     </motion.div>
   );
 };
+
 const SkeletonFour = () => {
   const first = {
     initial: {
@@ -194,6 +201,7 @@ const SkeletonFour = () => {
     </motion.div>
   );
 };
+
 const SkeletonFive = () => {
   const variants = {
     initial: {
@@ -245,17 +253,14 @@ const SkeletonFive = () => {
     </motion.div>
   );
 };
+
+
 const items = [
   {
     header: <SkeletonOne />,
     className: "md:col-span-2",
-    title : "Text Summarization",
-    description: (
-      <span className="text-sm">
-        Summarize your lengthy documents with AI technology.
-      </span>
-    ),
-  },
+    title : "About Me"  
+    },
   {
     title: "Automated Proofreading",
     description: (
