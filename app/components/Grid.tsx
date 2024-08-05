@@ -21,6 +21,7 @@ export function BentoGridThirdDemo() {
           header={item.header}
           className={cn("[&>p:text-lg]", item.className)}
           icon={item.icon}
+          img={item.img}
           id={i}
         />
       ))}
@@ -82,13 +83,13 @@ const SkeletonTwo = () => {
       },
     },
   };
-  const arr= ["html", "css ", "scss", "tailwind", "bootstrap", "javascript", "react", "next js", "node js", "php", "Wordpress"]
+  const arr= ["html", "css ", "scss", "tailwind", "bootstrap", "javascript", "react", "next js", "node js", "php", "wordpress",, "ruby", "rails"]
   return (
     <motion.div
       initial="initial"
       animate="animate"
       whileHover="hover"
-      className="grid grid-cols-2 gap-x-2 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col"
+      className="grid grid-cols-3 gap-x-3 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col"
     >
       {arr.map(( item, index) => (
         <motion.div
@@ -97,7 +98,7 @@ const SkeletonTwo = () => {
           style={{
             maxWidth: "100%",
           }}
-          className="flex flex-row justify-center rounded-sm border border-neutral-100 dark:border-white/[0.2] py-2 items-center bg-neutral-100 dark:bg-black w-full h-4"
+          className="flex flex-row justify-center rounded-sm border border-neutral-100 dark:border-white/[0.2] py-2 items-center bg-neutral-100 dark:bg-black w-full h-6"
         >
           {item}
         </motion.div>
@@ -255,8 +256,14 @@ const SkeletonFive = () => {
 const items = [
   {
     header: <SkeletonOne />,
-    className: "md:col-span-2",
-    title : "Skills"  
+    className: "md:col-span-1",
+    title : "About Me",
+    img:"/profile.jpg",   
+    description: (
+      <span className="text-sm">
+            Hi, I'm Avi. I have seven years of experience in project management and programming, focusing on community development, HR, and IT projects. I completed an 8-month bootcamp at Microverse before spending the past three years working as a programmer.
+      </span>
+    ),
     },
   {
     title: "My Skills",
@@ -266,7 +273,7 @@ const items = [
       </span>
     ),
     header: <SkeletonTwo />,
-    className: "md:col-span-1",
+    className: "md:col-span-2",
   },
   {
     title: "Contextual Suggestions",
