@@ -77,7 +77,7 @@ const SkeletonTwo = () => {
       },
     },
     hover: {
-      width: ["0%", "100%"],
+      width: ["50%", "100%"],
       transition: {
         duration: 2,
       },

@@ -56,9 +56,7 @@ export const BentoGridItem = ({
       </>
       }
 
-      {id===0 && <>{header}</>}
-
-      <div className="group-hover/bento:translate-x-2 transition duration-200 z-10">
+      <div className={`${id===0?"-translate-x-[110%] group-hover/bento:translate-x-2 transition duration-200 z-10":"group-hover/bento:translate-x-2 transition duration-200 z-10"}`}>
         {icon}
         <div className="font-sans font-bold text-white mb-2 mt-2 ">
           {title}
@@ -67,7 +65,7 @@ export const BentoGridItem = ({
           {description}
         </div>
       </div>
-      {id!==0 && <>{header}</>}	
+      {header}	
     </div>
   );
 };
