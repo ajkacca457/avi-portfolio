@@ -2,3 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer components {
+  .bento-grid {
+    background: hsla(209, 100%, 17%, 1);
+
+    background: linear-gradient(225deg, hsla(209, 100%, 17%, 1) 0%, hsla(209, 100%, 19%, 1) 100%);
+    
+    background: -moz-linear-gradient(225deg, hsla(209, 100%, 17%, 1) 0%, hsla(209, 100%, 19%, 1) 100%);
+    
+    background: -webkit-linear-gradient(225deg, hsla(209, 100%, 17%, 1) 0%, hsla(209, 100%, 19%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#002D58", endColorstr="#003362", GradientType=1 );
+  }
+}

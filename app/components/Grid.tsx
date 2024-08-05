@@ -2,9 +2,11 @@
 import { cn } from "../lib/utils";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
+
+
+
 import {
   IconBoxAlignRightFilled,
-  IconClipboardCopy,
   IconFileBroken,
   IconSignature,
   IconTableColumn,
@@ -13,7 +15,7 @@ import { motion } from "framer-motion";
 
 export function BentoGridThirdDemo() {
   return (
-    <BentoGrid className="max-w-[1400px] mx-auto md:auto-rows-[20rem]">
+    <BentoGrid className="w-[90vw] max-w-[1400px] mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -22,6 +24,7 @@ export function BentoGridThirdDemo() {
           header={item.header}
           className={cn("[&>p:text-lg]", item.className)}
           icon={item.icon}
+          img={item.img}
         />
       ))}
     </BentoGrid>
@@ -60,6 +63,13 @@ const SkeletonOne = () => {
       whileHover="animate"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
+      <motion.div
+        variants={variants}
+        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-white dark:bg-black"
+      >
+        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
+        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
+      </motion.div>
       <motion.div
         variants={variants}
         className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-white dark:bg-black"
@@ -244,7 +254,7 @@ const SkeletonFive = () => {
     <motion.div
       initial="initial"
       whileHover="animate"
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
+      className="flex flex-1 w-full h-full min-h-[6rem] flex-col space-y-2"
     >
       <motion.div
         variants={variants}
@@ -266,16 +276,22 @@ const SkeletonFive = () => {
   );
 };
 const items = [
+    {
+        title: "Sentiment Analysis",
+        description: (
+          <span className="text-sm">
+            Understand the sentiment of your text with AI analysis.
+          </span>
+        ),
+        header: <SkeletonFour />,
+        className: "md:col-span-2",
+        icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+        img: "/laptop.jpg",
+      },
   {
-    title: "AI Content Generation",
-    description: (
-      <span className="text-sm">
-        Experience the power of AI in generating unique content.
-      </span>
-    ),
+    title: "About Me",
     header: <SkeletonOne />,
     className: "md:col-span-1",
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "Automated Proofreading",
@@ -299,18 +315,51 @@ const items = [
     className: "md:col-span-1",
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
+
   {
-    title: "Sentiment Analysis",
+    title: "Text Summarization",
     description: (
       <span className="text-sm">
-        Understand the sentiment of your text with AI analysis.
+        Summarize your lengthy documents with AI technology.
       </span>
     ),
-    header: <SkeletonFour />,
-    className: "md:col-span-2",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    header: <SkeletonFive />,
+    className: "md:col-span-1",
+    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
   },
-
+  {
+    title: "Text Summarization",
+    description: (
+      <span className="text-sm">
+        Summarize your lengthy documents with AI technology.
+      </span>
+    ),
+    header: <SkeletonFive />,
+    className: "md:col-span-1",
+    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "Text Summarization",
+    description: (
+      <span className="text-sm">
+        Summarize your lengthy documents with AI technology.
+      </span>
+    ),
+    header: <SkeletonFive />,
+    className: "md:col-span-1",
+    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "Text Summarization",
+    description: (
+      <span className="text-sm">
+        Summarize your lengthy documents with AI technology.
+      </span>
+    ),
+    header: <SkeletonFive />,
+    className: "md:col-span-1",
+    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+  },
   {
     title: "Text Summarization",
     description: (
