@@ -123,17 +123,17 @@ return (
 const SkeletonFour = () => {
   const first = {
     initial: {
-      x: 10,
-      rotate:3,
+      x:0,
+      rotate:5,
     },
     hover: {
-      x: 10,
+      x:0,
       rotate: 0,
     },
   };
   const second = {
     initial: {
-      x: -10,
+      x: 0,
       rotate:3,
     },
     hover: {
@@ -150,16 +150,16 @@ const SkeletonFour = () => {
     >
       <motion.div
         variants={first}
-        className="w-full rounded-2xl text-white bg-purple-400/70 p-4 mb-2 mt-2 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
+        className="w-full rounded-2xl text-white bg-purple-400/70 p-2 mb-2 mt-2 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
        Web Design
       </motion.div>
-      <motion.div className="w-full relative text-white z-20 mb-2 rounded-2xl bg-purple-400/70 p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
+      <motion.div className="w-full relative text-white z-20 mb-2 rounded-2xl bg-purple-400/70 p-2 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
         Web Development
       </motion.div>
       <motion.div
         variants={second}
-        className="w-full rounded-2xl text-white bg-purple-400/70 p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
+        className="w-full rounded-2xl text-white bg-purple-400/70 p-2 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
         Application Development
       </motion.div>
