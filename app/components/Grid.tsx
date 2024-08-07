@@ -4,15 +4,15 @@ import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 import {
   IconBoxAlignRightFilled,
-  IconFileBroken,
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
 import { delay, motion } from "framer-motion";
+import { title } from "process";
 
 export function BentoGridThirdDemo() {
   return (
-    <BentoGrid className="w-[90vw] max-w-[1400px] mx-auto md:auto-rows-[20rem]">
+    <BentoGrid className="w-[90vw] max-w-[1280px] mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -66,41 +66,41 @@ const SkeletonOne = () => {
 };
 
 const SkeletonTwo = () => {
-  const variants = {
-    initial: {
-      width: 0,
-    },
-    animate: {
-      width: "100%",
-      transition: {
-        duration: 0.2,
-      },
-    },
-    hover: {
-      width: ["50%", "100%"],
-      transition: {
-        duration: 2,
-      },
-    },
-  };
+    const variants = {
+        initial: {
+        scale: 1,
+        rotate: 0,
+        backgroundColor: "#f3f3f3",
+        },
+        hover: {
+          scale: 1.02,
+          rotate:1.5,
+          backgroundColor: "red",
+          transition: {
+            delay: 0.2,
+            duration: 0.2,
+          },
+        },
+      };
   const arr= ["html", "css ", "scss", "tailwind", "bootstrap", "javascript", "react", "next js", "node js", "php", "wordpress",, "ruby", "rails"]
   return (
     <motion.div
       initial="initial"
       animate="animate"
-      whileHover="hover"
-      className="grid grid-cols-3 gap-x-3 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col"
+      className="grid grid-cols-3 gap-2 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col"
     >
       {arr.map(( item, index) => (
         <motion.div
+        variants={variants}
           key={"skelenton-two" + index}
-          variants={variants}
+          initial="initial"
+          whileHover="hover"
           style={{
             maxWidth: "100%",
           }}
-          className="flex flex-row justify-center rounded-sm border border-neutral-100 dark:border-white/[0.2] py-2 items-center bg-neutral-100 dark:bg-black w-full h-6"
+          className="flex flex-row bg-white rounded-sm text-sm"
         >
-          {item}
+         <span className="m-auto">{item}</span> 
         </motion.div>
       ))}
     </motion.div>
@@ -257,11 +257,10 @@ const items = [
   {
     header: <SkeletonOne />,
     className: "md:col-span-1",
-    title : "About Me",
+    title:"Integrity, Respect, and Commitment",
     img:"/profile.jpg",   
     description: (
       <span className="text-sm">
-            Hi, I'm Avi. I have seven years of experience in project management and programming, focusing on community development, HR, and IT projects. I completed an 8-month bootcamp at Microverse before spending the past three years working as a programmer.
       </span>
     ),
     },
@@ -269,22 +268,14 @@ const items = [
     title: "My Skills",
     description: (
       <span className="text-sm">
-        The technologies and tools I frequently work with.
+        Hi, I'm Avi. I have seven years of experience in project management and programming, focusing on community development, HR, and IT projects. I completed an 8-month bootcamp at Microverse before spending the past three years working as a programmer.
       </span>
     ),
-    header: <SkeletonTwo />,
     className: "md:col-span-2",
   },
   {
-    title: "Contextual Suggestions",
-    description: (
-      <span className="text-sm">
-        Get AI-powered suggestions based on your writing context.
-      </span>
-    ),
     header: <SkeletonThree />,
     className: "md:col-span-1",
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "Sentiment Analysis",

@@ -52,20 +52,23 @@ export const BentoGridItem = ({
       {img && 
       <>
         <img src={img} className="object-cover object-top w-full h-full rounded-xl absolute top-0 left-0 z-0" />
-        <div className="z-10 absolute bg-purple-800/40 group-hover/bento:bg-black/75 w-full h-full top-0 left-0 transition duration-200 ease-in"></div>
+        <div className="z-10 absolute bg-purple-800/40 group-hover/bento:bg-black/60 w-full h-full top-0 left-0 transition duration-200 ease-in"></div>
       </>
       }
 
-      <div className={`${id===0?"-translate-x-[110%] group-hover/bento:translate-x-2 transition duration-200 z-10":"group-hover/bento:translate-x-2 transition duration-200 z-10"}`}>
+      <div className={`${id===0?" -translate-x-[100vh] relative h-full group-hover/bento:translate-x-2 transition duration-200 z-10":"group-hover/bento:translate-x-2 transition duration-200 z-10"}`}>
         {icon}
-        <div className="font-sans font-bold text-white mb-2 mt-2 ">
+        <div className={`${id===0?"font-sans antialiased font-bold text-white text-xl mb-2 mt-2":"font-sans font-bold text-white mb-2 mt-2"}`}>
           {title}
         </div>
         <div className="font-sans font-normal text-white my-2">
           {description}
         </div>
       </div>
-      {header}	
+
+      {id!==0 && <>{header}</>}
+
+      	
     </div>
   );
 };
