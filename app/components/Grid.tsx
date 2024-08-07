@@ -9,6 +9,7 @@ import {
 } from "@tabler/icons-react";
 import { delay, motion } from "framer-motion";
 import { title } from "process";
+import { headers } from "next/headers";
 
 export function BentoGridThirdDemo() {
   return (
@@ -30,31 +31,6 @@ export function BentoGridThirdDemo() {
 }
 
 const SkeletonOne = () => {
-  const variants = {
-    initial: {
-      x: 0,
-    },
-    animate: {
-      x: 5,
-      transition: {
-        delay: 0.2,
-        duration: 0.2,
-      },
-    },
-  };
-  const variantsSecond = {
-    initial: {
-      x: 0,
-    },
-    animate: {
-      x: -10,
-      rotate: -5,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  };
-
   return (
     <motion.div
       initial="initial"
@@ -65,49 +41,8 @@ const SkeletonOne = () => {
   );
 };
 
-const SkeletonTwo = () => {
-    const variants = {
-        initial: {
-        scale: 1,
-        rotate: 0,
-        backgroundColor: "#f3f3f3",
-        },
-        hover: {
-          scale: 1.02,
-          rotate:1.5,
-          backgroundColor: "red",
-          transition: {
-            delay: 0.2,
-            duration: 0.2,
-          },
-        },
-      };
-  const arr= ["html", "css ", "scss", "tailwind", "bootstrap", "javascript", "react", "next js", "node js", "php", "wordpress",, "ruby", "rails"]
-  return (
-    <motion.div
-      initial="initial"
-      animate="animate"
-      className="grid grid-cols-3 gap-2 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col"
-    >
-      {arr.map(( item, index) => (
-        <motion.div
-        variants={variants}
-          key={"skelenton-two" + index}
-          initial="initial"
-          whileHover="hover"
-          style={{
-            maxWidth: "100%",
-          }}
-          className="flex flex-row bg-white rounded-sm text-sm"
-        >
-         <span className="m-auto">{item}</span> 
-        </motion.div>
-      ))}
-    </motion.div>
-  );
-};
 
-const SkeletonThree = () => {
+const SkeletonTwo = () => {
   const variants = {
     initial: {
       backgroundPosition: "0 50%",
@@ -137,6 +72,49 @@ const SkeletonThree = () => {
     </motion.div>
   );
 };
+
+const SkeletonThree = () => {
+  const variants = {
+      initial: {
+      scale: 1,
+      rotate: 0,
+      backgroundColor: "#f3f3f3",
+      },
+      hover: {
+        scale: 1.02,
+        rotate:1.5,
+        backgroundColor: "red",
+        transition: {
+          delay: 0.2,
+          duration: 0.2,
+        },
+      },
+    };
+const arr= ["html", "css ", "scss", "tailwind", "bootstrap", "javascript", "react", "next js", "node js", "php", "wordpress",, "ruby", "rails"]
+return (
+  <motion.div
+    initial="initial"
+    animate="animate"
+    className="grid grid-cols-3 gap-2 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col"
+  >
+    {arr.map(( item, index) => (
+      <motion.div
+      variants={variants}
+        key={"skelenton-two" + index}
+        initial="initial"
+        whileHover="hover"
+        style={{
+          maxWidth: "100%",
+        }}
+        className="flex flex-row bg-white rounded-sm text-sm"
+      >
+       <span className="m-auto">{item}</span> 
+      </motion.div>
+    ))}
+  </motion.div>
+);
+};
+
 
 const SkeletonFour = () => {
   const first = {
@@ -265,15 +243,12 @@ const items = [
     ),
     },
   {
-    title: "My Skills",
-    description: (
-      <span className="text-sm">
-        Hi, I'm Avi. I have seven years of experience in project management and programming, focusing on community development, HR, and IT projects. I completed an 8-month bootcamp at Microverse before spending the past three years working as a programmer.
-      </span>
-    ),
+    title: "About Me",
+    header: <SkeletonTwo />,
     className: "md:col-span-2",
   },
   {
+    title: "Skills",
     header: <SkeletonThree />,
     className: "md:col-span-1",
   },
