@@ -48,7 +48,7 @@ const SkeletonTwo = () => {
       backgroundPosition: "0 50%",
     },
     animate: {
-      backgroundPosition: ["0, 50%", "100% 50%", "0 50%"],
+      backgroundPosition: ["0, 100%", "80% 50%", "20% 50%"],
     },
   };
   return (
@@ -61,14 +61,18 @@ const SkeletonTwo = () => {
         repeat: Infinity,
         repeatType: "reverse",
       }}
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] rounded-lg bg-dot-black/[0.2] flex-col space-y-2"
+      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] rounded-lg bg-dot-black/[0.2] flex-col space-y-2 relative"
       style={{
-        background:
-          "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
+        background:"linear-gradient(-45deg, #ff7eb9, #ff65a3, #7afcff, #feff9c, #fff740)",
         backgroundSize: "400% 400%",
       }}
     >
-      <motion.div className="h-full w-full rounded-lg"></motion.div>
+      <div className="h-full w-full absolute top-0 left-0 bg-black/75 z-10"></div>
+
+      <motion.div className="h-full w-full rounded-lg p-4 flex flex-col justify-around z-20">
+        <motion.h1 variants={{ hover: { color: "#8B5CF6" } }} className="text-white font-bold text-2xl text-center">Determination wins battles. Perseverance wins wars.</motion.h1>
+        <p className="text-white text-justify text-sm">Hi, I’m Avi. I enjoy learning new technologies, building projects, and studying Finnish. With four years as a Programme/Project Manager in NGOs and the corporate sector, I've worked on community development, HR, and IT projects like e-learning. After self-learning programming, I completed an intensive bootcamp at Microverse. Now, as a Full Stack Developer, I’m eager to work with innovative teams to create impactful projects.</p>
+      </motion.div>
     </motion.div>
   );
 };
