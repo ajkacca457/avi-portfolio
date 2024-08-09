@@ -4,12 +4,26 @@ import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 import {
   IconBoxAlignRightFilled,
-  IconSignature,
-  IconTableColumn,
 } from "@tabler/icons-react";
-import { delay, motion } from "framer-motion";
-import { title } from "process";
-import { headers } from "next/headers";
+import { motion } from "framer-motion";
+import { AiOutlineHtml5 } from "react-icons/ai";
+import { TbFileTypeCss } from "react-icons/tb";
+import { BsFiletypeScss } from "react-icons/bs";
+import { IoLogoJavascript } from "react-icons/io5";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaBootstrap,FaReact,FaNodeJs,FaWordpress } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { SiPhp,SiRubyonrails } from "react-icons/si";
+import { DiRuby } from "react-icons/di";
+
+
+
+
+
+
+
+
+
 
 export function BentoGridThirdDemo() {
   return (
@@ -93,7 +107,19 @@ const SkeletonThree = () => {
         },
       },
     };
-const arr= ["html", "css ", "scss", "tailwind", "bootstrap", "javascript", "react", "next js", "node js", "php", "wordpress",, "ruby", "rails"]
+const arr= [<AiOutlineHtml5 className="text-purple-500" size={20}/>, 
+<TbFileTypeCss className="text-purple-500" size={20} />, 
+<BsFiletypeScss className="text-purple-500" size={20}/>, 
+<RiTailwindCssFill className="text-purple-500" size={20}/>, 
+<FaBootstrap className="text-purple-500" size={20}/>,
+ <IoLogoJavascript className="text-purple-500" size={20}/>, 
+ <FaReact className="text-purple-500" size={20}/>, 
+ <RiNextjsFill className="text-purple-500" size={20}/>, 
+ <FaNodeJs className="text-purple-500" size={20}/>, 
+ <SiPhp className="text-purple-500" size={20}/>,
+ <FaWordpress className="text-purple-500" size={18}/>,
+ <DiRuby className="text-purple-500" size={18}/>, 
+ <SiRubyonrails className="text-purple-500" size={20}/>]
 return (
   <motion.div
     initial="initial"
@@ -113,7 +139,8 @@ return (
                 <span className="absolute inset-[-1000%] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
                 <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-sm bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
                     {item}
-                </span>      </motion.div>
+                </span>
+        </motion.div>
     ))}
   </motion.div>
 );
