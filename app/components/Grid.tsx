@@ -17,6 +17,9 @@ import { SiPhp,SiRubyonrails,SiTypescript } from "react-icons/si";
 import { DiRuby } from "react-icons/di";
 import { Spotlight } from "./ui/Spotlight";
 
+import { CardStack } from "./ui/card-stack";
+
+
 export function BentoGridThirdDemo() {
   return (
     <BentoGrid className="w-[90vw] max-w-[1280px] mx-auto md:auto-rows-[20rem]">
@@ -162,6 +165,69 @@ const SkeletonFour = () => {
       rotate: 0,
     },
   };
+
+
+  const Highlight = ({
+    children,
+    className,
+  }: {
+    children: React.ReactNode;
+    className?: string;
+  }) => {
+    return (
+      <span
+        className={cn(
+          "font-bold bg-emerald-100 text-emerald-700 dark:bg-emerald-700/[0.2] dark:text-emerald-500 px-1 py-0.5",
+          className
+        )}
+      >
+        {children}
+      </span>
+    );
+  };
+
+  const CARDS = [
+    {
+      id: 0,
+      name: "Manu Arora",
+      designation: "Senior Software Engineer",
+      content: (
+        <p>
+          These cards are amazing, <Highlight>I want to use them</Highlight> in my
+          project. Framer motion is a godsend ngl tbh fam 🙏
+        </p>
+      ),
+    },
+    {
+      id: 1,
+      name: "Elon Musk",
+      designation: "Senior Shitposter",
+      content: (
+        <p>
+          I dont like this Twitter thing,{" "}
+          <Highlight>deleting it right away</Highlight> because yolo. Instead, I
+          would like to call it <Highlight>X.com</Highlight> so that it can easily
+          be confused with adult sites.
+        </p>
+      ),
+    },
+    {
+      id: 2,
+      name: "Tyler Durden",
+      designation: "Manager Project Mayhem",
+      content: (
+        <p>
+          The first rule of
+          <Highlight>Fight Club</Highlight> is that you do not talk about fight
+          club. The second rule of
+          <Highlight>Fight club</Highlight> is that you DO NOT TALK about fight
+          club.
+        </p>
+      ),
+    },
+  ]; 
+
+
   return (
     <motion.div
       initial="initial"
@@ -169,21 +235,7 @@ const SkeletonFour = () => {
       whileHover="hover"
       className=" w-full h-full mt-4 min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-row space-x-2"
     >
-      <motion.div
-        variants={first}
-        className="w-full rounded-2xl text-white bg-purple-400/70 p-2 mb-2 mt-2 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
-      >
-       Web Design
-      </motion.div>
-      <motion.div className="w-full relative text-white z-20 mb-2 rounded-2xl bg-purple-400/70 p-2 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
-        Web Development
-      </motion.div>
-      <motion.div
-        variants={second}
-        className="w-full rounded-2xl text-white bg-purple-400/70 p-2 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
-      >
-        Application Development
-      </motion.div>
+      <CardStack items={CARDS} />
     </motion.div>
   );
 };
