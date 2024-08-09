@@ -94,32 +94,28 @@ const SkeletonThree = () => {
   const variants = {
       initial: {
       scale: 1,
-      rotate: 0,
-      backgroundColor: "#f3f3f3",
       },
       hover: {
-        scale: 1.02,
-        rotate:1.5,
-        backgroundColor: "red",
+        scale: 1.04,
         transition: {
           delay: 0.2,
           duration: 0.2,
         },
       },
     };
-const arr= [<AiOutlineHtml5 className="text-purple-500" size={20}/>, 
-<TbFileTypeCss className="text-purple-500" size={20} />, 
-<BsFiletypeScss className="text-purple-500" size={20}/>, 
-<RiTailwindCssFill className="text-purple-500" size={20}/>, 
-<FaBootstrap className="text-purple-500" size={20}/>,
- <IoLogoJavascript className="text-purple-500" size={20}/>, 
- <FaReact className="text-purple-500" size={20}/>, 
- <RiNextjsFill className="text-purple-500" size={20}/>, 
- <FaNodeJs className="text-purple-500" size={20}/>, 
- <SiPhp className="text-purple-500" size={20}/>,
- <FaWordpress className="text-purple-500" size={18}/>,
- <DiRuby className="text-purple-500" size={18}/>, 
- <SiRubyonrails className="text-purple-500" size={20}/>]
+const arr= [<AiOutlineHtml5 className="text-purple-200" size={20}/>, 
+<TbFileTypeCss className="text-purple-200" size={20} />, 
+<BsFiletypeScss className="text-purple-200" size={20}/>, 
+<RiTailwindCssFill className="text-purple-200" size={20}/>, 
+<FaBootstrap className="text-purple-200" size={20}/>,
+ <IoLogoJavascript className="text-purple-200" size={20}/>, 
+ <FaReact className="text-purple-200" size={20}/>, 
+ <RiNextjsFill className="text-purple-200" size={20}/>, 
+ <FaNodeJs className="text-purple-200" size={20}/>, 
+ <SiPhp className="text-purple-200" size={20}/>,
+ <FaWordpress className="text-purple-200" size={18}/>,
+ <DiRuby className="text-purple-200" size={18}/>, 
+ <SiRubyonrails className="text-purple-200" size={20}/>]
 return (
   <motion.div
     initial="initial"
@@ -136,7 +132,7 @@ return (
           maxWidth: "100%",
         }}
         className="relative inline-flex h-8 md:h-10 overflow-hidden rounded-sm p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"      >
-                <span className="absolute inset-[-1000%] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                <span className="absolute inset-[-1000%] bg-[#4447d1]" />
                 <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-sm bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
                     {item}
                 </span>
