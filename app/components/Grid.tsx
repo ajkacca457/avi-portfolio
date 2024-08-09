@@ -13,8 +13,9 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaBootstrap,FaReact,FaNodeJs,FaWordpress } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiPhp,SiRubyonrails } from "react-icons/si";
+import { SiPhp,SiRubyonrails,SiTypescript } from "react-icons/si";
 import { DiRuby } from "react-icons/di";
+import { Spotlight } from "./ui/Spotlight";
 
 export function BentoGridThirdDemo() {
   return (
@@ -106,13 +107,19 @@ const arr= [<AiOutlineHtml5 className="text-purple-200" size={20}/>,
  <SiPhp className="text-purple-200" size={20}/>,
  <FaWordpress className="text-purple-200" size={18}/>,
  <DiRuby className="text-purple-200" size={18}/>, 
- <SiRubyonrails className="text-purple-200" size={20}/>]
+ <SiRubyonrails className="text-purple-200" size={20}/>,
+<SiTypescript className="text-purple-200" size={16}/>]
 return (
   <motion.div
     initial="initial"
     animate="animate"
-    className="grid grid-cols-3 gap-2 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col"
+    className="grid grid-cols-3 gap-2 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col relative"    
   >
+    <Spotlight
+      className="top-0 left-40"
+      fill="blue"
+    />
+
     {arr.map(( item, index) => (
       <motion.div
       variants={variants}
