@@ -16,15 +16,6 @@ import { RiNextjsFill } from "react-icons/ri";
 import { SiPhp,SiRubyonrails } from "react-icons/si";
 import { DiRuby } from "react-icons/di";
 
-
-
-
-
-
-
-
-
-
 export function BentoGridThirdDemo() {
   return (
     <BentoGrid className="w-[90vw] max-w-[1280px] mx-auto md:auto-rows-[20rem]">
