@@ -166,63 +166,44 @@ const SkeletonFour = () => {
     },
   };
 
-
-  const Highlight = ({
-    children,
-    className,
-  }: {
-    children: React.ReactNode;
-    className?: string;
-  }) => {
-    return (
-      <span
-        className={cn(
-          "font-bold bg-emerald-100 text-emerald-700 dark:bg-emerald-700/[0.2] dark:text-emerald-500 px-1 py-0.5",
-          className
-        )}
-      >
-        {children}
-      </span>
-    );
-  };
-
   const CARDS = [
     {
       id: 0,
-      name: "Manu Arora",
-      designation: "Senior Software Engineer",
+      name: "",
+      designation: "",
       content: (
-        <p>
-          These cards are amazing, <Highlight>I want to use them</Highlight> in my
-          project. Framer motion is a godsend ngl tbh fam 🙏
-        </p>
+        <>
+        <img src="/web.png" alt="Web Development" className="w-2/4 mx-auto"/>
+        <h1 className="text-white">
+          Web Development.
+        </h1>
+        </>
       ),
     },
     {
       id: 1,
-      name: "Elon Musk",
-      designation: "Senior Shitposter",
+      name: "",
+      designation: "",
       content: (
-        <p>
-          I dont like this Twitter thing,{" "}
-          <Highlight>deleting it right away</Highlight> because yolo. Instead, I
-          would like to call it <Highlight>X.com</Highlight> so that it can easily
-          be confused with adult sites.
-        </p>
+        <>
+        <img src="/application.png" alt="Application Development" className="w-2/4 mx-auto"/>
+        <h1 className="text-white">
+          Application Development.
+        </h1>
+        </>
       ),
     },
     {
       id: 2,
-      name: "Tyler Durden",
-      designation: "Manager Project Mayhem",
+      name: "",
+      designation: "",
       content: (
-        <p>
-          The first rule of
-          <Highlight>Fight Club</Highlight> is that you do not talk about fight
-          club. The second rule of
-          <Highlight>Fight club</Highlight> is that you DO NOT TALK about fight
-          club.
-        </p>
+        <>
+        <img src="/mobile.png" alt="Application Development" className="w-2/4 mx-auto"/>
+        <h1 className="text-white">
+          Mobile Development.
+        </h1>
+        </>
       ),
     },
   ]; 
