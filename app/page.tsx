@@ -1,5 +1,6 @@
 import Hero from "./components/Hero";
 import { BentoGridThirdDemo } from "./components/Grid";
+import {GlobeDemo} from "./components/GithubGlobe";
 
 export default function Home() {
   return (

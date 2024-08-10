@@ -19,6 +19,8 @@ import { Spotlight } from "./ui/Spotlight";
 
 import { CardStack } from "./ui/card-stack";
 
+import { GlobeDemo } from "./GithubGlobe";
+
 
 export function BentoGridThirdDemo() {
   return (
@@ -145,27 +147,6 @@ return (
 
 
 const SkeletonFour = () => {
-  const first = {
-    initial: {
-      x:0,
-      rotate:5,
-    },
-    hover: {
-      x:0,
-      rotate: 0,
-    },
-  };
-  const second = {
-    initial: {
-      x: 0,
-      rotate:3,
-    },
-    hover: {
-      x: 0,
-      rotate: 0,
-    },
-  };
-
   const CARDS = [
     {
       id: 0,
@@ -222,53 +203,15 @@ const SkeletonFour = () => {
 };
 
 const SkeletonFive = () => {
-  const variants = {
-    initial: {
-      x: 0,
-    },
-    animate: {
-      x: 10,
-      rotate: 5,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  };
-  const variantsSecond = {
-    initial: {
-      x: 0,
-    },
-    animate: {
-      x: -10,
-      rotate: -5,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  };
-
   return (
     <motion.div
       initial="initial"
       whileHover="animate"
-      className="flex flex-1 w-full h-full min-h-[6rem] flex-col space-y-2"
+      className="flex flex-1 w-full h-full min-h-[6rem] flex-col relative"
     >
-      <motion.div
-        variants={variants}
-        className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
-      >
-        <p className="text-xs text-neutral-500">
-          There are a lot of cool framerworks out there like React, Angular,
-          Vue, Svelte that can make your life ....
-        </p>
-      </motion.div>
-      <motion.div
-        variants={variantsSecond}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
-      >
-        <p className="text-xs text-neutral-500">Use PHP.</p>
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-      </motion.div>
+      <h1 className="text-white text-center text-2xl absolute top-1/2 left-10 z-30">International worker</h1>
+      <h2 className="text-white">Available in all timezone.</h2>
+      <GlobeDemo />
     </motion.div>
   );
 };
@@ -298,19 +241,12 @@ const items = [
   {
     title: "My Services",
     header: <SkeletonFour />,
-    className: "md:col-span-1"
+    className:"col-span-full md:col-span-1"
   },
 
   {
-    title: "Text Summarization",
-    description: (
-      <span className="text-sm">
-        Summarize your lengthy documents with AI technology.
-      </span>
-    ),
     header: <SkeletonFive />,
     className: "md:col-span-1",
-    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
   },
 
 ];
