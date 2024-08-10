@@ -209,8 +209,10 @@ const SkeletonFive = () => {
       whileHover="animate"
       className="flex flex-1 w-full h-full min-h-[6rem] flex-col relative"
     >
-      <h1 className="text-white text-center text-2xl absolute top-1/2 left-10 z-30">International worker</h1>
-      <h2 className="text-white">Available in all timezone.</h2>
+      <h1 className="text-white text-center text-2xl absolute top-0 left-0 z-30">Time Zone Flexibility</h1>
+      <h1 className="text-white text-center text-2xl absolute top-1/2 left-10 z-30">Remote Work Expertise</h1>
+      <h1 className="text-white text-center text-2xl absolute bottom-0 z-30">Multi-Language Communication</h1>
+
       <GlobeDemo />
     </motion.div>
   );
