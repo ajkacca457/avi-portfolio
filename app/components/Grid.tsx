@@ -32,7 +32,6 @@ export function BentoGridThirdDemo() {
           description={item.description}
           header={item.header}
           className={cn("[&>p:text-lg]", item.className)}
-          icon={item.icon}
           img={item.img}
           id={i}
         />
