@@ -173,8 +173,8 @@ const SkeletonFour = () => {
       designation: "",
       content: (
         <>
-        <img src="/web.png" alt="Web Development" className="w-2/4 mx-auto"/>
-        <h1 className="text-white">
+        <img src="/web.png" alt="Web development" className="w-1/4 mx-auto mb-2 drop-shadow-md" />
+        <h1 className="text-white text-center">
           Web Development.
         </h1>
         </>
@@ -186,8 +186,8 @@ const SkeletonFour = () => {
       designation: "",
       content: (
         <>
-        <img src="/application.png" alt="Application Development" className="w-2/4 mx-auto"/>
-        <h1 className="text-white">
+        <img src="/application.png" alt="Application development" className="w-1/4 mx-auto mb-2 drop-shadow-md" />
+        <h1 className="text-white text-center">
           Application Development.
         </h1>
         </>
@@ -199,8 +199,8 @@ const SkeletonFour = () => {
       designation: "",
       content: (
         <>
-        <img src="/mobile.png" alt="Application Development" className="w-2/4 mx-auto"/>
-        <h1 className="text-white">
+        <img src="/mobile.png" alt="Mobile development" className="w-1/4 mx-auto mb-2 drop-shadow-md" />
+        <h1 className="text-white text-center">
           Mobile Development.
         </h1>
         </>
@@ -214,7 +214,7 @@ const SkeletonFour = () => {
       initial="initial"
       animate="animate"
       whileHover="hover"
-      className=" w-full h-full mt-4 min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-row space-x-2"
+      className=" w-full h-full mt-4 min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-row space-x-2 relative"
     >
       <CardStack items={CARDS} />
     </motion.div>
