@@ -11,12 +11,14 @@ const Projects = () => {
     const featuredProjects = [
         {
             title: 'netox.com',
+            image: '/netox.png',
             url: 'https://netox.com',
             description: 'The website is constructed using custom Gutenberg React blocks, with my primary responsibility being the creation of these custom blocks designed to perform various interactive activities. Throughout this project, our team collectively devised unique solutions tailored to Gutenberg blocks. We successfully implemented several npm packages with custom Gutenberg React blocks and brainstormed innovative ideas to optimize their efficiency. Notably, we effectively utilized GSAP with custom blocks to introduce animation and interactivity. Our collaborative efforts resulted in a diverse array of custom blocks, enhancing user engagement and contributing to the overall success of the site.',
             stack: ["Javascript", "React", "PHP", "Wordpress", "Scss", "Gutenberg Blocks"]
         },
         {
             title: 'Icare interactive map',
+            image: '/icaremap.png',
             url: 'https://patients.icare-world.com/find-a-provider',
             description: 'Description 3',
             stack: ["Javascript", "PHP", "Wordpress", "Scss","Typescript"]
@@ -24,6 +26,7 @@ const Projects = () => {
         {
             title: 'rightware.com',
             url: 'https://rightware.com/',
+            image: '/rightware.png',
             description: 'Description 4',
             stack: ["Vue","PHP", "Wordpress","HeadlesCMS", "Wordpress Rest API"]
         },
@@ -53,7 +56,7 @@ const Projects = () => {
                             </CardItem>
                             <CardItem translateZ="100" className="w-full mt-4">
                                 <Image
-                                    src="/background1.jpg"
+                                    src={project.image}
                                     height="1000"
                                     width="1000"
                                     className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
