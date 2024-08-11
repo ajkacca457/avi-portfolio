@@ -10,6 +10,9 @@ export const HoverEffect = ({
   items: {
     date: string;
     role: string;
+    company: string;
+    companyUrl: string;
+    stack: string[];
   }[];
   className?: string;
 }) => {
@@ -27,6 +30,7 @@ export const HoverEffect = ({
           className="relative group  block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
+          key={idx}
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
@@ -46,8 +50,25 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle>{item.date}</CardTitle>
-            <CardDescription>{item.role}</CardDescription>
+            <CardTitle>{item.role}</CardTitle>
+            <CardDescription>{item.date}</CardDescription>
+            <CardDescription>
+              <Link href={item.companyUrl} target="_blank" className="text-blue-500 underline text-base">
+                {item.company}
+              </Link>
+            </CardDescription>
+
+            <div className="flex flex-wrap mt-4">
+              {item.stack.map((stack, idx) => (
+                <span
+                  key={idx}
+                  className="text-xs bg-blue-900 p-1 rounded-md mr-2 mt-2"
+                >
+                  {stack}
+                </span>
+              ))}
+            </div>
+
           </Card>
         </div>
       ))}
@@ -98,7 +119,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+        "mt-4 text-zinc-400 tracking-wide leading-relaxed text-sm",
         className
       )}
     >
