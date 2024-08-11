@@ -43,12 +43,13 @@ const Form = () => {
                 ></textarea>
             </div>
             <div className="flex justify-between">
-                <button
-                    type="submit"
-                    className="ml-3 bg-blue-950 text-white font-bold py-2 px-4 rounded-lg"
-                >
-                    Send Message
+                <button type='submit' className="p-[2px] relative">
+                    <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+                    <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-500 text-white hover:bg-transparent">
+                        Send Message
+                    </div>
                 </button>
+
             </div>
         </form>
     )
