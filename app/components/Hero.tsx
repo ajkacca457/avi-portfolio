@@ -28,7 +28,7 @@ const Hero = () => {
                     background="transparent"
                     minSize={0.2}
                     maxSize={1}
-                    particleDensity={1200}
+                    particleDensity={100}
                     className="w-full h-full"
                     particleColor="#0066b2"
                 />
@@ -60,7 +60,7 @@ const Hero = () => {
                     background="transparent"
                     minSize={0.2}
                     maxSize={1}
-                    particleDensity={1200}
+                    particleDensity={100}
                     className="w-full h-full"
                     particleColor="#0066b2"
                 />
