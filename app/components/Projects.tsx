@@ -4,6 +4,8 @@ import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import Link from "next/link";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+
 
 
 const Projects = () => {
@@ -83,6 +85,9 @@ const Projects = () => {
                     </CardContainer>
                     )
                 })}
+            </div>
+            <div className="flex justify-end">
+                <Link href="/projects" className="flex items-center gap-x-2 text-purple-300">See all projects <MdKeyboardDoubleArrowRight size={20} /></Link>
             </div>
         </div>
     )
