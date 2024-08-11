@@ -44,14 +44,8 @@ const Form = () => {
             </div>
             <div className="flex justify-between">
                 <button
-                    type="reset"
-                    className="ml-auto bg-gray-400 text-white font-bold py-2 px-4 rounded-lg"
-                >
-                    Reset
-                </button>
-                <button
                     type="submit"
-                    className="ml-3 bg-purple-600 text-white font-bold py-2 px-4 rounded-lg"
+                    className="ml-3 bg-blue-950 text-white font-bold py-2 px-4 rounded-lg"
                 >
                     Send Message
                 </button>

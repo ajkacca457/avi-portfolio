@@ -5,7 +5,7 @@ import Social from './Social'
 import Form from './Form'
 import { Spotlight } from "./ui/Spotlight";
 
-const Cotnact = () => {
+const Contact = () => {
 
   const [mounted, setMounted] = useState(false);
 
@@ -33,4 +33,4 @@ const Cotnact = () => {
   )
 }
 
-export default Cotnact
+export default Contact
