@@ -1,5 +1,8 @@
 "use client"
 import React from 'react'
+import { HoverEffect } from './ui/card-hover-effect';
+
+
 const Experience = () => {
     const experienceData = [
         {
@@ -93,16 +96,7 @@ const Experience = () => {
   return (
     <div className='w-[90vw] max-w-[1280px] mx-auto text-white my-[20vh]'>
         <h1 className='text-white text-2xl md:text-3xl lg:text-5xl leading-snug tracking-wide px-2 text-center font-bold'>My <span className='text-purple-300'>Experience</span></h1>
-
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-6 mt-10'>
-             {experienceData.map((experience, index) => {           
-                    return (
-                        <h1 className='text-white'>{experience.role}</h1>
-                    )
-
-               })}
-        </div>
-
+        <HoverEffect items={experienceData} />
     </div>
   )
 }
