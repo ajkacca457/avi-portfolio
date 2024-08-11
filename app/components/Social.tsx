@@ -7,7 +7,7 @@ import { MdAlternateEmail, MdPhoneInTalk } from "react-icons/md";
 const Social = () => {
     return (
         <article>
-            <h1 className="text-3xl font-semibold text-purple-300">Let's Talk</h1>
+            <h1 className="text-3xl font-semibold text-purple-300">Lets Talk</h1>
             <p className="text-sm text-white mt-3">
                 Have some big idea to develop or looking for a person to fill the skill void? Then reach out I would love to hear about your project and provide help.
             </p>
