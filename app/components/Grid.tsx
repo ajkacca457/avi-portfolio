@@ -2,9 +2,6 @@
 import { cn } from "../lib/utils";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
-import {
-  IconBoxAlignRightFilled,
-} from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { TbFileTypeCss } from "react-icons/tb";

@@ -1,6 +1,7 @@
 import Hero from "./components/Hero";
 import { BentoGridThirdDemo } from "./components/Grid";
 import Experience from "./components/Experience";
+import Projects from "./components/Projects";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <BentoGridThirdDemo />
       <Experience />
+      <Projects />
     </main>
   );
 }
