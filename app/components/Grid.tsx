@@ -22,7 +22,7 @@ import { GlobeDemo } from "./GithubGlobe";
 
 export function BentoGridThirdDemo() {
   return (
-    <BentoGrid className="w-[90vw] max-w-[1280px] mx-auto md:auto-rows-[20rem]">
+    <BentoGrid className="bento-grid-scroll w-[90vw] max-w-[1280px] mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}

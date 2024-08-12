@@ -9,7 +9,7 @@ const Hero = () => {
     const words = "Crafting Innovative Solutions, One Line at a Time"
 
     return (
-        <div className="h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+        <div className="hero h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
 
             <Spotlight
                 className="top-0 left-10 md:left-60 md:-top-20 "

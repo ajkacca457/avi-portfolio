@@ -17,7 +17,7 @@ const Contact = () => {
   if (!mounted) return null
 
   return (
-    <section className='w-[90vw] max-w-[1280px] mx-auto text-white mb-[20vh]'>
+    <section className='w-[90vw] max-w-[1280px] mx-auto text-white mb-[20vh] contact'>
       <h1 className='text-white text-2xl md:text-3xl lg:text-5xl leading-snug tracking-wide px-2 text-center font-bold mb-20'>
         Ways to <span className='text-purple-300'>Reach Me</span>
       </h1>
