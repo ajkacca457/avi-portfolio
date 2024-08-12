@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <div className='w-full fixed top-10 z-50'>
-        <div className="flex justify-center items-center py-2 px-6 gap-x-6 bg-slate-950 text-white w-fit mx-auto rounded-3xl border-[1px] border-white text-2xl">
+        <div className="flex justify-center items-center py-2 px-6 gap-x-6 bg-slate-950 text-white w-fit mx-auto rounded-3xl border-[1px] border-white text-xl">
             <button onClick={()=> handleScroll("hero")}><TiHome/></button>
             <button onClick={()=>handleScroll("bento-grid-scroll")}><BsInfoCircleFill /></button>
             <button onClick={()=>handleScroll("experience")}><MdWorkHistory /></button>
