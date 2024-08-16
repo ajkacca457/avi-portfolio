@@ -82,6 +82,7 @@ export const ProjectHoverEffect = ({
   className,
 }: {
   items: {
+    imgurl:string;
     title: string;
     url: string;
     description: string;
@@ -123,7 +124,8 @@ export const ProjectHoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle>{item.title}</CardTitle>
+            <CardTitle className="mb-3">{item.title}</CardTitle>
+            <img src={item.imgurl} alt={item.title} className="w-full rounded-md" />
             <CardDescription>{item.description}</CardDescription>
             <CardDescription>
               <Link href={item.url} target="_blank" className="text-blue-500 underline text-base">
