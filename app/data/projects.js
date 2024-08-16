@@ -2,86 +2,79 @@ export const projectsData = [
     {
         title: 'netox.com',
         url: 'https://netox.com',
-        description: 'The website is constructed using custom Gutenberg React blocks, with my primary responsibility being the creation of these custom blocks designed to perform various interactive activities. Throughout this project, our team collectively devised unique solutions tailored to Gutenberg blocks. We successfully implemented several npm packages with custom Gutenberg React blocks and brainstormed innovative ideas to optimize their efficiency. Notably, we effectively utilized GSAP with custom blocks to introduce animation and interactivity. Our collaborative efforts resulted in a diverse array of custom blocks, enhancing user engagement and contributing to the overall success of the site.',
+        description: 'This website was constructed using custom Gutenberg React blocks. I was responsible for the development of all custom blocks for the site. ',
         stack: ["Javascript", "React", "PHP", "Wordpress", "Scss", "Gutenberg-blocks"]
     },
     {
         title: 'efecte.tenderoffer.fi',
         url: 'https://efecte.tenderoffer.fi',
-        description: 'Description 2',
-        description: 'I led this project, which involved developing a public tender website to showcase various stock-related information for consumers. It was a time-sensitive project that demanded effective time and resource management. The site is constructed using a custom WordPress theme as the base, supplemented with Tailwind CSS, JavaScript, and Handlebars templates for data rendering.',
+        description: 'This is a public tender website to showcase various stock-related information for consumers. It was a very time sensitive project.',
         stack: ["Javascript", "PHP", "Wordpress","Handlebars","Tailwind","Typescript"]
     },
     {
         title: 'endomines.com',
         url: 'https://endomines.com',
-        description: 'Description 2',
+        description: 'Developed new features based on client requests, managed the codebase, and handled site updates and bug fixes.',
         stack: ["Javascript", "PHP", "Wordpress","Handlebars","Tailwind","Typescript"]
     },
     {
         title: 'Icare interactive map',
         url: 'https://patients.icare-world.com/find-a-provider',
-        description: 'Description 3',
+        description: 'The app shows providers locations as clusters on Google Maps, with search by name or location and calculated distances.',
         stack: ["Javascript", "Google-Maps-API", "PHP", "Wordpress", "Scss","Typescript"]
     },
     {
         title: 'Icare manual downloader application',
         url: 'https://www.icare-world.com/ifu/',
-        description: 'Description 4',
+        description: 'The app consumes API data for iCare manuals, providing filtering for different product models. Users can download manuals with specific filters.',
         stack: ["Javascript", "React", "PHP", "Wordpress", "Scss","Typescript"]
     },
     {
         title: 'museoliitto.fi',
         url: 'https://museoliitto.fi/',
-        description: 'Description 4',
+        description: "I developed the site's building blocks in collaboration with the lead developer. This site also has many third-party api integrations.",
         stack: ["Javascript", "PHP", "Wordpress", "Tailwind","Typescript"]
     },
     {
         title: 'tukikummit.fi',
         url: 'https://tukikummit.fi/',
-        description: 'Description 4',
+        description: 'I developed building blocks for this site, ensuring architectural consistency with the lead developer. It is a site for a NGO.',
         stack: ["Javascript", "PHP", "Wordpress", "Tailwind","Typescript"]
     },
     {
         title: 'rightware.com',
         url: 'https://rightware.com/',
-        description: 'Description 4',
+        description: 'This is a client site made with vue js and wordpress headless cms. I was responsible for the development of the site.',
         stack: ["Vue","PHP", "Wordpress","HeadlesCMS", "Wordpress Rest API"]
-    },
-    {
-        title: 'virala.fi',
-        url: 'https://virala.fi/',
-        description: 'Description 4',
-        stack: ["Javascript", "PHP", "Wordpress", "Tailwind","Typescript"]
     },
     {
         title: 'kettutesti.hel.fi',
         url: 'https://kettutesti.hel.fi/',
-        description: 'Description 4',
+        description: 'It was developed for the Helsinki City website, this quiz app targets children for a promotional campaign.',
         stack: ["Javascript", "PHP", "Wordpress", "Tailwind","Typescript"]
     },
     {
         title: 'Legend of Soha',
         url:"",
-        description: 'Description 4',
+        description: "This role-playing game was developed for my web development program's JavaScript capstone project. I used Phaser 3 for game logic.",
         stack: ["Javascript", "Phaser 3"]
     },
     {
         title: 'Course Tracker',
         url:"",
-        description: 'Description 4',
+        description: 'This app, a final Microverse capstone project updated with the MERN stack, helps students track course details. It uses JWT token authentication.',
         stack: ["Javascript", "React", "Express", "Mongoose", "MongoDB", "Node.js"]
     },
     {
         title: 'Home Accounts',
         url:"",
-        description: 'Description 4',
+        description: 'Mern stack app to track users day to day expenses and income. It has authentication, authorization and statistics features.',
         stack: ["Javascript", "React", "Express", "Mongoose", "MongoDB", "Node.js"]
     },
     {
         title: 'Photographer Portfolio',
         url:"",
-        description: 'Description 4',
+        description: 'This portfolio website for a photographer uses HTML, CSS, and JavaScript. It includes an image carousel, scroll animations with AOS, and Bootstrap.',
         stack: ["Javascript","Html", "Css"]
     },
 ];
