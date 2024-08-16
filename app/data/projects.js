@@ -1,4 +1,4 @@
-const projectsData = [
+export const projectsData = [
     {
         title: 'netox.com',
         url: 'https://netox.com',
@@ -62,21 +62,25 @@ const projectsData = [
     },
     {
         title: 'Legend of Soha',
+        url:"",
         description: 'Description 4',
         stack: ["Javascript", "Phaser 3"]
     },
     {
         title: 'Course Tracker',
+        url:"",
         description: 'Description 4',
         stack: ["Javascript", "React", "Express", "Mongoose", "MongoDB", "Node.js"]
     },
     {
         title: 'Home Accounts',
+        url:"",
         description: 'Description 4',
         stack: ["Javascript", "React", "Express", "Mongoose", "MongoDB", "Node.js"]
     },
     {
         title: 'Photographer Portfolio',
+        url:"",
         description: 'Description 4',
         stack: ["Javascript","Html", "Css"]
     },

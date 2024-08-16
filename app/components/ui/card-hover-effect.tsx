@@ -76,6 +76,80 @@ export const HoverEffect = ({
   );
 };
 
+
+export const ProjectHoverEffect = ({
+  items,
+  className,
+}: {
+  items: {
+    title: string;
+    url: string;
+    description: string;
+    stack: string[];
+  }[];
+  className?: string;
+}) => {
+  let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+  return (
+    <div
+      className={cn(
+        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
+        className
+      )}
+    >
+      {items.map((item, idx) => (
+        <div
+          className="relative group  block p-2 h-full w-full"
+          onMouseEnter={() => setHoveredIndex(idx)}
+          onMouseLeave={() => setHoveredIndex(null)}
+          key={idx}
+        >
+          <AnimatePresence>
+            {hoveredIndex === idx && (
+              <motion.span
+                className="absolute inset-0 h-full w-full bg-purple-200/50 dark:bg-slate-800/[0.8] block  rounded-3xl"
+                layoutId="hoverBackground"
+                initial={{ opacity: 0 }}
+                animate={{
+                  opacity: 1,
+                  transition: { duration: 0.15 },
+                }}
+                exit={{
+                  opacity: 0,
+                  transition: { duration: 0.15, delay: 0.2 },
+                }}
+              />
+            )}
+          </AnimatePresence>
+          <Card>
+            <CardTitle>{item.title}</CardTitle>
+            <CardDescription>{item.description}</CardDescription>
+            <CardDescription>
+              <Link href={item.url} target="_blank" className="text-blue-500 underline text-base">
+                Live Link
+              </Link>
+            </CardDescription>
+
+            <div className="flex flex-wrap mt-4">
+              {item.stack.map((stack, idx) => (
+                <span
+                  key={idx}
+                  className="text-xs bg-blue-900 p-1 rounded-md mr-2 mt-2"
+                >
+                  {stack}
+                </span>
+              ))}
+            </div>
+
+          </Card>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+
 export const Card = ({
   className,
   children,
