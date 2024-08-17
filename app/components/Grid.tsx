@@ -43,7 +43,7 @@ const SkeletonOne = () => {
     <motion.div
       initial="initial"
       whileHover="animate"
-      className="grid grid-cols-3 gap-x-4 h-full place-content-center"
+      className="h-full place-content-center"
     >   
     </motion.div>
   );
@@ -219,7 +219,7 @@ const SkeletonFive = () => {
 const items = [
   {
     header: <SkeletonOne />,
-    className: "md:col-span-1",
+    className: "w-full block md:col-span-1",
     title:"Integrity, Respect, and Commitment",
     img:"/profile.jpg",   
     description: (
@@ -230,22 +230,22 @@ const items = [
   {
     title: "About Me",
     header: <SkeletonTwo />,
-    className: "md:col-span-2",
+    className:"col-span-2",
   },
   {
     title: "Skills",
     header: <SkeletonThree />,
-    className: "md:col-span-1",
+    className: "col-span-2 md:col-span-1",
   },
   {
     title: "My Services",
     header: <SkeletonFour />,
-    className:"col-span-full md:col-span-1"
+    className:"col-span-2 md:col-span-1"
   },
 
   {
     header: <SkeletonFive />,
-    className: "md:col-span-1",
+    className: "col-span-2 md:col-span-1",
   },
 
 ];
