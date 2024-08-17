@@ -3,6 +3,7 @@ import React from 'react'
 import { SparklesCore } from './ui/sparkles'
 import { TextGenerateEffect } from './ui/text-generate-effect'
 import { Spotlight } from './ui/Spotlight';
+import Link from 'next/link';
 
 const Hero = () => {
 
@@ -41,12 +42,12 @@ const Hero = () => {
             <TextGenerateEffect filter={false} words={words} duration={1} className='mt-10' />
             <p className='text-white mt-10 text-xl'>Hi! I am a Full stack developer from Finland.</p>
 
-            <button className="relative inline-flex h-12 mt-10 overflow-hidden rounded-sm p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+            <Link href={`https://docs.google.com/document/d/1PelJIXVSGFz_4oKLre-k8oOjpLNcnID6zxSuQ6ezOZU/edit?usp=sharing`} target='_blank' className="relative inline-flex h-12 mt-10 overflow-hidden rounded-sm p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
                 <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-sm bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
                     Download CV
                 </span>
-            </button>
+            </Link>
 
             <div className="w-2/3 h-20 relative rotate-180 ">
                 {/* Gradients */}
