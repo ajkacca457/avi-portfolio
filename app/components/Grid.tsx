@@ -69,7 +69,7 @@ const SkeletonTwo = () => {
         repeat: Infinity,
         repeatType: "reverse",
       }}
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] rounded-lg bg-dot-black/[0.2] flex-col space-y-2 relative"
+      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] rounded-lg bg-dot-black/[0.2] flex-col space-y-2 absolute top-0 left-0"
       style={{
         background:"linear-gradient(-45deg, #6a11cb, #2575fc, #7b2cbf, #00c6ff)",
         backgroundSize: "400% 400%",

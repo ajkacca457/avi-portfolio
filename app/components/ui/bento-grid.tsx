@@ -54,7 +54,7 @@ export const BentoGridItem = ({
       </>
       }
 
-      <div className={`${id===0?" -translate-x-[100vh] relative h-full group-hover/bento:translate-x-2 transition duration-200 z-10":"group-hover/bento:translate-x-2 transition duration-200 z-10"}`}>
+      <div className={`${id===0?" -translate-x-[100vh] relative h-full group-hover/bento:translate-x-2 transition duration-200 z-10":"group-hover/bento:translate-x-2 transition duration-200 z-20"}`}>
         <div className={`${id===0?"h-full flex flex-col justify-end antialiased text-white text-xl mb-2 mt-2":" text-white mb-2 mt-2"}`}>
           {title}
         </div>
