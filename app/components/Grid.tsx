@@ -57,7 +57,7 @@ const SkeletonTwo = () => {
       </video>
 
       <motion.div className="h-full w-full rounded-lg p-4 flex flex-col justify-center gap-y-4 z-20">
-        <p className="text-white text-justify text-sm md:text-base lg:text-lg">Hi, I’m Avi. I enjoy learning new technologies, building projects, and studying Finnish. With four years as a Programme/Project Manager in NGOs and the corporate sector, I've worked on community development, HR, and IT projects like e-learning. After self-learning programming, I completed an intensive bootcamp at Microverse and have been working as a Full Stack Developer for over three years. I’m eager to collaborate with innovative teams to create impactful projects.</p>
+        <p className="text-white text-justify text-sm md:text-base lg:text-lg">Hi, I’m Avi. I’m passionate about learning new technologies, building projects, and studying Finnish. With four years of experience as a Program and Project Manager in NGOs and the corporate sector, I’ve led projects in community development, HR, and IT. After self-teaching programming, I completed an intensive bootcamp at Microverse and have since worked as a Full Stack Developer for over three years. I’m eager to collaborate with innovative teams to create impactful projects.</p>
       </motion.div>
     </motion.div>
   );
