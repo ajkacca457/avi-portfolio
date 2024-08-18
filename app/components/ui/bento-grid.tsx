@@ -50,7 +50,7 @@ export const BentoGridItem = ({
       {img && 
       <>
         <img src={img} className="object-cover object-top w-full h-full rounded-xl absolute top-0 left-0 z-0" />
-        <div className="z-10 absolute bg-purple-800/40 group-hover/bento:bg-black/60 w-full h-full top-0 left-0 transition duration-200 ease-in"></div>
+        <div className="z-10 absolute bg-blue-800/40 group-hover/bento:bg-black/60 w-full h-full top-0 left-0 transition duration-200 ease-in"></div>
       </>
       }
 

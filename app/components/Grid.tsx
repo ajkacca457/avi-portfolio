@@ -15,11 +15,6 @@ import { SiPhp,SiRubyonrails,SiTypescript } from "react-icons/si";
 import { DiRuby } from "react-icons/di";
 import { Spotlight } from "./ui/Spotlight";
 
-import { CardStack } from "./ui/card-stack";
-
-import { GlobeDemo } from "./GithubGlobe";
-
-
 export function BentoGridThirdDemo() {
   return (
     <BentoGrid className="bento-grid-scroll w-[90vw] max-w-[1280px] mx-auto md:auto-rows-[20rem]">
@@ -51,21 +46,15 @@ const SkeletonOne = () => {
 
 
 const SkeletonTwo = () => {
-  const variants = {
-    initial: {
-      backgroundPosition: "0 50%",
-    },
-    animate: {
-      backgroundPosition: ["0, 100%", "80% 50%", "20% 50%"],
-    },
-  };
   return (
     <motion.div
       initial="initial"
       animate="animate"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] rounded-lg bg-dot-black/[0.2] flex-col space-y-2 absolute top-0 left-0"
     >
-      <div className="h-full w-full absolute top-0 left-0 bg-black/60 z-10"></div>
+      <video className="w-full h-full absolute top-0 left-0 object-fill opacity-30" autoPlay loop muted>
+        <source src="/gradient.mp4" type="video/mp4" />
+      </video>
 
       <motion.div className="h-full w-full rounded-lg p-4 flex flex-col justify-center gap-y-4 z-20">
         <p className="text-white text-justify text-sm md:text-base lg:text-lg">Hi, I’m Avi. I enjoy learning new technologies, building projects, and studying Finnish. With four years as a Programme/Project Manager in NGOs and the corporate sector, I've worked on community development, HR, and IT projects like e-learning. After self-learning programming, I completed an intensive bootcamp at Microverse and have been working as a Full Stack Developer for over three years. I’m eager to collaborate with innovative teams to create impactful projects.</p>
@@ -77,10 +66,8 @@ const SkeletonTwo = () => {
 const SkeletonThree = () => {
   const variants = {
       initial: {
-      scale: 1,
       },
       hover: {
-        scale: 1.04,
         transition: {
           delay: 0.2,
           duration: 0.2,
@@ -105,12 +92,12 @@ return (
   <motion.div
     initial="initial"
     animate="animate"
-    className="grid grid-cols-3 gap-2 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col relative"    
+    className="grid grid-cols-3 gap-2 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col"    
   >
-    <Spotlight
-      className="top-0 left-40"
-      fill="blue"
-    />
+    
+    <video className="w-full h-full absolute top-0 left-0 object-fill opacity-10" autoPlay loop muted>
+      <source src="/drop.mp4" type="video/mp4" />
+    </video>
 
     {arr.map(( item, index) => (
       <motion.div
@@ -194,13 +181,15 @@ const SkeletonFive = () => {
     <motion.div
       initial="initial"
       whileHover="animate"
-      className="flex flex-1 w-full h-full min-h-[6rem] flex-col relative"
+      className="flex flex-1 w-full h-full min-h-[6rem] flex-col"
     >
-      <h1 className="text-white text-center text-2xl absolute top-0 left-0 z-30">Time Zone Flexibility</h1>
-      <h1 className="text-white text-center text-2xl absolute top-1/2 left-10 z-30">Remote Work Expertise</h1>
-      <h1 className="text-white text-center text-2xl absolute bottom-0 z-30">Multi-Language Communication</h1>
+      <video className="w-full h-full absolute top-0 left-0 object-cover opacity-70" autoPlay loop muted>
+        <source src="/globe.mp4" type="video/mp4" />
+      </video>
+      <h1 className="text-white text-center text-2xl absolute top-10 left-10 z-30">Time Zone Flexibility</h1>
+      <h1 className="text-white text-center text-2xl absolute top-1/2 left-20 z-30">Remote Work Expertise</h1>
+      <h1 className="text-white text-center text-2xl absolute bottom-5 right-10 z-30">Multi-Language Communication</h1>
 
-      {/* <GlobeDemo /> */}
     </motion.div>
   );
 };
