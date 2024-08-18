@@ -162,10 +162,19 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-slate-800 border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        "rounded-2xl h-full w-full p-4 overflow-hidden border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
         className
       )}
+      style={{
+        background: "rgb(4,7,29)",
+        backgroundColor:
+          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+      }}
     >
+      
+      <video className="w-full h-full absolute top-0 left-0 object-fill opacity-5" autoPlay loop muted>
+              <source src="/glow.mp4" type="video/mp4" />
+      </video>
       <div className="relative z-50">
         <div className="p-4">{children}</div>
       </div>
