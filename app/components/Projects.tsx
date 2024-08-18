@@ -36,8 +36,8 @@ const Projects = () => {
 
 
     return (
-        <div className='w-[90vw] max-w-[1280px] mx-auto text-white mb-[20vh] work'>
-            <h1 className='text-white text-2xl md:text-3xl lg:text-5xl leading-snug tracking-wide px-2 text-center font-bold'>My <span className='text-purple-300'>Projects</span></h1>
+        <div className='w-[90vw] max-w-[1280px] mx-auto text-white mb-[5vh] md:mb-[15vh] work'>
+            <h1 className='text-white text-2xl md:text-3xl lg:text-5xl leading-snug tracking-wide px-2 text-center font-bold mb-5 md:mb-10'>My <span className='text-purple-300'>Projects</span></h1>
             <div className="grid grid-cols-3">
                 {featuredProjects.map((project, index) => {
                     return (

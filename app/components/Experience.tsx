@@ -90,8 +90,8 @@ const Experience = () => {
       ];
 
   return (
-    <div className='w-[90vw] max-w-[1280px] mx-auto text-white my-[20vh] experience'>
-        <h1 className='text-white text-2xl md:text-3xl lg:text-5xl leading-snug tracking-wide px-2 text-center font-bold mb-20 pt-6'>My <span className='text-purple-300'>Experience</span></h1>
+    <div className='w-[90vw] max-w-[1280px] mx-auto text-white my-[5vh] md:my-[15vh] experience'>
+        <h1 className='text-white text-2xl md:text-3xl lg:text-5xl leading-snug tracking-wide px-2 text-center font-bold mb-5 md:mb-10'>My <span className='text-purple-300'>Experience</span></h1>
         <HoverEffect items={experienceData} />
     </div>
   )

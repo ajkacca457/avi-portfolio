@@ -57,7 +57,7 @@ const SkeletonTwo = () => {
       </video>
 
       <motion.div className="h-full w-full rounded-lg p-4 flex flex-col justify-center gap-y-4 z-20">
-        <p className="text-white text-justify text-sm md:text-base lg:text-lg">Hi, I’m Avi. I’m passionate about learning new technologies, building projects, and studying Finnish. With four years of experience as a Program and Project Manager in NGOs and the corporate sector, I’ve led projects in community development, HR, and IT. After self-teaching programming, I completed an intensive bootcamp at Microverse and have since worked as a Full Stack Developer for over three years. I’m eager to collaborate with innovative teams to create impactful projects.</p>
+        <p className="text-white text-justify text-xs md:text-base lg:text-lg">Hi, I’m Avi. I’m passionate about learning new technologies, building projects, and studying Finnish. With four years of experience as a Program and Project Manager in NGOs and the corporate sector, I’ve led projects in community development, HR, and IT. After self-teaching programming, I completed an intensive bootcamp at Microverse and have since worked as a Full Stack Developer for over three years. I’m eager to collaborate with innovative teams to create impactful projects.</p>
       </motion.div>
     </motion.div>
   );
@@ -186,9 +186,9 @@ const SkeletonFive = () => {
       <video className="w-full h-full absolute top-0 left-0 object-cover opacity-70" autoPlay loop muted>
         <source src="/globe.mp4" type="video/mp4" />
       </video>
-      <h1 className="text-white text-center text-2xl absolute top-10 left-10 z-30">Time Zone Flexibility</h1>
-      <h1 className="text-white text-center text-2xl absolute top-1/2 left-20 z-30">Remote Work Expertise</h1>
-      <h1 className="text-white text-center text-2xl absolute bottom-5 right-10 z-30">Multi-Language Communication</h1>
+      <h1 className="text-white text-center text-lg md:text-2xl absolute top-10 left-10 z-30">Time Zone Flexibility</h1>
+      <h1 className="text-white text-center text-lg md:text-2xl absolute top-1/2 left-20 z-30">Remote Work Expertise</h1>
+      <h1 className="text-white text-center text-lg md:text-2xl absolute bottom-5 right-10 z-30">Multi-Language Communication</h1>
 
     </motion.div>
   );
