@@ -52,8 +52,8 @@ const SkeletonTwo = () => {
       animate="animate"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] rounded-lg bg-dot-black/[0.2] flex-col space-y-2 absolute top-0 left-0"
     >
-      <video className="w-full h-full absolute top-0 left-0 object-fill opacity-30" autoPlay loop muted>
-        <source src="/gradient.mp4" type="video/mp4" />
+      <video className="w-full h-full absolute top-0 left-0 object-fill opacity-10" autoPlay loop muted>
+        <source src="/glow.mp4" type="video/mp4" />
       </video>
 
       <motion.div className="h-full w-full rounded-lg p-4 flex flex-col justify-center gap-y-4 z-20">
@@ -96,7 +96,7 @@ return (
   >
     
     <video className="w-full h-full absolute top-0 left-0 object-fill opacity-10" autoPlay loop muted>
-      <source src="/drop.mp4" type="video/mp4" />
+      <source src="/glow.mp4" type="video/mp4" />
     </video>
 
     {arr.map(( item, index) => (
