@@ -63,17 +63,7 @@ const SkeletonTwo = () => {
     <motion.div
       initial="initial"
       animate="animate"
-      variants={variants}
-      transition={{
-        duration: 5,
-        repeat: Infinity,
-        repeatType: "reverse",
-      }}
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] rounded-lg bg-dot-black/[0.2] flex-col space-y-2 absolute top-0 left-0"
-      style={{
-        background:"linear-gradient(-45deg, #6a11cb, #2575fc, #7b2cbf, #00c6ff)",
-        backgroundSize: "400% 400%",
-      }}
     >
       <div className="h-full w-full absolute top-0 left-0 bg-black/60 z-10"></div>
 
@@ -194,7 +184,7 @@ const SkeletonFour = () => {
       whileHover="hover"
       className=" w-full h-full mt-4 min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-row space-x-2 relative"
     >
-      <CardStack items={CARDS} />
+      {/* <CardStack items={CARDS} /> */}
     </motion.div>
   );
 };
@@ -210,7 +200,7 @@ const SkeletonFive = () => {
       <h1 className="text-white text-center text-2xl absolute top-1/2 left-10 z-30">Remote Work Expertise</h1>
       <h1 className="text-white text-center text-2xl absolute bottom-0 z-30">Multi-Language Communication</h1>
 
-      <GlobeDemo />
+      {/* <GlobeDemo /> */}
     </motion.div>
   );
 };
