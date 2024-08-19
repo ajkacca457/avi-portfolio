@@ -65,7 +65,7 @@ const SkeletonTwo = () => {
       </video>
 
       <motion.div className="h-full w-full rounded-lg p-4 flex flex-col justify-center gap-y-4 z-20">
-        <p className="text-white text-justify text-xs md:text-base lg:text-lg">Hi, I’m Avi. I’m passionate about learning new technologies, building projects, and studying Finnish. With four years of experience as a Program and Project Manager in NGOs and the corporate sector, I’ve led projects in community development, HR, and IT. After self-teaching programming, I completed an intensive bootcamp at Microverse and have since worked as a Full Stack Developer for over three years. I’m eager to collaborate with innovative teams to create impactful projects.</p>
+        <p className="text-white text-justify text-sm mt-3 md:mt-0 md:text-base lg:text-lg">Hi, I’m Avi. I’m passionate about learning new technologies, building projects, and studying Finnish. With four years of experience as a Program and Project Manager in NGOs and the corporate sector, I’ve led projects in community development, HR, and IT. After self-teaching programming, I completed an intensive bootcamp at Microverse and have since worked as a Full Stack Developer for over three years. I’m eager to collaborate with innovative teams to create impactful projects.</p>
       </motion.div>
     </motion.div>
   );
@@ -164,6 +164,10 @@ const SkeletonFour = () => {
     <motion.div
       className=" w-full h-full mt-4 min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] grid grid-cols-2 gap-2 relative"
     >
+
+      <video className="w-full h-full absolute top-0 left-0 object-fill opacity-20" autoPlay loop muted>
+        <source src="/loop.mp4" type="video/mp4" />
+      </video>
       
        {cardData.map((item, index) => {
         return (
@@ -172,7 +176,7 @@ const SkeletonFour = () => {
         key={"skelenton-four" + index}  
         initial="initial"
         whileHover="hover"
-        className="rounded-sm bg-purple-950 bg-opacity-30 flex flex-col items-center justify-center"
+        className="rounded-sm bg-slate-800 bg-opacity-30 flex flex-col items-center justify-center"
       >
         <span className="text-white mb-2">{item.icon}</span>
         <span className="text-white text-xs">{item.title}</span>
