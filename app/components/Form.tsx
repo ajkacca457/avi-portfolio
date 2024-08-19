@@ -14,7 +14,7 @@ const Form = () => {
                     Full Name
                 </label>
                 <input
-                    name="Name"
+                    name="name"
                     type="text"
                     placeholder="First and Last Name"
                     className="border border-gray-400 py-2 px-3 w-full rounded-md focus:outline-none focus:border-purple-600 text-sm md:text-base"
@@ -25,7 +25,7 @@ const Form = () => {
                     Email
                 </label>
                 <input
-                    name="Email"
+                    name="email"
                     type="email"
                     placeholder="Your email"
                     className="border border-gray-400 py-2 px-3 w-full rounded-md focus:outline-none focus:border-purple-600 text-sm md:text-base"
@@ -36,7 +36,7 @@ const Form = () => {
                     Message
                 </label>
                 <textarea
-                    name="Message"
+                    name="message"
                     rows={4}
                     placeholder="Enter your message here"
                     className="border border-gray-400 py-2 px-3 w-full rounded-md focus:outline-none focus:border-purple-600 text-sm md:text-base"
