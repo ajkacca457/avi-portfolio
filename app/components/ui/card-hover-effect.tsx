@@ -167,7 +167,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        "rounded-2xl h-full w-full p-4 overflow-hidden border-[1px] border-slate-800 relative z-20",
         className
       )}
       style={{
@@ -176,7 +176,6 @@ export const Card = ({
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
-    
       <div className="relative z-50">
         <div className="p-4">{children}</div>
       </div>
