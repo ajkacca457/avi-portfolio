@@ -47,15 +47,15 @@ export const BentoGridItem = ({
       }}
     >
 
-      {img && 
-      <>
-        <img src={img} className="object-cover object-top w-full h-full rounded-xl absolute top-0 left-0 z-0" />
-        <div className="z-10 absolute bg-blue-800/40 group-hover/bento:bg-black/60 w-full h-full top-0 left-0 transition duration-200 ease-in"></div>
-      </>
+      {img &&
+        <>
+          <img src={img} className="object-cover object-top w-full h-full rounded-xl absolute top-0 left-0 z-0" />
+          <div className="z-10 absolute bg-blue-800/40 group-hover/bento:bg-black/60 w-full h-full top-0 left-0 transition duration-200 ease-in"></div>
+        </>
       }
 
-      <div className={`${id===0?" -translate-x-[100vh] relative h-full group-hover/bento:translate-x-2 transition duration-200 z-10":"group-hover/bento:translate-x-2 transition duration-200 z-20"}`}>
-        <div className={`${id===0?"h-full flex flex-col justify-end antialiased text-white text-base md:text-xl mb-2 mt-2":" text-white mb-2 mt-2"}`}>
+      <div className={`${id === 0 ? " -translate-x-[100vh] relative h-full group-hover/bento:translate-x-2 transition duration-200 z-10" : "group-hover/bento:translate-x-2 transition duration-200 z-20"}`}>
+        <div className={`${id === 0 ? "h-full flex flex-col justify-end antialiased text-white text-base md:text-xl mb-2 mt-2" : " text-white mb-2 mt-2"}`}>
           {title}
         </div>
         <div className="font-sans font-normal text-white my-2">
@@ -63,8 +63,8 @@ export const BentoGridItem = ({
         </div>
       </div>
 
-      {id!==0 && <>{header}</>}
-      	
+      {id !== 0 && <>{header}</>}
+
     </div>
   );
 };

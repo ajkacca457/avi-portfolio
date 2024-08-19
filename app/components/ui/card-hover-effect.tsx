@@ -82,7 +82,7 @@ export const ProjectHoverEffect = ({
   className,
 }: {
   items: {
-    imgurl:string;
+    imgurl: string;
     title: string;
     url: string;
     description: string;
@@ -171,9 +171,9 @@ export const Card = ({
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
-      
+
       <video className="w-full h-full absolute top-0 left-0 object-fill opacity-5" autoPlay loop muted>
-              <source src="/glow.mp4" type="video/mp4" />
+        <source src="/glow.mp4" type="video/mp4" />
       </video>
       <div className="relative z-50">
         <div className="p-4">{children}</div>

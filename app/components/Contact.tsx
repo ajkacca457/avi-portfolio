@@ -22,10 +22,10 @@ const Contact = () => {
         Ways to <span className='text-purple-300'>Reach Me</span>
       </h1>
       <div className="grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto bg-slate-900 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md text-[#333] font-[sans-serif] relative">
-      <Spotlight
-      className="top-40 left-60 absolute h-full opacity-80"
-      fill="blue"
-    />
+        <Spotlight
+          className="top-40 left-60 absolute h-full opacity-80"
+          fill="blue"
+        />
         <Social />
         <Form />
       </div>

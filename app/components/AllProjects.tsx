@@ -1,6 +1,6 @@
 import React from 'react'
 import { ProjectHoverEffect } from './ui/card-hover-effect';
-import {projectsData} from '../data/projects';
+import { projectsData } from '../data/projects';
 
 const AllProjects = () => {
   return (
