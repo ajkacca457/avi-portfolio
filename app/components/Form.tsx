@@ -3,7 +3,7 @@ import React from 'react'
 const Form = () => {
     return (
         <form
-            action="https://public.herotofu.com/v1/c2ac6a00-252d-11ee-be3e-d1dfc2754df2"
+            action="https://formspree.io/f/mgvwlkrj"
             method="post"
             acceptCharset="UTF-8"
             className="w-full"
