@@ -165,7 +165,7 @@ const SkeletonFour = () => {
       className=" w-full h-full mt-4 min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] grid grid-cols-2 gap-2 relative"
     >
 
-      <video className="w-full h-full absolute top-0 left-0 object-fill opacity-10" autoPlay loop muted>
+      <video className="w-full h-full absolute top-0 left-0 object-fill opacity-20" autoPlay loop muted>
         <source src="/loop.mp4" type="video/mp4" />
       </video>
 
