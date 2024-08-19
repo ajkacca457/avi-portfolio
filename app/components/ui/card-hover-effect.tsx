@@ -83,7 +83,7 @@ export const ProjectHoverEffect = ({
   className,
 }: {
   items: {
-    imgurl: string;
+    imgurl:string;
     title: string;
     url?: string;
     githuburl?: string;
@@ -129,15 +129,13 @@ export const ProjectHoverEffect = ({
             <CardTitle className="mb-3 text-purple-300">{item.title}</CardTitle>
             <img src={item.imgurl} alt={item.title} className="w-full rounded-md" />
             <CardDescription>{item.description}</CardDescription>
-            <CardDescription>
-              <div className="flex gap-x-4 items-center">
-              {item.url && (<Link href={item.url} target="_blank" className="text-white underline text-base">
+            <CardDescription className="flex gap-x-4 mt-8">
+              {item.url && (<Link href={item.url} target="_blank" className="text-white underline text-sm">
                 Live Link
               </Link>)}
               {item.githuburl && (<Link href={item.githuburl} target="_blank" className="text-blue-400 underline text-base">
-                <FaGithub size={20} className='text-white drop-shadow-md transition duration-300 group-hover:scale-125' />
+                <FaGithub size={18} className='text-white drop-shadow-md transition duration-300 group-hover:scale-125' />
               </Link>)}
-              </div>
             </CardDescription>
 
             <div className="flex flex-wrap mt-4">
@@ -178,9 +176,9 @@ export const Card = ({
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
-
+      
       <video className="w-full h-full absolute top-0 left-0 object-fill opacity-5" autoPlay loop muted>
-        <source src="/glow.mp4" type="video/mp4" />
+              <source src="/glow.mp4" type="video/mp4" />
       </video>
       <div className="relative z-50">
         <div className="p-4">{children}</div>
