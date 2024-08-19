@@ -19,7 +19,7 @@ const Hero = () => {
 
             <div className='flex flex-col justify-center relative'>
 
-                <video className="w-full h-full absolute top-0 left-0 object-cover opacity-10" autoPlay loop muted>
+                <video className="w-full h-full absolute top-0 left-0 object-cover opacity-20" autoPlay loop muted>
                     <source src="/code-m.mp4" type="video/mp4" />
                 </video>
 
