@@ -66,20 +66,21 @@ export const projectsData = [
         imgurl: "./legendofsoha.png",
         title: 'Legend of Soha',
         url: "https://legendofsoha.netlify.app/",
+        githuburl:"https://github.com/ajkacca457/JS_Capstone_LOS",
         description: "This role-playing game was developed for my web development program's JavaScript capstone project. I used Phaser 3 for game logic.",
         stack: ["Javascript", "Phaser 3"]
     },
     {
         imgurl: "./coursetracker.png",
         title: 'Course Tracker',
-        url: "",
+        githuburl:"https://github.com/ajkacca457/course_tracker_restructure",
         description: 'This app, a final Microverse capstone project updated with the MERN stack, helps students track course details. It uses JWT token authentication.',
         stack: ["Javascript", "React", "Express", "Mongoose", "MongoDB", "Node.js"]
     },
     {
         imgurl: "./homeaccounts.png",
         title: 'Home Accounts',
-        url: "",
+        githuburl: "https://github.com/ajkacca457/home_accounts",
         description: 'Mern stack app to track users day to day expenses and income. It has authentication, authorization and statistics features.',
         stack: ["Javascript", "React", "Express", "Mongoose", "MongoDB", "Node.js"]
     },
@@ -87,6 +88,7 @@ export const projectsData = [
         imgurl: "./recommend.png",
         title: 'Recommend',
         url: "https://recommend-v1.netlify.app/",
+        githuburl: "https://github.com/ajkacca457/recommend_vue",
         description: 'A personal recommendation app that allows users to recommend books, movies, and games. It uses JWT token authentication.',
         stack: ["Javascript", "vue js", "firebase", "Node.js"]
     },
@@ -94,6 +96,7 @@ export const projectsData = [
         imgurl: "./portfolio.png",
         title: 'Photographer Portfolio',
         url: "https://shahriarislam.netlify.app/index.html",
+        githuburl: "https://github.com/ajkacca457/Photography_portfolio",
         description: 'This portfolio website for a photographer uses HTML, CSS, and JavaScript. It includes an image carousel, scroll animations with AOS, and Bootstrap.',
         stack: ["Javascript", "Html", "Css"]
     },

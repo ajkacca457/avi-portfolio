@@ -2,6 +2,7 @@ import { cn } from "../../lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
+import { FaGithub } from "react-icons/fa";
 
 export const HoverEffect = ({
   items,
@@ -84,7 +85,8 @@ export const ProjectHoverEffect = ({
   items: {
     imgurl: string;
     title: string;
-    url: string;
+    url?: string;
+    githuburl?: string;
     description: string;
     stack: string[];
   }[];
@@ -128,9 +130,14 @@ export const ProjectHoverEffect = ({
             <img src={item.imgurl} alt={item.title} className="w-full rounded-md" />
             <CardDescription>{item.description}</CardDescription>
             <CardDescription>
-              <Link href={item.url} target="_blank" className="text-blue-400 underline text-base">
+              <div className="flex gap-x-4 items-center">
+              {item.url && (<Link href={item.url} target="_blank" className="text-white underline text-base">
                 Live Link
-              </Link>
+              </Link>)}
+              {item.githuburl && (<Link href={item.githuburl} target="_blank" className="text-blue-400 underline text-base">
+                <FaGithub size={20} className='text-white drop-shadow-md transition duration-300 group-hover:scale-125' />
+              </Link>)}
+              </div>
             </CardDescription>
 
             <div className="flex flex-wrap mt-4">
