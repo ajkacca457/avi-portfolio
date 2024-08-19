@@ -129,14 +129,14 @@ export const ProjectHoverEffect = ({
             <CardTitle className="mb-3 text-purple-300">{item.title}</CardTitle>
             <img src={item.imgurl} alt={item.title} className="w-full rounded-md" />
             <CardDescription>{item.description}</CardDescription>
-            <CardDescription className="flex gap-x-4 mt-8">
+            {/* <CardDescription className="flex gap-x-4 mt-8">
               {item.url && (<Link href={item.url} target="_blank" className="text-white underline text-sm">
                 Live Link
               </Link>)}
               {item.githuburl && (<Link href={item.githuburl} target="_blank" className="text-blue-400 underline text-base">
                 <FaGithub size={18} className='text-white drop-shadow-md transition duration-300 group-hover:scale-125' />
               </Link>)}
-            </CardDescription>
+            </CardDescription> */}
 
             <div className="flex flex-wrap mt-4">
               {item.stack.map((stack, idx) => (
