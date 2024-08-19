@@ -13,7 +13,15 @@ import { FaBootstrap,FaReact,FaNodeJs,FaWordpress } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiPhp,SiRubyonrails,SiTypescript } from "react-icons/si";
 import { DiRuby } from "react-icons/di";
-import { Spotlight } from "./ui/Spotlight";
+import { TbWorldWww } from "react-icons/tb";
+import { IoLogoAppleAr } from "react-icons/io5";
+import { MdMobileFriendly,MdDesignServices, MdManageHistory} from "react-icons/md";
+import { TbSeo } from "react-icons/tb";
+
+
+
+
+
 
 export function BentoGridThirdDemo() {
   return (
@@ -121,57 +129,57 @@ return (
 
 
 const SkeletonFour = () => {
-  const CARDS = [
+
+  const cardData = [
+
     {
-      id: 0,
-      name: "",
-      designation: "",
-      content: (
-        <>
-        <img src="/web.png" alt="Web development" className="w-1/4 mx-auto mb-2 drop-shadow-md" />
-        <h1 className="text-white text-center">
-          Web Development.
-        </h1>
-        </>
-      ),
+      title: "Web Development",
+      icon: <TbWorldWww className="text-purple-200" size={30}/>,
     },
     {
-      id: 1,
-      name: "",
-      designation: "",
-      content: (
-        <>
-        <img src="/application.png" alt="Application development" className="w-1/4 mx-auto mb-2 drop-shadow-md" />
-        <h1 className="text-white text-center">
-          Application Development.
-        </h1>
-        </>
-      ),
+      title: "Application Development",
+      icon: <IoLogoAppleAr className="text-purple-200" size={30}/>,
     },
     {
-      id: 2,
-      name: "",
-      designation: "",
-      content: (
-        <>
-        <img src="/mobile.png" alt="Mobile development" className="w-1/4 mx-auto mb-2 drop-shadow-md" />
-        <h1 className="text-white text-center">
-          Mobile Development.
-        </h1>
-        </>
-      ),
+      title: "Mobile Application Development",
+      icon: <MdMobileFriendly className="text-purple-200" size={30}/>,
     },
-  ]; 
+    {
+      title: "Responsive Design",
+      icon: <MdDesignServices className="text-purple-200" size={30}/>,
+    },
+    {
+      title: "Project Management",
+      icon: <MdManageHistory className="text-purple-200" size={30}/>,
+    },
+    {
+      title:"SEO Optimization",
+      icon: <TbSeo className="text-purple-200" size={30}/>,
+    }
+
+  ];
 
 
   return (
     <motion.div
-      initial="initial"
-      animate="animate"
-      whileHover="hover"
-      className=" w-full h-full mt-4 min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-row space-x-2 relative"
+      className=" w-full h-full mt-4 min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] grid grid-cols-2 gap-2 relative"
     >
-      {/* <CardStack items={CARDS} /> */}
+      
+       {cardData.map((item, index) => {
+        return (
+        <motion.div
+        
+        key={"skelenton-four" + index}  
+        initial="initial"
+        whileHover="hover"
+        className="rounded-sm bg-purple-950 bg-opacity-30 flex flex-col items-center justify-center"
+      >
+        <span className="text-white mb-2">{item.icon}</span>
+        <span className="text-white text-xs">{item.title}</span>
+      </motion.div>
+        )
+       })} 
+
     </motion.div>
   );
 };
