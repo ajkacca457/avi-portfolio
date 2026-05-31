@@ -1,21 +1,14 @@
-"use client"
-import Hero from "./components/Hero";
-import { BentoGridThirdDemo } from "./components/Grid";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+"use client";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Projects from "./components/Projects";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between overflow-x-hidden bg-black">
+    <main className="min-h-screen bg-vsc-bg">
       <Navbar />
       <Hero />
-      <BentoGridThirdDemo />
-      <Experience />
       <Projects />
-      <Contact />
-      <Footer />
     </main>
   );
 }
