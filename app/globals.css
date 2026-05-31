@@ -2,21 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
 
-@layer components {
-  .bento-grid,.form {
-    background: hsla(209, 100%, 17%, 1);
+:root {
+  --bg-primary: #1e1e1e;
+  --bg-secondary: #252526;
+  --bg-tertiary: #2d2d2d;
+  --border: #3e3e42;
+  --border-light: #2d2d2d;
 
-    background: linear-gradient(225deg, hsla(209, 100%, 17%, 1) 0%, hsla(209, 100%, 19%, 1) 100%);
-    
-    background: -moz-linear-gradient(225deg, hsla(209, 100%, 17%, 1) 0%, hsla(209, 100%, 19%, 1) 100%);
-    
-    background: -webkit-linear-gradient(225deg, hsla(209, 100%, 17%, 1) 0%, hsla(209, 100%, 19%, 1) 100%);
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#002D58", endColorstr="#003362", GradientType=1 );
-  }
+  --c-blue: #569cd6;
+  --c-orange: #ce9178;
+  --c-teal: #4ec9b0;
+  --c-green: #6a9955;
+  --c-yellow: #dcdcaa;
+  --c-purple: #c586c0;
+  --c-red: #f44747;
+  --c-light-blue: #9cdcfe;
+
+  --text-primary: #d4d4d4;
+  --text-muted: #858585;
+  --text-faint: #3e3e42;
+
+  --font-mono: 'JetBrains Mono', 'Consolas', 'Courier New', monospace;
+  --font-sans: 'Segoe UI', system-ui, sans-serif;
+
+  --statusbar-bg: #007acc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
 textarea {
   resize: none;
+}
+
+::selection {
+  background: #264f78;
+  color: #d4d4d4;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
