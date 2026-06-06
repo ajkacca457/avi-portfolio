@@ -22,9 +22,17 @@ export default function Navbar() {
                 <div className="flex items-stretch justify-between h-11">
 
                     {/* Logo */}
-                    <div className="flex items-center px-4 border-r border-vsc-border text-vsc-text text-xs">
-                        portfolio.tsx
-                    </div>
+                    <button
+                        onClick={() => {
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                            window.history.pushState(null, "", "/");
+                        }}
+                        className="flex items-center px-4 border-r border-vsc-border text-sm cursor-pointer hover:text-vsc-teal transition-colors duration-150"
+                    >
+                        <span className="text-vsc-muted">{"<"}</span>
+                        <span className="text-vsc-yellow">Avijit</span>
+                        <span className="text-vsc-muted">{" />"}</span>
+                    </button>
 
                     {/* File tabs — hidden on mobile */}
                     <div className="hidden md:flex items-stretch flex-1">
