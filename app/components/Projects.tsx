@@ -1,4 +1,6 @@
+import FadeIn from "./animations/FadeIn";
 import { projects, type Project } from "../data/projects";
+
 
 const badgeStyles: Record<string, string> = {
     funded: "bg-[#0d2a0d] border border-[#2a5a2a] text-vsc-teal",
@@ -79,8 +81,8 @@ function ProjectCard({ project }: { project: Project }) {
                         target={link.href.startsWith("http") ? "_blank" : undefined}
                         rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                         className={`text-xs font-mono transition-colors duration-150 ${link.private
-                                ? "text-vsc-muted cursor-default pointer-events-none"
-                                : "text-vsc-blue hover:text-vsc-light-blue"
+                            ? "text-vsc-muted cursor-default pointer-events-none"
+                            : "text-vsc-blue hover:text-vsc-light-blue"
                             }`}
                     >
                         {link.label}
@@ -99,20 +101,24 @@ export default function Projects() {
 
 
                 {/* Section header */}
-                <div className="text-vsc-green text-xs font-mono mb-1">
-                    {`// featured_projects.tsx`}
-                </div>
-                <div className="text-vsc-yellow text-xl font-mono mb-1">
-                    const projects = [
-                </div>
-                <p className="text-vsc-muted text-sm font-sans mb-8">
-                    Personal and startup projects — full ownership, end to end.
-                </p>
+                <FadeIn>
+                    <div className="text-vsc-green text-xs font-mono mb-1">
+                        {`// featured_projects.tsx`}
+                    </div>
+                    <div className="text-vsc-yellow text-xl font-mono mb-1">
+                        const projects = [
+                    </div>
+                    <p className="text-vsc-muted text-sm font-sans mb-8">
+                        Personal and startup projects — full ownership, end to end.
+                    </p>
+                </FadeIn>
 
                 {/* Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {projects.map((project) => (
-                        <ProjectCard key={project.name} project={project} />
+                    {projects.map((project, index) => (
+                        <FadeIn key={project.name} delay={index * 0.1}>
+                            <ProjectCard project={project} />
+                        </FadeIn>
                     ))}
                 </div>
 
