@@ -1,7 +1,6 @@
 "use client";
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import { useRef, useEffect, useState } from "react";
 
 type FadeInProps = {
   children: React.ReactNode;
@@ -18,6 +17,11 @@ export default function FadeIn({
 }: FadeInProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const directionMap = {
     up: { y: 24, x: 0 },
@@ -32,7 +36,7 @@ export default function FadeIn({
     ...directionMap[direction],
   };
 
-  const animate = isInView
+  const animate = mounted && isInView
     ? { opacity: 1, y: 0, x: 0 }
     : initial;
 

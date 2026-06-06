@@ -1,6 +1,9 @@
 "use client";
 import FadeIn from "./animations/FadeIn";
 import CountUp from "./animations/CountUp";
+import TypeWriter from "./animations/TypeWriter";
+import DotGrid from "./animations/DotGrid";
+
 
 const locationTargets = [
     { flag: "🇫🇮", country: "Finland", type: "onsite or remote", onsite: true },
@@ -26,8 +29,12 @@ const stats = [
 
 export default function Hero() {
     return (
-        <section className="border-b border-vsc-border-light">
-            <div className="container-main px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <section className="border-b border-vsc-border-light relative overflow-hidden">
+
+            {/* Dot grid background */}
+            <DotGrid />
+
+            <div className="container-main px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10">
 
                 {/* Available badge */}
                 <FadeIn delay={0}>
@@ -45,7 +52,7 @@ export default function Hero() {
                         {[
                             { ln: "1", content: <><span className="text-vsc-blue">const</span> <span className="text-vsc-yellow">developer</span> <span className="text-vsc-text">=</span> <span className="text-vsc-orange">{"{"}</span></> },
                             { ln: "2", content: <>&nbsp;&nbsp;<span className="text-vsc-teal">name</span><span className="text-vsc-text">:</span> <span className="text-vsc-orange">&quot;Avijit Karmaker&quot;</span><span className="text-vsc-text">,</span></> },
-                            { ln: "3", content: <>&nbsp;&nbsp;<span className="text-vsc-teal">title</span><span className="text-vsc-text">:</span> <span className="text-vsc-orange">&quot;Full-Stack Developer &amp; Tech Lead&quot;</span><span className="text-vsc-text">,</span></> },
+                            { ln: "3", content: <>&nbsp;&nbsp;<span className="text-vsc-teal">title</span><span className="text-vsc-text">:</span> <TypeWriter /><span className="text-vsc-text">,</span></> },
                             { ln: "4", content: <>&nbsp;&nbsp;<span className="text-vsc-teal">location</span><span className="text-vsc-text">:</span> <span className="text-vsc-orange">&quot;Helsinki, Finland&quot;</span><span className="text-vsc-text">,</span></> },
                             { ln: "5", content: <>&nbsp;&nbsp;<span className="text-vsc-teal">current</span><span className="text-vsc-text">:</span> <span className="text-vsc-orange">&quot;Tech Lead @ GoDoc (€10k funded fintech)&quot;</span><span className="text-vsc-text">,</span></> },
                             { ln: "6", content: <>&nbsp;&nbsp;<span className="text-vsc-teal">studying</span><span className="text-vsc-text">:</span> <span className="text-vsc-orange">&quot;MSc Cybersecurity, JAMK 2025–&quot;</span><span className="text-vsc-text">,</span></> },
@@ -71,8 +78,8 @@ export default function Hero() {
                             <span
                                 key={loc.country}
                                 className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-sm text-xs font-mono ${loc.onsite
-                                    ? "bg-[#0d2a0d] border border-[#2a4a2a] text-vsc-teal"
-                                    : "bg-[#1a1a2e] border border-[#2d2d4a] text-vsc-blue"
+                                        ? "bg-[#0d2a0d] border border-[#2a4a2a] text-vsc-teal"
+                                        : "bg-[#1a1a2e] border border-[#2d2d4a] text-vsc-blue"
                                     }`}
                             >
                                 <span>{loc.flag}</span>
@@ -116,7 +123,7 @@ export default function Hero() {
                         </a>
                     </div>
                 </FadeIn>
-                
+
                 {/* Stats */}
                 <FadeIn delay={0.5}>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
