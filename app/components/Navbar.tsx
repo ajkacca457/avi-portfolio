@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 
 const navLinks = [
+    { label: "about.ts", href: "#about" },
     { label: "projects.tsx", href: "#projects" },
     { label: "experience.ts", href: "#experience" },
     { label: "skills.ts", href: "#skills" },
