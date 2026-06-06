@@ -55,7 +55,7 @@ export default function Contact() {
           {/* Left — info */}
           <div>
             <p className="text-vsc-muted text-sm font-sans leading-relaxed mb-6">
-              Looking for a full-stack developer who can lead, rescue, and ship? Let's talk.
+              Looking for a full-stack developer who can lead, rescue, and ship? Let&apos;s talk.
             </p>
 
             {/* Location chips */}
