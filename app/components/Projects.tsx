@@ -1,93 +1,124 @@
-"use client";
+import { projects, type Project } from "../data/projects";
 
-import Image from "next/image";
-import React from "react";
-import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
-import Link from "next/link";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+const badgeStyles: Record<string, string> = {
+    funded: "bg-[#0d2a0d] border border-[#2a5a2a] text-vsc-teal",
+    lead: "bg-[#0a1a2e] border border-[#1a4a7e] text-vsc-blue",
+    live: "bg-[#1a0a2e] border border-[#3a1a5e] text-vsc-purple",
+    wip: "bg-[#1c1300] border border-[#4a3500] text-vsc-yellow",
+    company: "bg-[#0d1a0d] border border-[#2a3a2a] text-vsc-teal",
+    ai: "bg-[#1a0a1a] border border-[#4a2a4a] text-vsc-purple",
+};
 
-
-
-const Projects = () => {
-
-    const featuredProjects = [
-        {
-            title: 'netox.com',
-            image: '/netox.png',
-            description: "A site made with gutenburg custom blocks",
-            url: 'https://netox.com',
-            stack: ["Javascript", "React", "PHP", "Wordpress", "Scss", "Gutenberg Blocks"]
-        },
-        {
-            title: 'Icare interactive map',
-            image: '/icaremap.png',
-            description: 'Interactive map for finding providers',
-            url: 'https://patients.icare-world.com/find-a-provider',
-            stack: ["Javascript", "PHP", "Wordpress", "Scss", "Typescript"]
-        },
-        {
-            title: 'rightware.com',
-            image: '/rightware.png',
-            description: 'A headless CMS site with vue frontend',
-            url: 'https://rightware.com/',
-            stack: ["Vue", "PHP", "Wordpress", "HeadlesCMS", "Wordpress Rest API"]
-        },
-    ];
-
-
+function ProjectCard({ project }: { project: Project }) {
     return (
-        <div className='w-[90vw] max-w-[1280px] mx-auto text-white mb-[5vh] md:mb-[15vh] work'>
-            <h1 className='text-white text-2xl md:text-3xl lg:text-5xl leading-snug tracking-wide px-2 text-center font-bold mb-5 md:mb-10'>Recent <span className='text-purple-300'>Projects</span></h1>
-            <div className="grid grid-cols-3">
-                {featuredProjects.map((project, index) => {
-                    return (
-                        <CardContainer className="inter-var bg-slate-800 rounded-md mx-auto w-[95%]" key={index}>
-                            <CardBody className="relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]  border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-                                <CardItem
-                                    translateZ="50"
-                                    className="text-xl font-bold text-purple-300"
-                                >
-                                    {project.title}
-                                </CardItem>
-                                <CardItem
-                                    as="p"
-                                    translateZ="60"
-                                    className="text-white mt-2"
-                                >
-                                    {project.description}
-                                </CardItem>
-                                <CardItem translateZ="100" className="w-full mt-4">
-                                    <Image
-                                        src={project.image}
-                                        height="1000"
-                                        width="1000"
-                                        className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-                                        alt="thumbnail"
-                                    />
-                                </CardItem>
-                                <CardItem
-                                    translateZ={20}
-                                    className="px-4 py-2 rounded-xl text-xs font-normal mt-4 block text-purple-300 mb-4"
-                                >
-                                    {project.stack.join(", ")}
-                                </CardItem>
-                                <CardItem
-                                    translateZ={20}
-                                    as="button"
-                                    className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-                                >
-                                    <Link href={project.url}>Live link</Link>
-                                </CardItem>
-                            </CardBody>
-                        </CardContainer>
-                    )
-                })}
+        <div className="bg-vsc-bg-secondary border border-vsc-border rounded-sm p-6 hover:border-vsc-blue transition-colors duration-150">
+
+            {/* File comment */}
+            <div className="text-vsc-muted text-xs mb-3 font-mono">{project.file}</div>
+
+            {/* Name */}
+            <div className="text-vsc-yellow text-base font-mono mb-3">{project.name}</div>
+
+            {/* Badges */}
+            <div className="flex flex-wrap gap-2 mb-4">
+                {project.badges.map((badge) => (
+                    <span
+                        key={badge.label}
+                        className={`text-xs px-2 py-0.5 rounded-sm font-mono ${badgeStyles[badge.type]}`}
+                    >
+                        {badge.label}
+                    </span>
+                ))}
             </div>
-            <div className="flex justify-end">
-                <Link href="/projects" className="flex items-center gap-x-2 text-purple-300">See all projects <MdKeyboardDoubleArrowRight size={20} /></Link>
+
+            {/* Highlight */}
+            {project.highlight && (
+                <div className="bg-[#1a2a1a] border-l-2 border-vsc-teal rounded-r-sm px-4 py-3 mb-4 text-vsc-muted text-sm font-sans leading-relaxed">
+                    <strong className="text-vsc-text font-medium">{project.highlight.split(" and ")[0]}</strong>
+                    {project.highlight.includes(" and ") && " and " + project.highlight.split(" and ").slice(1).join(" and ")}
+                </div>
+            )}
+
+            {/* Description */}
+            {project.description && (
+                <p className="text-vsc-muted text-sm font-sans leading-relaxed mb-4">
+                    {project.description}
+                </p>
+            )}
+
+            {/* Features */}
+            {project.features && (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 mb-4">
+                    {project.features.map((feat) => (
+                        <div key={feat} className="flex items-start gap-2 text-xs text-vsc-muted font-sans">
+                            <span className="w-1 h-1 rounded-full bg-vsc-teal flex-shrink-0 mt-1.5" />
+                            {feat}
+                        </div>
+                    ))}
+                </div>
+            )}
+
+            {/* Stack */}
+            <div className="flex flex-wrap gap-1.5 mb-4">
+                {project.stack.map((tech) => (
+                    <span
+                        key={tech}
+                        className="bg-vsc-bg border border-vsc-border text-vsc-light-blue text-xs px-2 py-0.5 rounded-sm font-mono"
+                    >
+                        {tech}
+                    </span>
+                ))}
             </div>
+
+            {/* Links */}
+            <div className="flex flex-wrap gap-4">
+                {project.links.map((link) => (
+                    <a
+                        key={link.label}
+                        href={link.href}
+                        target={link.href.startsWith("http") ? "_blank" : undefined}
+                        rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                        className={`text-xs font-mono transition-colors duration-150 ${link.private
+                                ? "text-vsc-muted cursor-default pointer-events-none"
+                                : "text-vsc-blue hover:text-vsc-light-blue"
+                            }`}
+                    >
+                        {link.label}
+                    </a>
+                ))}
+            </div>
+
         </div>
-    )
+    );
 }
 
-export default Projects
+export default function Projects() {
+    return (
+        <section id="projects" className="px-4 sm:px-8 md:px-12 lg:px-16 py-16 border-b border-vsc-border-light">
+            <div className="container-main px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+
+
+                {/* Section header */}
+                <div className="text-vsc-green text-xs font-mono mb-1">
+                    {`// featured_projects.tsx`}
+                </div>
+                <div className="text-vsc-yellow text-xl font-mono mb-1">
+                    const projects = [
+                </div>
+                <p className="text-vsc-muted text-sm font-sans mb-8">
+                    Personal and startup projects — full ownership, end to end.
+                </p>
+
+                {/* Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {projects.map((project) => (
+                        <ProjectCard key={project.name} project={project} />
+                    ))}
+                </div>
+
+                <div className="text-vsc-muted text-xs font-mono mt-4">];</div>
+            </div>
+
+        </section>
+    );
+}

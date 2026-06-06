@@ -8,28 +8,39 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        "vsc-bg": "#1e1e1e",
+        "vsc-bg-secondary": "#252526",
+        "vsc-bg-tertiary": "#2d2d2d",
+        "vsc-border": "#3e3e42",
+        "vsc-border-light": "#2d2d2d",
+        "vsc-blue": "#569cd6",
+        "vsc-orange": "#ce9178",
+        "vsc-teal": "#4ec9b0",
+        "vsc-green": "#6a9955",
+        "vsc-yellow": "#dcdcaa",
+        "vsc-purple": "#c586c0",
+        "vsc-red": "#f44747",
+        "vsc-light-blue": "#9cdcfe",
+        "vsc-text": "#d4d4d4",
+        "vsc-muted": "#858585",
+        "vsc-faint": "#3e3e42",
+        "vsc-statusbar": "#007acc",
+        "vsc-selection": "#264f78",
       },
-      animation: {
-        spotlight: "spotlight 2s ease .75s 1 forwards",
+      fontFamily: {
+        mono: ["JetBrains Mono", "Consolas", "Courier New", "monospace"],
+        sans: ["Segoe UI", "system-ui", "sans-serif"],
       },
-      keyframes: {
-        spotlight: {
-          "0%": {
-            opacity: "0",
-            transform: "translate(-72%, -62%) scale(0.5)",
-          },
-          "100%": {
-            opacity: "1",
-            transform: "translate(-50%,-40%) scale(1)",
-          },
-        },
-      }  
+      fontSize: {
+        "2xs": "11px",
+        xs: "12px",
+        sm: "13px",
+        base: "14px",
+      },
     },
   },
   plugins: [],
 };
+
 export default config;
