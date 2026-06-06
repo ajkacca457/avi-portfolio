@@ -82,7 +82,7 @@ export default function ClientWork() {
         </FadeIn>
 
         <FadeIn>
-          <div className="text-vsc-muted text-xs font-mono mt-4">];</div>
+          <div className="text-vsc-yellow text-xl font-mono mt-4">];</div>
         </FadeIn>
 
       </div>
