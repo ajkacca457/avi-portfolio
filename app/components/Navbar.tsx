@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 
 const navLinks = [
@@ -12,11 +12,36 @@ const navLinks = [
 
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [activeSection, setActiveSection] = useState<string>("");
+
+    useEffect(() => {
+        const sectionIds = navLinks.map((l) => l.href.replace("#", ""));
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setActiveSection(entry.target.id);
+                    }
+                });
+            },
+            {
+                rootMargin: "-40% 0px -55% 0px",
+                threshold: 0,
+            }
+        );
+
+        sectionIds.forEach((id) => {
+            const el = document.getElementById(id);
+            if (el) observer.observe(el);
+        });
+
+        return () => observer.disconnect();
+    }, []);
 
     return (
         <header className="sticky top-0 z-50 bg-vsc-bg-tertiary border-b border-vsc-border">
             <div className="container-main px-4 sm:px-6 lg:px-8">
-
 
                 {/* Desktop nav */}
                 <div className="flex items-stretch justify-between h-11">
@@ -26,6 +51,7 @@ export default function Navbar() {
                         onClick={() => {
                             window.scrollTo({ top: 0, behavior: "smooth" });
                             window.history.pushState(null, "", "/");
+                            setActiveSection("");
                         }}
                         className="flex items-center px-4 border-r border-vsc-border text-sm cursor-pointer hover:text-vsc-teal transition-colors duration-150"
                     >
@@ -36,16 +62,22 @@ export default function Navbar() {
 
                     {/* File tabs — hidden on mobile */}
                     <div className="hidden md:flex items-stretch flex-1">
-                        {navLinks.map((link) => (
-                            <Link
-                                key={link.href}
-                                href={link.href}
-                                className="flex items-center gap-2 px-4 text-vsc-muted text-xs border-r border-vsc-border hover:text-vsc-text hover:bg-vsc-bg transition-colors duration-150 border-t-2 border-t-transparent hover:border-t-vsc-blue"
-                            >
-                                <span className="text-vsc-muted text-2xs">TS</span>
-                                {link.label}
-                            </Link>
-                        ))}
+                        {navLinks.map((link) => {
+                            const isActive = activeSection === link.href.replace("#", "");
+                            return (
+                                <Link
+                                    key={link.href}
+                                    href={link.href}
+                                    className={`flex items-center gap-2 px-4 text-xs border-r border-vsc-border transition-colors duration-150 border-t-2 ${isActive
+                                            ? "text-vsc-text bg-vsc-bg border-t-vsc-blue"
+                                            : "text-vsc-muted border-t-transparent hover:text-vsc-text hover:bg-vsc-bg hover:border-t-vsc-blue"
+                                        }`}
+                                >
+                                    <span className={`text-2xs ${isActive ? "text-vsc-blue" : "text-vsc-muted"}`}>TS</span>
+                                    {link.label}
+                                </Link>
+                            );
+                        })}
                     </div>
 
                     <div className="flex items-center gap-3 px-4 ml-auto">
@@ -87,19 +119,24 @@ export default function Navbar() {
             {/* Mobile dropdown */}
             {menuOpen && (
                 <div className="container-main px-4 sm:px-6 lg:px-8">
-
                     <div className="md:hidden border-t border-vsc-border bg-vsc-bg">
-                        {navLinks.map((link) => (
-                            <Link
-                                key={link.href}
-                                href={link.href}
-                                onClick={() => setMenuOpen(false)}
-                                className="flex items-center gap-3 px-4 py-3 text-vsc-muted text-xs border-b border-vsc-border hover:text-vsc-text hover:bg-vsc-bg-secondary transition-colors duration-150"
-                            >
-                                <span className="text-vsc-faint text-2xs">TS</span>
-                                {link.label}
-                            </Link>
-                        ))}
+                        {navLinks.map((link) => {
+                            const isActive = activeSection === link.href.replace("#", "");
+                            return (
+                                <Link
+                                    key={link.href}
+                                    href={link.href}
+                                    onClick={() => setMenuOpen(false)}
+                                    className={`flex items-center gap-3 px-4 py-3 text-xs border-b border-vsc-border transition-colors duration-150 ${isActive
+                                            ? "text-vsc-text bg-vsc-bg-secondary border-l-2 border-l-vsc-blue"
+                                            : "text-vsc-muted hover:text-vsc-text hover:bg-vsc-bg-secondary"
+                                        }`}
+                                >
+                                    <span className={`text-2xs ${isActive ? "text-vsc-blue" : "text-vsc-faint"}`}>TS</span>
+                                    {link.label}
+                                </Link>
+                            );
+                        })}
                         <a
                             href="/cv.pdf"
                             target="_blank"
