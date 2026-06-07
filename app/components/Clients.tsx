@@ -13,7 +13,7 @@ export default function ClientWork() {
   const hasMore = visibleCount < clients.length;
 
   return (
-    <section className="border-b border-vsc-border-light">
+    <section className="border-b border-vsc-border-light" id="clients">
       <div className="container-main px-4 sm:px-6 lg:px-8 py-16">
 
         <FadeIn>

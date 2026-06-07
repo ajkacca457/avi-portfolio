@@ -84,7 +84,7 @@ export default function Contact() {
 
               <div className="flex flex-col gap-2">
                 <a
-                  href="https://linkedin.com/in/YOUR_LINKEDIN"
+                  href="https://www.linkedin.com/in/avijitkarmaker/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-vsc-blue hover:text-vsc-light-blue text-sm font-mono transition-colors duration-150"
@@ -98,14 +98,6 @@ export default function Contact() {
                   className="text-vsc-blue hover:text-vsc-light-blue text-sm font-mono transition-colors duration-150"
                 >
                   ↗ github
-                </a>
-                <a
-                  href="/cv.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-vsc-blue hover:text-vsc-light-blue text-sm font-mono transition-colors duration-150"
-                >
-                  ↗ download cv
                 </a>
               </div>
             </div>

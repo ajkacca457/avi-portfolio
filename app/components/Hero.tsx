@@ -111,15 +111,13 @@ export default function Hero() {
                             href="#projects"
                             className="bg-[#0e639c] hover:bg-[#1177bb] text-vsc-text text-sm px-5 py-2 rounded-sm transition-colors duration-150 font-mono"
                         >
-                            viewProjects()
+                            viewFeaturedProjects()
                         </a>
-                        <a
-                            href="/cv.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="border border-vsc-border hover:bg-vsc-bg-secondary text-vsc-text text-sm px-5 py-2 rounded-sm transition-colors duration-150 font-mono"
+                                                <a
+                            href="#clients"
+                            className="bg-[#0e639c] hover:bg-[#1177bb] text-vsc-text text-sm px-5 py-2 rounded-sm transition-colors duration-150 font-mono"
                         >
-                            downloadCV()
+                            viewClientProjects()
                         </a>
                     </div>
                 </FadeIn>
