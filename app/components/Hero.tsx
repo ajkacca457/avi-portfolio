@@ -54,11 +54,12 @@ export default function Hero() {
                             { ln: "2", content: <>&nbsp;&nbsp;<span className="text-vsc-teal">name</span><span className="text-vsc-text">:</span> <span className="text-vsc-orange">&quot;Avijit Karmaker&quot;</span><span className="text-vsc-text">,</span></> },
                             { ln: "3", content: <>&nbsp;&nbsp;<span className="text-vsc-teal">title</span><span className="text-vsc-text">:</span> <TypeWriter /><span className="text-vsc-text">,</span></> },
                             { ln: "4", content: <>&nbsp;&nbsp;<span className="text-vsc-teal">location</span><span className="text-vsc-text">:</span> <span className="text-vsc-orange">&quot;Helsinki, Finland&quot;</span><span className="text-vsc-text">,</span></> },
-                            { ln: "5", content: <>&nbsp;&nbsp;<span className="text-vsc-teal">current</span><span className="text-vsc-text">:</span> <span className="text-vsc-orange">&quot;Tech Lead @ GoDoc (€10k funded fintech)&quot;</span><span className="text-vsc-text">,</span></> },
-                            { ln: "6", content: <>&nbsp;&nbsp;<span className="text-vsc-teal">studying</span><span className="text-vsc-text">:</span> <span className="text-vsc-orange">&quot;MSc Cybersecurity, JAMK 2025–&quot;</span><span className="text-vsc-text">,</span></> },
-                            { ln: "7", content: <>&nbsp;&nbsp;<span className="text-vsc-teal">yearsExperience</span><span className="text-vsc-text">:</span> <span className="text-vsc-purple">4</span><span className="text-vsc-text">,</span></> },
-                            { ln: "8", content: <>&nbsp;&nbsp;<span className="text-vsc-teal">sitesMaintained</span><span className="text-vsc-text">:</span> <span className="text-vsc-purple">150</span><span className="text-vsc-text">,</span></> },
-                            { ln: "9", content: <><span className="text-vsc-orange">{"}"}</span><span className="text-vsc-text">;</span></> },
+                            { ln: "5", content: <>&nbsp;&nbsp;<span className="text-vsc-teal">dayJob</span><span className="text-vsc-text">:</span> <span className="text-vsc-orange">&quot;Full-Stack Developer @ JJ-NET OY&quot;</span><span className="text-vsc-text">,</span></> },
+                            { ln: "6", content: <>&nbsp;&nbsp;<span className="text-vsc-teal">techLead</span><span className="text-vsc-text">:</span> <span className="text-vsc-orange">&quot;Tech Lead @ GoDoc (€10k funded fintech)&quot;</span><span className="text-vsc-text">,</span></> },
+                            { ln: "7", content: <>&nbsp;&nbsp;<span className="text-vsc-teal">studying</span><span className="text-vsc-text">:</span> <span className="text-vsc-orange">&quot;MSc Cybersecurity, JAMK 2025–&quot;</span><span className="text-vsc-text">,</span></> },
+                            { ln: "8", content: <>&nbsp;&nbsp;<span className="text-vsc-teal">yearsExperience</span><span className="text-vsc-text">:</span> <span className="text-vsc-purple">4</span><span className="text-vsc-text">,</span></> },
+                            { ln: "9", content: <>&nbsp;&nbsp;<span className="text-vsc-teal">sitesMaintained</span><span className="text-vsc-text">:</span> <span className="text-vsc-purple">150</span><span className="text-vsc-text">,</span></> },
+                            { ln: "10", content: <><span className="text-vsc-orange">{"}"}</span><span className="text-vsc-text">;</span></> },
                         ].map((line) => (
                             <div key={line.ln} className="flex items-baseline gap-0 text-base md:text-lg leading-8">
                                 <span className="text-vsc-faint text-xs w-8 text-right mr-5 select-none flex-shrink-0">
@@ -78,8 +79,8 @@ export default function Hero() {
                             <span
                                 key={loc.country}
                                 className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-sm text-xs font-mono ${loc.onsite
-                                        ? "bg-[#0d2a0d] border border-[#2a4a2a] text-vsc-teal"
-                                        : "bg-[#1a1a2e] border border-[#2d2d4a] text-vsc-blue"
+                                    ? "bg-[#0d2a0d] border border-[#2a4a2a] text-vsc-teal"
+                                    : "bg-[#1a1a2e] border border-[#2d2d4a] text-vsc-blue"
                                     }`}
                             >
                                 <span>{loc.flag}</span>
@@ -113,7 +114,7 @@ export default function Hero() {
                         >
                             viewFeaturedProjects()
                         </a>
-                                                <a
+                        <a
                             href="#clients"
                             className="bg-[#0e639c] hover:bg-[#1177bb] text-vsc-text text-sm px-5 py-2 rounded-sm transition-colors duration-150 font-mono"
                         >

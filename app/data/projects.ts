@@ -23,7 +23,7 @@ export const projects: Project[] = [
     stack: ["ASP.NET", "React", "React Native", "SQL Server", "REST API", "Azure"],
     links: [
       { label: "↗ godoccourier.com", href: "https://godoccourier.com" },
-      { label: "→ case_study.md", href: "#" },
+      { label: "→ case_study", href: "/godoc" },
     ],
   },
   {
@@ -46,33 +46,22 @@ export const projects: Project[] = [
     ],
     stack: ["React", "WordPress", "Gutenberg", "PHP", "ACF", "REST API", "Multisite"],
     links: [
-      { label: "→ case_study.md", href: "#" },
+      { label: "→ case_study", href: "/empa" },
       { label: "// code private — company property", href: "#", private: true },
     ],
-  },
-  {
-    file: "// personal prototype · ai / multi-agent",
-    name: "AikaCrew — Multi-Agent AI Platform",
-    badges: [
-      { label: "CrewAI", type: "ai" },
-      { label: "Rebuilding", type: "wip" },
-    ],
-    description: "Multi-agent platform built as an investor demo for Aika AI. Create agents with defined roles, converse with them individually, context persisted via vector DB. 3-layer context: agent history + global context + live Google search. Rebuilding with Pinecone for deployment.",
-    stack: ["CrewAI", "FastAPI", "Python", "FAISS→Pinecone", "React", "Azure OpenAI"],
-    links: [{ label: "⌥ github", href: "https://github.com/ajkacca457" }],
   },
   {
     file: "// personal project · full stack",
     name: "Home Accounts — Finance Tracker",
     badges: [
-      { label: "Upgrading", type: "wip" },
+      { label: "Live", type: "live" },
       { label: "MERN", type: "lead" },
     ],
     description: "Personal finance tracker with authentication, income/expense logging, and statistics dashboard. Upgrading with improved data visualisation, budget categories, and cleaner UI.",
     stack: ["React", "Node.js", "Express", "MongoDB", "JWT Auth", "Recharts"],
     links: [
-      { label: "↗ live demo", href: "#" },
-      { label: "⌥ github", href: "https://github.com/ajkacca457" },
+      { label: "↗ live demo", href: "https://home-accounts-front.vercel.app/" },
+      { label: "⌥ github", href: "https://github.com/ajkacca457/home_accounts" },
     ],
   },
   {
@@ -80,21 +69,14 @@ export const projects: Project[] = [
     name: "CurtainCalls — Event Booking Platform",
     badges: [
       { label: "Live", type: "live" },
+      { label: "MERN", type: "lead" },
       { label: "Stripe", type: "lead" },
     ],
     description: "Full MERN booking platform for live events — seat selection, Stripe payment integration, booking confirmation logic, and admin dashboard.",
     stack: ["React", "Node.js", "Express", "MongoDB", "Stripe", "JWT Auth"],
     links: [
-      { label: "↗ live demo", href: "#" },
-      { label: "⌥ github", href: "https://github.com/ajkacca457" },
+      { label: "↗ live demo", href: "https://curtain-call-front.vercel.app/" },
+      { label: "⌥ github", href: "https://github.com/ajkacca457/curtain-call" },
     ],
-  },
-  {
-    file: "// personal project · full stack",
-    name: "EcoRides — Ride Sharing App",
-    badges: [{ label: "80% complete", type: "wip" }],
-    description: "Ride-sharing platform — trip matching, user profiles, real-time availability. Finishing and deploying shortly.",
-    stack: ["Next.js 14", "TypeScript", "Supabase", "Postgres", "Tailwind"],
-    links: [{ label: "⌥ github", href: "https://github.com/ajkacca457" }],
-  },
+  }
 ];
