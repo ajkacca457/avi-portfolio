@@ -24,7 +24,7 @@ const features = [
     id: "01",
     title: "Clean-slate editor",
     color: "text-vsc-blue",
-    desc: "The editor starts with only <p> and <h1>. No default blocks, no noise. Every block is intentional — added on demand by the content editor, not dumped in by default.",
+    desc: "The editor starts with only p and h1. No default blocks, no noise. Every block is intentional — added on demand by the content editor, not dumped in by default.",
   },
   {
     id: "02",
@@ -36,13 +36,13 @@ const features = [
     id: "03",
     title: "Pattern dependency resolver",
     color: "text-vsc-yellow",
-    desc: "Gutenberg patterns can declare block dependencies. If a required block isn't installed, the pattern installation is blocked until the dependency is satisfied — automatically.",
+    desc: "Gutenberg patterns can declare block dependencies. If a required block is not installed, the pattern installation is blocked until the dependency is satisfied — automatically.",
   },
   {
     id: "04",
     title: "Block usage tracking",
     color: "text-vsc-purple",
-    desc: "The system tracks which blocks are used across which pages. Before removing a block, editors can see exactly where it's in use — preventing silent content breakage.",
+    desc: "The system tracks which blocks are used across which pages. Before removing a block, editors can see exactly where it is in use — preventing silent content breakage.",
   },
   {
     id: "05",
@@ -74,6 +74,66 @@ const clients = [
   { name: "Netox", detail: "All custom Gutenberg blocks — netox.com" },
   { name: "Enjoynature.fi", detail: "Full site + booking system" },
   { name: "150+ sites", detail: "Maintained via JJ-NET OY infrastructure" },
+];
+
+const steps = [
+  {
+    step: "01",
+    title: "Editor opens WordPress",
+    detail: "Sees only p and h1. No block noise. Clean slate.",
+    color: "text-vsc-blue",
+  },
+  {
+    step: "02",
+    title: "Editor opens Block Manager",
+    detail: "React UI lists all available blocks from the remote library with descriptions and previews.",
+    color: "text-vsc-teal",
+  },
+  {
+    step: "03",
+    title: "Editor installs a block",
+    detail: "Block is registered automatically. No PHP changes, no developer needed.",
+    color: "text-vsc-yellow",
+  },
+  {
+    step: "04",
+    title: "Editor installs a pattern",
+    detail: "Dependency resolver checks if required blocks are installed. Blocks with missing deps are blocked until resolved.",
+    color: "text-vsc-purple",
+  },
+  {
+    step: "05",
+    title: "Editor removes a block",
+    detail: "Usage tracker shows which pages use it. If pages depend on it, removal is surfaced before it happens.",
+    color: "text-vsc-orange",
+  },
+];
+
+const outcomes = [
+  {
+    key: "scope",
+    value: "1 system",
+    desc: "One theme architecture replaces dozens of one-off solutions. Any new client site extends Empa rather than starting from scratch.",
+    color: "text-vsc-teal",
+  },
+  {
+    key: "ownership",
+    value: "solo",
+    desc: "Designed, architected, and built entirely alone over 1+ year — no team, no spec, no prior system to reference.",
+    color: "text-vsc-blue",
+  },
+  {
+    key: "reach",
+    value: "150+",
+    desc: "Sites in the JJ-NET OY ecosystem. Major Finnish clients including Helsinki City and the Finnish Museums Association.",
+    color: "text-vsc-yellow",
+  },
+  {
+    key: "codeVisibility",
+    value: "private",
+    desc: "Code is company property and cannot be open-sourced. The case study documents the architecture and technical decisions.",
+    color: "text-vsc-muted",
+  },
 ];
 
 export default function EmpaCaseStudy() {
@@ -170,16 +230,16 @@ export default function EmpaCaseStudy() {
               </h2>
               <div className="border-l-2 border-vsc-border pl-4 text-vsc-muted text-sm leading-relaxed space-y-3">
                 <p>
-                  WordPress's default Gutenberg editor gives every site the same
-                  cluttered block library — dozens of blocks content editors don't need,
-                  can't control, and often misuse. For an agency maintaining 150+ client
+                  The default Gutenberg editor gives every site the same cluttered
+                  block library — dozens of blocks content editors do not need, cannot
+                  control, and often misuse. For an agency maintaining 150+ client
                   sites, this creates inconsistency, content breakage, and constant
                   maintenance overhead.
                 </p>
                 <p>
                   There was no clean way to give each client a curated, intentional
-                  editing experience without forking themes repeatedly or writing one-off
-                  solutions per site.
+                  editing experience without forking themes repeatedly or writing
+                  one-off solutions per site.
                 </p>
               </div>
               <div className="text-vsc-yellow text-sm mt-3">
@@ -197,12 +257,12 @@ export default function EmpaCaseStudy() {
                 <p>
                   Build a single theme architecture that any client site could extend —
                   with a clean editing baseline, a managed block library, dependency
-                  resolution, and multisite support. One system, maintained in one place,
-                  deployed everywhere.
+                  resolution, and multisite support. One system, maintained in one
+                  place, deployed everywhere.
                 </p>
                 <p>
-                  The system had to be operable by non-technical content editors without
-                  developer involvement for day-to-day block management.
+                  The system had to be operable by non-technical content editors
+                  without developer involvement for day-to-day block management.
                 </p>
               </div>
               <div className="text-vsc-yellow text-sm mt-3">
@@ -282,38 +342,7 @@ export default function EmpaCaseStudy() {
           <div className="text-xs text-vsc-green mb-6">{"// how_it_works.ts"}</div>
 
           <div className="space-y-px border border-vsc-border">
-            {[
-              {
-                step: "01",
-                title: "Editor opens WordPress",
-                detail: "Sees only <p> and <h1>. No block noise. Clean slate.",
-                color: "text-vsc-blue",
-              },
-              {
-                step: "02",
-                title: "Editor opens Block Manager",
-                detail: "React UI lists all available blocks from the remote library with descriptions and previews.",
-                color: "text-vsc-teal",
-              },
-              {
-                step: "03",
-                title: "Editor installs a block",
-                detail: "Block is registered automatically. No PHP changes, no developer needed.",
-                color: "text-vsc-yellow",
-              },
-              {
-                step: "04",
-                title: "Editor installs a pattern",
-                detail: "Dependency resolver checks if required blocks are installed. Blocks with missing deps are blocked until resolved.",
-                color: "text-vsc-purple",
-              },
-              {
-                step: "05",
-                title: "Editor removes a block",
-                detail: "Usage tracker shows which pages use it. If pages depend on it, removal is surfaced before it happens.",
-                color: "text-vsc-orange",
-              },
-            ].map((item) => (
+            {steps.map((item) => (
               <div
                 key={item.step}
                 className="bg-vsc-bg-secondary p-5 flex gap-5 items-start border-b border-vsc-border last:border-b-0"
@@ -360,32 +389,7 @@ export default function EmpaCaseStudy() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
-              {[
-                {
-                  key: "scope",
-                  value: "1 system",
-                  desc: "One theme architecture replaces dozens of one-off solutions. Any new client site extends Empa rather than starting from scratch.",
-                  color: "text-vsc-teal",
-                },
-                {
-                  key: "ownership",
-                  value: "solo",
-                  desc: "Designed, architected, and built entirely alone over 1+ year — no team, no spec, no prior system to reference.",
-                  color: "text-vsc-blue",
-                },
-                {
-                  key: "reach",
-                  value: "150+",
-                  desc: "Sites in the JJ-NET OY ecosystem. Major Finnish clients including Helsinki City and the Finnish Museums Association.",
-                  color: "text-vsc-yellow",
-                },
-                {
-                  key: "codeVisibility",
-                  value: "private",
-                  desc: "Code is company property and cannot be open-sourced. The case study documents the architecture and technical decisions.",
-                  color: "text-vsc-muted",
-                },
-              ].map((o) => (
+              {outcomes.map((o) => (
                 <div key={o.key} className="border-l-2 border-vsc-border pl-4">
                   <div className="text-xs text-vsc-muted mb-1">
                     <span className="text-vsc-light-blue">{o.key}</span>
