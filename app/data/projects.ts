@@ -23,7 +23,7 @@ export const projects: Project[] = [
     stack: ["ASP.NET", "React", "React Native", "SQL Server", "REST API", "Azure"],
     links: [
       { label: "↗ godoccourier.com", href: "https://godoccourier.com" },
-      { label: "→ case_study.md", href: "#" },
+      { label: "→ case_study", href: "/godoc" },
     ],
   },
   {
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     ],
     stack: ["React", "WordPress", "Gutenberg", "PHP", "ACF", "REST API", "Multisite"],
     links: [
-      { label: "→ case_study.md", href: "#" },
+      { label: "→ case_study", href: "/empa" },
       { label: "// code private — company property", href: "#", private: true },
     ],
   },
