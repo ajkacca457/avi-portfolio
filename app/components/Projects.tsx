@@ -109,7 +109,7 @@ export default function Projects() {
                         const projects = [
                     </div>
                     <p className="text-vsc-muted text-sm font-sans mb-8">
-                        Personal and startup projects — full ownership, end to end.
+                        Personal,startup and company projects.
                     </p>
                 </FadeIn>
 
