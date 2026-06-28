@@ -5,59 +5,63 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "GoDoc — Case Study | Avijit Karmaker",
   description:
-    "How I rescued a failing fintech codebase, became sole CTO, and helped GoDoc secure €10k in funding.",
+    "How I revived a dormant fintech codebase, became sole CTO, and helped GoDoc secure €10k in funding.",
 };
 
 const stack = [
   "ASP.NET Core",
   "ASP.NET Framework",
+  "C#",
   "SQL Server",
   "REST API",
   "Java (Android)",
-  "React",
-  "Azure",
+  "Bootstrap",
+  "Plesk",
 ];
 
 const challenges = [
   {
     id: "01",
-    problem: "Inherited a broken codebase with no documentation",
+    problem: "Inherited a dormant codebase with no documentation",
     solution:
-      "Conducted a full audit across the API, web client, and mobile app. Mapped dependencies, identified critical failure points, and established a priority fix list before writing a single line of new code.",
+      "Conducted a full audit across all three layers — API, web client, admin site, and Android app. Had multiple sessions with the founder to understand how the platforms were supposed to work together. Mapping the intended workflow before touching any code was one of the biggest challenges of the project.",
   },
   {
     id: "02",
-    problem: "API endpoints returning inconsistent or incorrect data",
+    problem: "MySQL dev database had to be migrated to SQL Server",
     solution:
-      "Rewrote the core API layer in ASP.NET Core with consistent response contracts. Added validation, error handling, and proper HTTP status codes throughout — bringing the API to a state where the mobile team could reliably integrate against it.",
+      "The only available database was a dev dump in MySQL format. Converted the entire schema and data to SQL Server, resolved type mismatches and relation issues, and validated data integrity before reconnecting the API.",
   },
   {
     id: "03",
-    problem: "Android app disconnected from live API",
+    problem: "API endpoints broken or returning incorrect data",
     solution:
-      "Reconnected the Java Android app to the production API, resolved auth flow issues, and audited the app for Google Play Store compliance. App is now live on Google Play.",
+      "Debugged and fixed broken endpoints across the ASP.NET Core API. Added missing validation, fixed auth errors, and standardised HTTP responses so both the web client and Android app could reliably connect.",
   },
   {
     id: "04",
-    problem: "No deployment process or environment separation",
+    problem: "Android app disconnected from the live API",
     solution:
-      "Set up Azure deployment pipeline with environment separation between staging and production. Established a release process so the team could ship updates without breaking live traffic.",
+      "Reconnected the Java Android app to the production API, resolved auth flow issues, and audited the app for Google Play Store compliance. App is fixed and ready for resubmission.",
   },
   {
     id: "05",
-    problem: "Business emails failing to deliver",
+    problem: "Web client UI was outdated and unusable",
     solution:
-      "Configured SmarterMail on Plesk with correct PTR records, SPF, DKIM, and DMARC to resolve shared IP reputation issues causing Gmail delivery failures.",
+      "Rebuilt and modernised every UI component across the web client — restructured forms, improved the bank portal interface, and gave the site a professional, story-driven design. For a courier platform in Bangladesh, this level of UI is uncommon and has received strong feedback.",
   },
 ];
 
 const timeline = [
-  { phase: "Inherited codebase", detail: "Audited all three layers — API, web client, Android app" },
-  { phase: "Stabilised API", detail: "Rewrote core endpoints, added validation and error contracts" },
-  { phase: "Reconnected mobile", detail: "Android app live on Google Play with working auth flow" },
-  { phase: "Infra & deployment", detail: "Azure pipeline, environment separation, email delivery fixed" },
-  { phase: "€10k funding secured", detail: "Company received investment after codebase rescue" },
-  { phase: "Ongoing — sole CTO", detail: "All architecture, deployment, and technical decisions" },
+  { phase: "Took over the project", detail: "8 months ago — platform had been dormant for years due to lack of technical support" },
+  { phase: "Workflow mapping", detail: "Multiple sessions with the founder to fully understand how the three platforms work together" },
+  { phase: "Database migration", detail: "Converted MySQL dev database to SQL Server and restored data integrity" },
+  { phase: "API stabilisation", detail: "Fixed broken endpoints, auth errors, and validation across the ASP.NET Core API" },
+  { phase: "Web client + admin rebuild", detail: "Fixed API connections, restructured UI, modernised every component" },
+  { phase: "Android app reconnected", detail: "Resolved auth flow, reconnected to live API, audited for Play Store compliance" },
+  { phase: "Deployed to Plesk", detail: "All three platforms live on ASPHostPortal Plesk server" },
+  { phase: "€10k funding secured", detail: "Company received investment after the platform was rescued and made presentable" },
+  { phase: "Ongoing — sole CTO", detail: "Pilot with first bank in final setup. In discussion with several others under NDA" },
 ];
 
 export default function GoDocCaseStudy() {
@@ -65,40 +69,53 @@ export default function GoDocCaseStudy() {
     <main className="min-h-screen bg-vsc-bg font-mono text-vsc-text">
 
       {/* ── Top bar ── */}
-      <div className="border-b border-vsc-border bg-vsc-bg-secondary px-6 py-2 flex items-center justify-between text-xs text-vsc-muted">
-        <div className="flex items-center gap-4">
+      <div className="border-b border-vsc-border bg-vsc-bg-secondary px-6 py-2 flex items-center justify-between text-xs text-vsc-muted overflow-hidden">
+        <div className="flex items-center gap-2 min-w-0 truncate">
           <Link
             href="/"
-            className="hover:text-vsc-text transition-colors flex items-center gap-1"
+            className="hover:text-vsc-text transition-colors flex items-center gap-1 shrink-0"
           >
             <span className="text-vsc-blue">←</span>
-            <span>avijitkarmaker.com</span>
+            <span className="hidden sm:inline">avijitkarmaker.com</span>
           </Link>
-          <span className="text-vsc-border">/</span>
-          <span className="text-vsc-teal">godoc</span>
-          <span className="text-vsc-border">/</span>
-          <span className="text-vsc-orange">case_study.md</span>
+          <span className="text-vsc-border shrink-0">/</span>
+          <span className="text-vsc-teal shrink-0">godoc</span>
+          <span className="text-vsc-border shrink-0">/</span>
+          <span className="text-vsc-orange truncate">case_study.tsx</span>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 shrink-0 ml-4">
           <span className="text-vsc-green">● Live</span>
-          <span>godoccourier.com</span>
+          <a
+            href="https://godoccourier.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:inline hover:text-vsc-text transition-colors"
+          >
+            godoccourier.com
+          </a>
         </div>
       </div>
 
       {/* ── Tab bar ── */}
-      <div className="border-b border-vsc-border bg-vsc-bg-secondary flex text-xs">
-        <div className="flex items-center gap-2 px-4 py-2 border-r border-vsc-border bg-vsc-bg text-vsc-text border-t-2 border-t-vsc-blue">
-          <span className="text-vsc-orange">MD</span>
-          <span>case_study.md</span>
+      <div className="border-b border-vsc-border bg-vsc-bg-secondary flex text-xs overflow-x-auto">
+        <div className="flex items-center gap-2 px-4 py-2 border-r border-vsc-border bg-vsc-bg text-vsc-text border-t-2 border-t-vsc-blue shrink-0">
+          <span className="text-vsc-teal">TSX</span>
+          <span>case_study.tsx</span>
         </div>
-        <div className="flex items-center gap-2 px-4 py-2 border-r border-vsc-border text-vsc-muted hover:text-vsc-text transition-colors">
+        <a
+          href="#architecture"
+          className="flex items-center gap-2 px-4 py-2 border-r border-vsc-border text-vsc-muted hover:text-vsc-text transition-colors shrink-0"
+        >
           <span className="text-vsc-blue">TS</span>
           <span>architecture.ts</span>
-        </div>
-        <div className="flex items-center gap-2 px-4 py-2 text-vsc-muted hover:text-vsc-text transition-colors">
-          <span className="text-vsc-yellow">JS</span>
-          <span>challenges.js</span>
-        </div>
+        </a>
+        <a
+          href="#challenges"
+          className="flex items-center gap-2 px-4 py-2 text-vsc-muted hover:text-vsc-text transition-colors shrink-0"
+        >
+          <span className="text-vsc-yellow">CS</span>
+          <span>challenges.cs</span>
+        </a>
       </div>
 
       <div className="max-w-4xl mx-auto px-6 py-16">
@@ -106,7 +123,7 @@ export default function GoDocCaseStudy() {
         {/* ── Hero ── */}
         <section className="mb-20">
           <div className="text-xs text-vsc-green mb-4">
-            {"// startup · part time · tech lead · bangladesh"}
+            {"// startup · part time · sole CTO · bangladesh"}
           </div>
 
           <h1 className="text-3xl md:text-4xl text-vsc-text font-mono mb-4 leading-tight">
@@ -118,9 +135,10 @@ export default function GoDocCaseStudy() {
           </h1>
 
           <p className="text-vsc-muted text-sm mb-10 max-w-xl leading-relaxed">
-            Secure physical document courier platform connecting banks with courier
-            networks across Bangladesh. I inherited a failing codebase, rescued it,
-            and became the sole CTO — after which the company secured €10k in funding.
+            Secure physical document courier platform connecting banks and organisations
+            with courier networks across Bangladesh. The platform had been dormant for
+            years. I took over the entire codebase, revived it across three layers, and
+            helped the company secure €10k in funding — now in pilot with its first bank.
           </p>
 
           {/* Stats row */}
@@ -128,7 +146,7 @@ export default function GoDocCaseStudy() {
             {[
               { value: "€10k", label: "funding secured" },
               { value: "3", label: "platforms owned" },
-              { value: "50+", label: "banks served" },
+              { value: "8mo", label: "to revive platform" },
               { value: "sole", label: "CTO / tech lead" },
             ].map((s) => (
               <div key={s.label} className="bg-vsc-bg-secondary px-5 py-5">
@@ -152,14 +170,15 @@ export default function GoDocCaseStudy() {
               </h2>
               <div className="border-l-2 border-vsc-border pl-4 text-vsc-muted text-sm leading-relaxed space-y-3">
                 <p>
-                  GoDoc had an existing codebase across three layers — an ASP.NET API,
-                  an ASP.NET Framework web client, and a Java Android app. The previous
-                  development team had left it in a non-functional state.
+                  GoDoc had a working concept and an existing codebase across three
+                  platforms — an ASP.NET Core API, an ASP.NET Framework web client
+                  with admin site, and a Java Android app. But the project had been
+                  on hold for years with no active developer.
                 </p>
                 <p>
-                  Endpoints were broken, the mobile app was disconnected from the API,
-                  there was no deployment pipeline, and no documentation. The business
-                  had a working product concept but no working product.
+                  The codebase was broken, undocumented, and even the founder was
+                  uncertain about how the platforms were meant to work together.
+                  There was no path to funding without a working product.
                 </p>
               </div>
               <div className="text-vsc-yellow text-sm mt-3">
@@ -175,15 +194,15 @@ export default function GoDocCaseStudy() {
               </h2>
               <div className="border-l-2 border-vsc-border pl-4 text-vsc-muted text-sm leading-relaxed space-y-3">
                 <p>
-                  GoDoc connects banks and financial institutions with a courier
-                  network for secure physical document delivery — loan agreements,
-                  legal paperwork, KYC documents. The platform handles the full
-                  lifecycle: request, pickup, tracking, delivery confirmation, and
-                  electronic proof of delivery.
+                  GoDoc connects banks, financial institutions, and organisations with
+                  a courier network for secure physical document delivery — loan
+                  agreements, legal paperwork, KYC documents. The platform handles
+                  the full lifecycle: order creation, package management, tracking,
+                  and delivery confirmation.
                 </p>
                 <p>
-                  Operating in Bangladesh with 50+ bank clients. Android app
-                  available on Google Play.
+                  Operating in Bangladesh with a pilot bank in final setup and
+                  NDA-protected discussions underway with several others.
                 </p>
               </div>
               <div className="text-vsc-yellow text-sm mt-3">
@@ -203,20 +222,21 @@ export default function GoDocCaseStudy() {
                 label: "ASP.NET Core API",
                 color: "text-vsc-blue",
                 points: [
-                  "Rewrote broken endpoints",
-                  "Consistent response contracts",
-                  "Auth, validation, error handling",
-                  "REST API for web + mobile",
+                  "Fixed broken endpoints",
+                  "Resolved auth and validation errors",
+                  "REST API connecting DB to all clients",
+                  "Stable connection for web + mobile",
                 ],
               },
               {
-                label: "ASP.NET Web Client",
+                label: "Web Client + Admin Site",
                 color: "text-vsc-teal",
                 points: [
-                  "Admin dashboard",
-                  "Bank portal interface",
-                  "Shipment management",
-                  "Real-time tracking UI",
+                  "Fixed API and DB connections",
+                  "Restructured bank portal forms",
+                  "Role-based admin (super admin, regional manager, riders)",
+                  "Modernised UI — every component rebuilt",
+                  "Real-time tracking fixed",
                 ],
               },
               {
@@ -225,8 +245,8 @@ export default function GoDocCaseStudy() {
                 points: [
                   "Reconnected to live API",
                   "Fixed auth flow",
-                  "Google Play Store audit",
-                  "Push notifications (POD)",
+                  "Google Play Store audit complete",
+                  "Ready for resubmission",
                 ],
               },
             ].map((platform) => (
@@ -248,33 +268,42 @@ export default function GoDocCaseStudy() {
         </section>
 
         {/* ── Technical Architecture ── */}
-        <section className="mb-20">
+        <section className="mb-20" id="architecture">
           <div className="text-xs text-vsc-green mb-6">{"// architecture.ts"}</div>
 
           <div className="bg-vsc-bg-secondary border border-vsc-border p-6 text-xs leading-relaxed">
             <div className="text-vsc-muted mb-4">{"// system overview"}</div>
             <pre className="text-vsc-text overflow-x-auto">
-{`  ┌─────────────────────────────────────────────────────┐
-  │                    GoDoc Platform                    │
-  ├──────────────┬──────────────────┬───────────────────┤
-  │  Web Client  │   ASP.NET Core   │  Android App      │
-  │  (ASP.NET    │   REST API       │  (Java)           │
-  │  Framework)  │                  │                   │
-  │              │  ┌────────────┐  │  ┌─────────────┐ │
-  │  Bank Portal │  │ Auth layer │  │  │ Courier App │ │
-  │  Admin Panel │  │ Validation │  │  │ POD capture │ │
-  │  Shipment Mg.│  │ SQL Server │  │  │ Live track  │ │
-  └──────────────┴──┴────────────┴──┴──┴─────────────┴─┘
-                          │
-                    ┌─────┴──────┐
-                    │ SQL Server │
-                    │  Database  │
-                    └─────┬──────┘
-                          │
-                    ┌─────┴──────┐
-                    │   Azure    │
-                    │ Deployment │
-                    └────────────┘`}
+{`  ┌─────────────────────────────────────────────────────────────┐
+  │                       GoDoc Platform                         │
+  ├───────────────────┬──────────────────┬───────────────────────┤
+  │   Web Client      │  ASP.NET Core    │  Android App          │
+  │   (ASP.NET FW)    │  REST API        │  (Java)               │
+  │                   │                  │                       │
+  │  Customer Portal  │  Auth + Routes   │  Courier App          │
+  │  Real-time Track  │  DB connector    │  Order tracking       │
+  │                   │                  │  Auth flow            │
+  ├───────────────────┤                  ├───────────────────────┤
+  │   Admin Site      │                  │                       │
+  │   (ASP.NET FW)    │                  │                       │
+  │                   │                  │                       │
+  │  Super Admin      │                  │                       │
+  │  Regional Manager │                  │                       │
+  │  Rider Management │                  │                       │
+  │  Order + Packages │                  │                       │
+  └───────────────────┴──────────────────┴───────────────────────┘
+                              │
+                      ┌───────┴────────┐
+                      │   SQL Server   │
+                      │   Database     │
+                      │ (migrated from │
+                      │    MySQL)      │
+                      └───────┬────────┘
+                              │
+                      ┌───────┴────────┐
+                      │  ASPHostPortal │
+                      │  Plesk Server  │
+                      └────────────────┘`}
             </pre>
           </div>
 
@@ -292,8 +321,8 @@ export default function GoDocCaseStudy() {
         </section>
 
         {/* ── Key Challenges ── */}
-        <section className="mb-20">
-          <div className="text-xs text-vsc-green mb-6">{"// challenges.ts"}</div>
+        <section className="mb-20" id="challenges">
+          <div className="text-xs text-vsc-green mb-6">{"// challenges.cs"}</div>
 
           <div className="space-y-px border border-vsc-border">
             {challenges.map((c) => (
@@ -356,25 +385,25 @@ export default function GoDocCaseStudy() {
                 {
                   key: "funding",
                   value: "€10,000",
-                  desc: "Company received investment after codebase was rescued and stabilised. The working product was a direct prerequisite for funding.",
+                  desc: "Company received investment after the platform was revived and made presentable. A working product was the direct prerequisite for securing funding.",
                   color: "text-vsc-teal",
                 },
                 {
-                  key: "platform",
-                  value: "3 layers",
-                  desc: "Full ownership across API, web client, and Android app. All architecture, deployment, and technical decisions made solely by me.",
+                  key: "ownership",
+                  value: "sole CTO",
+                  desc: "Full technical ownership across API, web client, admin site, and Android app. All architecture and deployment decisions are mine.",
                   color: "text-vsc-blue",
                 },
                 {
-                  key: "clients",
-                  value: "50+ banks",
-                  desc: "Platform serving banks and financial institutions across Bangladesh for secure physical document courier services.",
+                  key: "traction",
+                  value: "pilot live",
+                  desc: "First bank pilot in final setup. NDA-protected discussions underway with several banks and organisations across Bangladesh.",
                   color: "text-vsc-yellow",
                 },
                 {
                   key: "status",
-                  value: "Live",
-                  desc: "godoccourier.com is live. Android app is on Google Play. Platform is in active use with real clients.",
+                  value: "live",
+                  desc: "godoccourier.com is live. Web client and admin site fully operational. Android app fixed and ready for Play Store resubmission.",
                   color: "text-vsc-green",
                 },
               ].map((o) => (
