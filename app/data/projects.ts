@@ -11,6 +11,22 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    file: "// personal project · full stack + payments",
+    name: "EcoRides — Vehicle Rental Marketplace",
+    badges: [
+      { label: "Live", type: "live" },
+      { label: "Next.js", type: "lead" },
+      { label: "Stripe", type: "lead" },
+    ],
+    highlight: "Dual-sided marketplace — vehicle owners list and manage their fleet, renters book and pay, with a role-based admin layer on top for platform-wide stats.",
+    description: "Full-stack vehicle rental marketplace — users list their own vehicles and book others', with calendar-based availability, Stripe Embedded Checkout, reviews, and a role-based admin dashboard with booking analytics.",
+    stack: ["Next.js", "TypeScript", "Prisma", "Supabase", "Clerk", "Stripe", "Tailwind"],
+    links: [
+      { label: "↗ live demo", href: "https://ecorides-nu.vercel.app/" },
+      { label: "⌥ github", href: "https://github.com/ajkacca457/ecorides" },
+    ],
+  },
+  {
     file: "// startup · part time · tech lead",
     name: "GoDoc — Fintech Document Courier",
     badges: [
