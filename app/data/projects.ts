@@ -11,19 +11,19 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    file: "// personal project · full stack + payments",
-    name: "EcoRides — Vehicle Rental Marketplace",
+    file: "// company project · solo build · 1 year+",
+    name: "Empa — WordPress Theme System",
     badges: [
-      { label: "Live", type: "live" },
-      { label: "Next.js", type: "lead" },
-      { label: "Stripe", type: "lead" },
+      { label: "Company project", type: "company" },
+      { label: "Architect", type: "lead" },
+      { label: "Deployed", type: "live" },
     ],
-    highlight: "Dual-sided marketplace — vehicle owners list and manage their fleet, renters book and pay, with a role-based admin layer on top for platform-wide stats.",
-    description: "Full-stack vehicle rental marketplace — users list their own vehicles and book others', with calendar-based availability, Stripe Embedded Checkout, reviews, and a role-based admin dashboard with booking analytics.",
-    stack: ["Next.js", "TypeScript", "Prisma", "Supabase", "Clerk", "Stripe", "Tailwind"],
+    highlight: "Built from scratch over 1+ year — a clean-slate WordPress theme where the editor starts with only p and h1, everything else added on demand.",
+    description: "A React-powered block manager handles remote block registration, dependency resolution between patterns, and usage tracking across every page, with full multisite and child theme support.",
+    stack: ["React", "WordPress", "Gutenberg", "PHP", "ACF", "Multisite"],
     links: [
-      { label: "↗ live demo", href: "https://ecorides-nu.vercel.app/" },
-      { label: "⌥ github", href: "https://github.com/ajkacca457/ecorides" },
+      { label: "→ case_study", href: "/empa" },
+      { label: "// code private — company property", href: "#", private: true },
     ],
   },
   {
@@ -43,41 +43,19 @@ export const projects: Project[] = [
     ],
   },
   {
-    file: "// company project · solo build · 1 year+",
-    name: "Empa — WordPress Theme System",
-    badges: [
-      { label: "Company project", type: "company" },
-      { label: "Architect", type: "lead" },
-      { label: "Deployed", type: "live" },
-    ],
-    highlight: "Built from scratch over 1+ year. Clean-slate WordPress theme — editor starts with only p and h1. Everything else is on-demand via a React-powered block manager.",
-    description: "",
-    features: [
-      "Remote block library + auto-registration",
-      "Pattern dependency resolver",
-      "Blocked install until deps satisfied",
-      "Block usage tracking across pages",
-      "React + ACF block support",
-      "Multisite + child theme creator",
-    ],
-    stack: ["React", "WordPress", "Gutenberg", "PHP", "ACF", "REST API", "Multisite"],
-    links: [
-      { label: "→ case_study", href: "/empa" },
-      { label: "// code private — company property", href: "#", private: true },
-    ],
-  },
-  {
-    file: "// personal project · full stack",
-    name: "Home Accounts — Finance Tracker",
+    file: "// personal project · full stack + payments",
+    name: "EcoRides — Vehicle Rental Marketplace",
     badges: [
       { label: "Live", type: "live" },
-      { label: "MERN", type: "lead" },
+      { label: "Next.js", type: "lead" },
+      { label: "Stripe", type: "lead" },
     ],
-    description: "Personal finance tracker with authentication, income/expense logging, and statistics dashboard. Upgrading with improved data visualisation, budget categories, and cleaner UI.",
-    stack: ["React", "Node.js", "Express", "MongoDB", "JWT Auth", "Recharts"],
+    highlight: "Dual-sided marketplace where owners list vehicles and renters book them — the entire data layer runs on Next.js Server Actions instead of a separate REST API.",
+    description: "Calendar-based availability, Stripe Embedded Checkout, and per-vehicle reviews on the renter side, with a role-based admin dashboard tracking bookings and revenue across the platform.",
+    stack: ["Next.js", "TypeScript", "Prisma", "Supabase", "Clerk", "Stripe"],
     links: [
-      { label: "↗ live demo", href: "https://home-accounts-front.vercel.app/" },
-      { label: "⌥ github", href: "https://github.com/ajkacca457/home_accounts" },
+      { label: "↗ live demo", href: "https://ecorides-nu.vercel.app/" },
+      { label: "⌥ github", href: "https://github.com/ajkacca457/ecorides" },
     ],
   },
   {
@@ -88,11 +66,28 @@ export const projects: Project[] = [
       { label: "MERN", type: "lead" },
       { label: "Stripe", type: "lead" },
     ],
-    description: "Full MERN booking platform for live events — seat selection, Stripe payment integration, booking confirmation logic, and admin dashboard.",
+    highlight: "Full booking platform for live theatre and events, with real-time seat holds during checkout so two people can never buy the same seat.",
+    description: "Stripe handles payment end-to-end, with booking confirmation logic and an admin dashboard for managing shows, showtimes, and reservations.",
     stack: ["React", "Node.js", "Express", "MongoDB", "Stripe", "JWT Auth"],
     links: [
       { label: "↗ live demo", href: "https://curtain-call-front.vercel.app/" },
       { label: "⌥ github", href: "https://github.com/ajkacca457/curtain-call" },
+    ],
+  },
+  {
+    file: "// personal project · full stack",
+    name: "Home Accounts — Finance Tracker",
+    badges: [
+      { label: "Live", type: "live" },
+      { label: "MERN", type: "lead" },
+      { label: "Solo project", type: "lead" },
+    ],
+    highlight: "Personal finance tracker built to replace a spreadsheet habit — income and expense logging with a statistics dashboard for a clearer monthly picture.",
+    description: "Currently upgraded with improved data visualisation, custom budget categories, and a cleaner UI pass across the whole app.",
+    stack: ["React", "Node.js", "Express", "MongoDB", "JWT Auth", "Recharts"],
+    links: [
+      { label: "↗ live demo", href: "https://home-accounts-front.vercel.app/" },
+      { label: "⌥ github", href: "https://github.com/ajkacca457/home_accounts" },
     ],
   }
 ];
