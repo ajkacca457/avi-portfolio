@@ -43,6 +43,22 @@ export const projects: Project[] = [
     ],
   },
   {
+    file: "// started as AI startup prototype · rebuilt solo",
+    name: "Roundtable — AI Advisory Board Platform",
+    badges: [
+      { label: "Live", type: "live" },
+      { label: "Multi-Agent AI", type: "ai" },
+      { label: "Solo rebuild", type: "lead" },
+    ],
+    highlight: "Originally prototyped for an AI startup's multi-agent concept, then rebuilt into a general-purpose, multi-tenant platform with real auth and per-board data isolation.",
+    description: "Create a board, populate it with knowledge-grounded AI advisor personas, then chat with the whole panel or one advisor. Synthesis reconciles their advice into one recommendation.",
+    stack: ["React", "FastAPI", "CrewAI", "PostgreSQL", "pgvector", "Clerk"],
+    links: [
+      { label: "↗ live demo", href: "https://roundtable-mauve.vercel.app/" },
+      { label: "⌥ github", href: "https://github.com/ajkacca457/Roundtable" },
+    ],
+  },
+  {
     file: "// personal project · full stack + payments",
     name: "EcoRides — Vehicle Rental Marketplace",
     badges: [
